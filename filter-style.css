@@ -14,7 +14,10 @@
 
 .filter {}
 
-.filter>img {}
+.filter>img {
+    display: block;
+    margin-left: 10rem;
+}
 
 .filter>a {
     font-family: var(--secondary-font);
@@ -27,6 +30,5 @@
     padding-left: 1rem;
     border-radius: 1rem;
     display: inline-flex;
-    justify-content: center;
     align-items: center;
 }
