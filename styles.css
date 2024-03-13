@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+:root{
+    --clr-pink-50: #fee8f0;
+    --clr-pink-100: #fdb6d1;
+    --clr-pink-200: #fb93bb;
+    --clr-pink-300: #fa629c;
+    --clr-pink-400: #f94489;
+    --clr-pink-500: #f7156b;
+    --clr-pink-600: #e11361;
+    --clr-pink-700: #af0f4c;
+    --clr-pink-800: #880c3b;
+    --clr-pink-900: #68092d;
+
+    --clr-purple-50: #f6e6f8;
+    --clr-purple-100: #e2b2e8;
+    --clr-purple-100: #d58cdd;
+    --clr-purple-100: #c158ce;
+    --clr-purple-100: #b537c5;
+    --clr-purple-100: #a305b6;
+    --clr-purple-100: #9405a6;
+    --clr-purple-100: #740481;
+    --clr-purple-100: #5a0364;
+    --clr-purple-100: #44024c;
+
+    --clr-black-50: #e6e6e6;
+    --clr-black-100: #c2c2c2;
+    --clr-black-200: #919191;
+    --clr-black-300: #5e5e5e;
+    --clr-black-400: #2e2e2e;
+    --clr-black-500: #000000;
+
+    --clr-white-50: #ffffff;
+    --clr-white-100: #e8e8e8;
+    --clr-white-200: #b5b5b5;
+    --clr-white-300: #8c8c8c;
+    --clr-white-400: #6b6b6b;
+
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+main {
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+}
+
