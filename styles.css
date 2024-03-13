@@ -33,4 +33,6 @@
     --clr-white-200: #b5b5b5;
     --clr-white-300: #8c8c8c;
     --clr-white-400: #6b6b6b;
+* {
+    background-color: FFF5F5;
 }
