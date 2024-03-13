@@ -1,0 +1,207 @@
+:root {
+    --secondary-color: #EFE0F1;
+    --main-color: #F7146B;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-top: 5rem;
+}
+
+img {
+    width: 13rem;
+}
+
+.topOfSlide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    margin-left: 0.5rem;
+    color: var(--main-color);
+}
+
+.card1 {
+    background-color: var(--secondary-color);
+    background-image: url(https://images.unsplash.com/photo-1619881589316-56c7f9e6b587?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWNkb25hbGQnc3xlbnwwfDB8MHx8fDA%3D);
+    background-repeat: no-repeat;
+    background-position: -11rem;
+    background-size: 17rem;
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    color: black;
+    width: 14rem;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.8rem;
+    position: relative;
+}
+
+#favIcon {
+    width: 1rem;
+    display: flex;
+}
+
+.fav {
+    background-color: var(--secondary-color);
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+#range {
+    padding-right: 1rem;
+    font-size: 0.5rem;
+}
+
+.card1>h4 {
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.card1>p {
+    padding-bottom: 0.8rem;
+    padding-left: 6rem;
+    font-size: 0.8rem;
+}
+
+.seeMore,
+.learnMore {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: solid;
+    border-style: none;
+    border-radius: 2rem;
+    color: white;
+    background-color: var(--main-color);
+    font-size: 0.6rem;
+
+}
+
+.card2 {
+    background-color: var(--secondary-color);
+    background-image: url(https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=800);
+    background-repeat: no-repeat;
+    background-position: -11rem;
+    background-size: 17rem;
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    color: black;
+    width: 14rem;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.8rem;
+    position: relative;
+}
+
+.firstSlide {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.card2>h4 {
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.card2>p {
+    padding-bottom: 0.8rem;
+    padding-left: 6rem;
+    font-size: 0.8rem;
+}
+
+.card3 {
+    background-color: var(--secondary-color);
+    background-image: url(https://plus.unsplash.com/premium_photo-1683657860394-abc3c54d5237?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fGtmY3xlbnwwfDB8MHx8fDA%3D);
+    background-repeat: no-repeat;
+    background-position: -11rem;
+    background-size: 17rem;
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    color: black;
+    width: 14rem;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.8rem;
+    position: relative;
+}
+
+.card3>h4 {
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.card3>p {
+    padding-bottom: 0.8rem;
+    padding-left: 6rem;
+    font-size: 0.8rem;
+}
+
+.topOfSlide2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    margin-left: 0.5rem;
+    color: var(--main-color);
+}
+
+.card4 {
+    background-color: var(--secondary-color);
+    background-image: url(https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-repeat: no-repeat;
+    background-position: -11rem;
+    background-size: 17rem;
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    color: black;
+    width: 14rem;
+    height: 11rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.8rem;
+    position: relative;
+}
