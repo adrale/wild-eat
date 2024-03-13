@@ -1,42 +1,8 @@
-<<<<<<< HEAD
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
     --primary-color: #FFF5F5;
-    --text-color: #000000;
-    --back-main-color: #ebeadf;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-    font-family: "Libre Franklin", sans-serif;
-}
-
-body {
-    background-color: var(--primary-color);
-}
-
-main {
-    padding: 1rem;
-    margin-top: 2rem;
-    font-size: 1rem;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-}
-
-p {
-    display: flex;
-    flex-direction: row;
-}
-
-=======
-:root{
     --clr-pink-50: #fee8f0;
     --clr-pink-100: #fdb6d1;
     --clr-pink-200: #fb93bb;
@@ -72,4 +38,33 @@ p {
     --clr-white-300: #8c8c8c;
     --clr-white-400: #6b6b6b;
 }
->>>>>>> dev
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+main {
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+}
+
+
