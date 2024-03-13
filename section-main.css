@@ -1,0 +1,429 @@
+:root {
+    --secondary-color: #EFE0F1;
+    --main-color: #F7146B;
+    --width-card: 16rem;
+    --height-card: 11rem;
+    --padding-left-card-p: 8rem;
+    --image-position: -11rem;
+    --gap-top-of-slide: 8rem;
+    --padding-bottom-card: 2rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-top: 5rem;
+    background-color: #FFF5F5;
+}
+
+img {
+    width: 13rem;
+}
+
+
+
+
+#favIcon {
+    width: 1rem;
+    display: flex;
+}
+
+.fav {
+    background-color: var(--secondary-color);
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+#range {
+    padding-right: 1rem;
+    font-size: 0.5rem;
+}
+
+.seeMore,
+.learnMore {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: solid;
+    border-style: none;
+    border-radius: 2rem;
+    color: white;
+    background-color: var(--main-color);
+    font-size: 0.6rem;
+
+}
+
+.topOfSlide {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-top-of-slide);
+    padding-bottom: 1rem;
+    margin-left: 0.5rem;
+    color: var(--main-color);
+}
+
+.firstSlide {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding-bottom: var(--padding-bottom-card);
+}
+
+.card1 {
+    background-color: var(--secondary-color);
+    background-image: url(https://images.unsplash.com/photo-1619881589316-56c7f9e6b587?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWNkb25hbGQnc3xlbnwwfDB8MHx8fDA%3D);
+    background-repeat: no-repeat;
+    background-position: var(--image-position);
+    background-size: 17rem;
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    color: black;
+    width: var(--width-card);
+    height: var(--height-card);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.8rem;
+    position: relative;
+}
+
+
+
+.card1>h4 {
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.card1>p {
+    padding-bottom: 0.8rem;
+    padding-left: var(--padding-left-card-p);
+    font-size: 0.8rem;
+}
+
+
+.card2 {
+    background-color: var(--secondary-color);
+    background-image: url(https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=800);
+    background-repeat: no-repeat;
+    background-position: var(--image-position);
+    background-size: 17rem;
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    color: black;
+    width: var(--width-card);
+    height: var(--height-card);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.8rem;
+    position: relative;
+}
+
+
+
+.card2>h4 {
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.card2>p {
+    padding-bottom: 0.8rem;
+    padding-left: var(--padding-left-card-p);
+    font-size: 0.8rem;
+}
+
+.card3 {
+    background-color: var(--secondary-color);
+    background-image: url(https://plus.unsplash.com/premium_photo-1683657860394-abc3c54d5237?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fGtmY3xlbnwwfDB8MHx8fDA%3D);
+    background-repeat: no-repeat;
+    background-position: var(--image-position);
+    background-size: 17rem;
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    color: black;
+    width: var(--width-card);
+    height: var(--height-card);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.8rem;
+    position: relative;
+}
+
+.card3>h4 {
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.card3>p {
+    padding-bottom: 0.8rem;
+    padding-left: var(--padding-left-card-p);
+    font-size: 0.8rem;
+}
+
+.topOfSlide2 {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-top-of-slide);
+    padding-bottom: 1rem;
+    margin-left: 0.5rem;
+    color: var(--main-color);
+}
+
+.secondSlide {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding-bottom: var(--padding-bottom-card);
+}
+
+.card4 {
+    background-color: var(--secondary-color);
+    background-image: url(https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?auto=compress&cs=tinysrgb&w=800);
+    background-repeat: no-repeat;
+    background-position: var(--image-position);
+    background-size: 17rem;
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    color: black;
+    width: var(--width-card);
+    height: var(--height-card);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.8rem;
+    position: relative;
+}
+
+.card4>h4 {
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.card4>p {
+    padding-bottom: 0.8rem;
+    padding-left: var(--padding-left-card-p);
+    font-size: 0.8rem;
+}
+
+.card5 {
+    background-color: var(--secondary-color);
+    background-image: url(https://images.pexels.com/photos/3738755/pexels-photo-3738755.jpeg?auto=compress&cs=tinysrgb&w=800);
+    background-repeat: no-repeat;
+    background-position: var(--image-position);
+    background-size: 17rem;
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    color: black;
+    width: var(--width-card);
+    height: var(--height-card);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.8rem;
+    position: relative;
+}
+
+.card5>h4 {
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.card5>p {
+    padding-bottom: 0.8rem;
+    padding-left: var(--padding-left-card-p);
+    font-size: 0.8rem;
+}
+
+.card6 {
+    background-color: var(--secondary-color);
+    background-image: url(https://images.pexels.com/photos/1600727/pexels-photo-1600727.jpeg?auto=compress&cs=tinysrgb&w=800);
+    background-repeat: no-repeat;
+    background-position: var(--image-position);
+    background-size: 17rem;
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    color: black;
+    width: var(--width-card);
+    height: var(--height-card);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.8rem;
+    position: relative;
+}
+
+.card6>h4 {
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.card6>p {
+    padding-bottom: 0.8rem;
+    padding-left: var(--padding-left-card-p);
+    font-size: 0.8rem;
+}
+
+
+.topOfSlide3 {
+    display: flex;
+    flex-direction: row;
+    gap: 6.5rem;
+    padding-bottom: 1rem;
+    margin-left: 0.5rem;
+    color: var(--main-color);
+}
+
+.thirdSlide {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.card7 {
+    background-color: var(--secondary-color);
+    background-image: url(https://images.pexels.com/photos/3218467/pexels-photo-3218467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-repeat: no-repeat;
+    background-position: var(--image-position);
+    background-size: 17rem;
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    color: black;
+    width: var(--width-card);
+    height: var(--height-card);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.8rem;
+    position: relative;
+}
+
+.card7>h4 {
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.card7>p {
+    padding-bottom: 0.8rem;
+    padding-left: var(--padding-left-card-p);
+    font-size: 0.8rem;
+}
+
+.card8 {
+    background-color: var(--secondary-color);
+    background-image: url(https://images.unsplash.com/photo-1609950547346-a4f431435b2b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ym91bGFuZ2VyaWUlMjBidXJnZXJ8ZW58MHx8MHx8fDA%3D);
+    background-repeat: no-repeat;
+    background-position: var(--image-position);
+    background-size: 17rem;
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    color: black;
+    width: var(--width-card);
+    height: var(--height-card);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.8rem;
+    position: relative;
+}
+
+.card8>h4 {
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.card8>p {
+    padding-bottom: 0.8rem;
+    padding-left: var(--padding-left-card-p);
+    font-size: 0.8rem;
+}
+
+.card9 {
+    background-color: var(--secondary-color);
+    background-image: url(https://images.unsplash.com/photo-1505826759037-406b40feb4cd?q=80&w=3272&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-position: var(--image-position);
+    background-size: 17rem;
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    color: black;
+    width: var(--width-card);
+    height: var(--height-card);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.8rem;
+    position: relative;
+}
+
+.card9>h4 {
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.card9>p {
+    padding-bottom: 0.8rem;
+    padding-left: var(--padding-left-card-p);
+    font-size: 0.8rem;
+}
