@@ -45,6 +45,10 @@ img:last-of-type {
 
 main {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 
@@ -56,13 +60,13 @@ main > p {
     margin: 1rem;
     background-color: var(--back-search);
     color: rgb(0,0,0, 0.55);
+    width: clamp(18rem, 5vw, 18rem);
 }
 
 section {
     background-image: url(Img/background-card.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 0px solid var(--text-color);
     border-radius: 1rem;
     margin: 1rem;
     display: grid;
@@ -72,16 +76,17 @@ section {
 
 section > p:first-of-type {
     font-weight: bold;
-    font-size:xx-large;
+    font-size: clamp(2rem, 5vw, 5rem);
     color: white;
     grid-column: 1/3;
     grid-row: 1/2; 
     padding-left: 1rem;
+    text-align: center;
 }
 
 section > p:last-of-type {
     font-weight: bold;
-    font-size:medium;
+    font-size:clamp(0.5rem, 3vw, 5rem);
     color: white;
     grid-column: 1/3;
     grid-row: 2/3;
@@ -89,9 +94,11 @@ section > p:last-of-type {
 }
 
 section > img {
-    border: 0px solid var(--text-color);
     border-radius: 1rem;
     padding: 0.5rem;
     grid-column: 2/3;
     grid-row: 1/3;
+    width: clamp(7.5rem, 45vw, 51rem);
+    max-height: 28rem;
+    min-height: 9rem;
 }
