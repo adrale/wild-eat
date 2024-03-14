@@ -12,11 +12,16 @@
     --secondary-font: "Libre Franklin", sans-serif;
 }
 
-.filter {}
+.filter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
 
-.filter>img {}
+.filter img {}
 
-.filter>a {
+.filter a {
     font-family: var(--secondary-font);
     font-size: .8rem;
     color: var(--black-color);
@@ -24,9 +29,19 @@
     text-decoration: none;
     margin: .5rem;
     padding: .5rem;
-    padding-left: 1rem;
-    border-radius: 1rem;
-    display: inline-flex;
-    justify-content: center;
+    padding-left: .8rem;
+    border-radius: 2rem;
+    border: 1px solid #000000;
+    display: flex;
     align-items: center;
+}
+
+.filter>a:first-child {
+    background-color: var(--wild-color);
+    color: var(--white-color);
+}
+
+.filter a>p {
+    margin-left: .5rem;
+    margin-right: .5rem;
 }
