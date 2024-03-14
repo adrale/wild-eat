@@ -13,21 +13,16 @@
 }
 
 .filter {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
+    display: flex;
 }
 
-.filter img {}
-
-.filter a {
+.filter>a {
     font-family: var(--secondary-font);
     font-size: .8rem;
     color: var(--black-color);
     background-color: var(--background-secondary-color);
     text-decoration: none;
-    margin: .5rem;
+    margin: .6rem;
     padding: .5rem;
     padding-left: .8rem;
     border-radius: 2rem;
@@ -41,7 +36,19 @@
     color: var(--white-color);
 }
 
-.filter a>p {
+.filter>a>p {
     margin-left: .5rem;
     margin-right: .5rem;
+}
+
+@media screen and (min-width: 992px) {
+    .filter {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .filter>a {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 }
