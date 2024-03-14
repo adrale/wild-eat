@@ -38,24 +38,33 @@ nav>ul>li:last-of-type {
 @media screen and (min-width: 992px) {
 
     .navDesktop {
-        display: flex;
+        padding: 0;
+        height: 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         justify-content: center;
     }
 
-    nav>ul {}
-
-    nav>ul>.logo {
-        justify-self: start;
+    nav>ul {
+        padding-bottom: 0.2rem;
     }
 
-    nav>ul>li {
-        padding: 2rem;
+    nav>ul>img {
+        display: block;
+    }
+
+    nav>ul>li>a {
         text-decoration: none;
         color: black;
     }
 
     nav>ul>li:first-of-type {
         background-color: #EFE0F1;
+        margin-left: 2rem;
+    }
+
+    nav>ul>li:nth-child(2) {
+        grid-column: 3/4;
     }
 
     .navMobil {
