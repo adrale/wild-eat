@@ -29,21 +29,21 @@ img {
     width: 13rem;
 }
 
-
-#favIcon {
-    width: 1rem;
-    display: flex;
-}
-
-.fav {
+#favButton {
     background-color: var(--secondary-color);
     border: solid;
     border-style: none;
-    border-radius: 1rem;
-    padding: 0.2rem;
+    border-radius: 3rem;
     position: absolute;
     top: 0.6rem;
     left: 0.6rem;
+    padding-top: 0.2rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+#iconFav {
+    width: 1rem;
 }
 
 #range {
@@ -66,7 +66,7 @@ img {
 
 }
 
-.topOfSlide {
+.topOfSlideFirst {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -76,12 +76,17 @@ img {
     color: var(--main-color);
 }
 
-.firstSlide {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    padding-bottom: var(--padding-bottom-card);
+.topOfSlide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    margin-left: 0.5rem;
+    padding-top: 2rem;
+    padding-right: 1rem;
+    color: var(--main-color);
 }
+
 
 .cards {
     background-image: url(https://images.unsplash.com/photo-1619881589316-56c7f9e6b587?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWNkb25hbGQnc3xlbnwwfDB8MHx8fDA%3D);
@@ -122,19 +127,6 @@ img {
     display: none;
 }
 
-.secondSlide {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    padding-bottom: var(--padding-bottom-card);
-}
-
-.thirdSlide {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-}
-
 @media screen and (min-width:992px) {
 
     .cards {
@@ -156,11 +148,7 @@ img {
         position: relative;
     }
 
-    #favIcon {
-        display: none;
-    }
-
-    .fav {
+    #favButton {
         display: none;
     }
 
