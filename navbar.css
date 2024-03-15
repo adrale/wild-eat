@@ -4,10 +4,15 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primaryColor: #EFE0F1;
+    --secondaryColor: #F7146B;
+}
+
 nav {
     height: 4rem;
     margin: auto;
-    background-color: #EFE0F1;
+    background-color: var(--primaryColor);
     position: sticky;
 }
 
@@ -21,7 +26,7 @@ nav>ul {
 }
 
 nav>ul>li:first-of-type {
-    background-color: #F7146B;
+    background-color: var(--secondaryColor);
     border-radius: 50% 50% 50% 50%;
     padding: 0.6rem;
     margin-left: 2rem;
