@@ -51,9 +51,11 @@ main {
 
 }
 
+.desktop-hero {
+    display: none;
+}
 
 main > p {
-    border: 0px solid var(--text-color);
     border-radius: 1rem;
     text-align: center;
     padding: 1rem;
@@ -75,18 +77,21 @@ section {
 }
 
 section > p:first-of-type {
+    display: flex;
+    align-items: flex-end;
     font-weight: bold;
     font-size: clamp(2rem, 5vw, 5rem);
     color: white;
     grid-column: 1/3;
     grid-row: 1/2; 
     padding-left: 1rem;
-    text-align: center;
 }
 
 section > p:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
     font-weight: bold;
-    font-size:clamp(0.5rem, 3vw, 5rem);
+    font-size:clamp(0.8rem, 3vw, 5rem);
     color: white;
     grid-column: 1/3;
     grid-row: 2/3;
@@ -101,4 +106,87 @@ section > img {
     width: clamp(7.5rem, 45vw, 51rem);
     max-height: 28rem;
     min-height: 9rem;
+}
+
+@media screen and (min-width: 992px) {
+    header > img,
+    header > div, 
+    header > img:last-of-type {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    main > p {
+        margin: 0;
+        text-align: initial;
+    }
+
+    section {
+        grid-column: 2/3;
+        grid-row: 1/6;
+    }
+    
+
+    .desktop-hero {
+        display: block;
+        background-color: var(--primary-color);
+        margin: 0;
+        padding: 0;
+        justify-self: center;
+        color: #000000;
+    }
+
+    main > p:nth-of-type(3) {
+        justify-self: center;
+    }
+
+    h1 {
+        font-weight: 400;
+        font-size:clamp(1rem, 3vw, 2rem);
+        grid-row: 1/2;
+    }
+
+    p:nth-child(2) {
+        font-size: 300;
+        font-size:clamp(0.8rem, 3vw, 1rem);
+    }
+
+    main > p:nth-child(3) {
+        font-size:clamp(0.5rem, 3vw, 0.8rem);
+        font-size: 200;
+    }
+
+    main > p:nth-child(4) {
+        color: #000000;
+        
+    }
+
+    main > p:nth-child(5) {
+        font-size:clamp(0.5rem, 3vw, 0.8rem);
+        border-radius: 1rem;
+        background-color: #f7156b;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    section {
+        background-image: none;
+    }
+
+    section > p:first-of-type {
+        display: none;
+    }
+
+    section > p:last-of-type {
+        display: none;
+    }
+    
+
+
 }
