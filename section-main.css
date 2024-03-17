@@ -29,7 +29,7 @@ img {
     width: 13rem;
 }
 
-#favButton {
+.favButton {
     background-color: var(--secondary-color);
     border: solid;
     border-style: none;
@@ -42,7 +42,7 @@ img {
     padding-right: 0.2rem;
 }
 
-#iconFav {
+.iconFav {
     width: 1rem;
 }
 
@@ -91,7 +91,7 @@ img {
 .cards {
     background-image: url(https://images.unsplash.com/photo-1619881589316-56c7f9e6b587?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWNkb25hbGQnc3xlbnwwfDB8MHx8fDA%3D);
     background-repeat: no-repeat;
-    background-position: var(--image-position);
+    background-position: -11rem;
     background-size: 17rem;
     background-color: var(--secondary-color);
     border: solid;
@@ -110,14 +110,14 @@ img {
 }
 
 
-.cards>h4 {
+.cardTitle>h4 {
     padding-bottom: 0.8rem;
     font-size: 0.8rem;
     color: var(--main-color);
     text-decoration: underline;
 }
 
-.cards>p {
+.cardDesc>p {
     padding-bottom: 0.8rem;
     padding-left: var(--padding-left-card-p);
     font-size: 0.8rem;
@@ -141,14 +141,14 @@ img {
         height: var(--height-card);
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
         text-align: right;
         padding-right: 0;
         padding-top: 0;
         position: relative;
     }
 
-    #favButton {
+    .favButton {
         display: none;
     }
 
@@ -167,11 +167,35 @@ img {
         backdrop-filter: blur(7px);
         text-decoration: none;
         font-weight: 400;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .cards>p {
+        display: none;
     }
 
     .cards>article {
         display: flex;
         font-size: 0.6rem;
+        flex-direction: row;
+        gap: 2.5rem;
+        padding-left: 0.5rem;
+        padding-bottom: 0.4rem;
+        background-color: #42424271;
+        width: 100%;
+        text-align: center;
+        padding-top: 0.5rem;
+        border: solid;
+        border-style: none;
+        border-radius: 0 0 0.9rem 0.9rem;
+        backdrop-filter: blur(7px);
+    }
+
+    .seeMore,
+    .learnMore {
+        display: none;
     }
 
 }
