@@ -1,33 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="hero.css">
     <title>Wild-Eat</title>
+    <link rel="icon" type="icon" href="Img/desktop-logo.svg">
 </head>
 <body>
     <header>
-        <img src="Img/Ellipse 2.svg" alt="Profil photo">
-        <div>
+        <!-- header-hero -->
+        <hgroup class="header-hero">
+            <img src="Img/Ellipse 2.svg" alt="Profil photo">
             <p>Livré à :</p>
-            <p>Campus - Bordeaux ,<img src="Img/fleche_livre.svg" alt=""></p>
+            <!-- Remplacer par un input si on veut changer de campus? -->
+            <p>Campus - Bordeaux <img src="Img/fleche_livre.svg" alt="Scrolling menu"></p>
             <p>171, Rue Lucien Faure</p>
-        </div>
-        <img src="Img/desktop-logo.svg" alt="Logo Wild">
+            <img src="Img/desktop-logo.svg" alt="Logo Wild">
+        </hgroup>
     </header>
     <main>
-        <h1 class="desktop-hero">Bienvenue sur Wild Eats</h1>
-        <p class="desktop-hero">Votre plateforme de livraison de nourriture préférée</p>
-        <p class="desktop-hero">Découvrez une expérience culinaire sans pareille, directement à votre porte !</p>
-        <p >Que souhaitez-vous manger ?</p>
-        <p class="desktop-hero">Commander</p>
-        <section>
-            <p>50 % </p>
-            <p>Offre spéciale, nouveaux clients</p>
-            <img src="Img/desktop-hero.jpg" alt="">
-        </section>
+        <!-- main-hero -->
+        <hgroup class="main-hero">
+            <hgroup>
+                <h1>Bienvenue sur Wild Eats</h1>
+                <input type="text" value="Que souhaitez-vous manger ?">
+            </hgroup>
+            <hgroup>
+                <p class="desktop-hero">Votre plateforme de livraison de nourriture préférée</p>
+                <p class="desktop-hero">Découvrez une expérience culinaire sans pareille, directement à votre porte !</p>
+                <!-- Que fait le bouton "commander"? -->
+                <p class="desktop-hero">Commander</p>
+                <p class="mobil-hero">50 % </p>
+                <p class="mobil-hero">Offre spéciale, nouveaux clients</p>
+                <img src="Img/desktop-hero.jpg" alt="Picture of three different dishes">
+            </hgroup>
+            <img class="desktop-hero" src="Img/bannière-hero.svg" alt="Banner of our results">
+        </hgroup>
     </main>
+    <script src="hero.js"></script>
 </body>
 </html> 
 
