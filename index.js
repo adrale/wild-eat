@@ -1,3 +1,4 @@
 import { createCard } from "./createCard";
 
-createCard();
+createCard
+

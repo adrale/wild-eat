@@ -110,14 +110,14 @@ img {
 }
 
 
-.cardTitle>h4 {
+.card-title {
     padding-bottom: 0.8rem;
     font-size: 0.8rem;
     color: var(--main-color);
     text-decoration: underline;
 }
 
-.cardDesc>p {
+.cardDesc {
     padding-bottom: 0.8rem;
     padding-left: var(--padding-left-card-p);
     font-size: 0.8rem;
