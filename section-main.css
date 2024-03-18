@@ -42,7 +42,7 @@ img {
     padding-right: 0.2rem;
 }
 
-.iconFav {
+#iconFav {
     width: 1rem;
 }
 
@@ -117,7 +117,7 @@ img {
     text-decoration: underline;
 }
 
-.cardDesc {
+.card-desc {
     padding-bottom: 0.8rem;
     padding-left: var(--padding-left-card-p);
     font-size: 0.8rem;
