@@ -22,17 +22,10 @@ body {
 /* --------------------------------------------------------------------    HEADER    ----------------------------------------------------------------------------- */
 header > hgroup:first-of-type {
     display: grid;
-    grid-template-columns: 3rem repeat(4, 1fr);
-    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
     margin: 1rem;
 }
 
-hgroup:first-of-type > img:first-of-type {
-    grid-column: 1;
-    grid-row: 1/4;
-    width: clamp(2.5rem, 3vw, 3rem);
-    margin-top: 0.5rem;
-}
 
 hgroup:first-of-type > p:nth-of-type(1) {
     grid-column: 2;
@@ -49,12 +42,6 @@ hgroup:first-of-type > p:nth-of-type(3) {
     grid-row: 3;
 }
 
-hgroup:first-of-type > img:last-of-type {
-    grid-column: 5;
-    grid-row: 1/4;
-    width: clamp(2.5rem, 3vw, 3rem);
-    margin-top: 1rem;
-}
 
 /* --------------------------------------------------------------------    NAVBAR    ----------------------------------------------------------------------------- */
 nav {
