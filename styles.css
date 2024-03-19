@@ -19,29 +19,21 @@ body {
     background-color: var(--primary-color);
 }
 
-/* --------------------------------------------------------------------    HEADER    ----------------------------------------------------------------------------- */
-header > hgroup:first-of-type {
+/* --------------------------------------------------------------------    HEADER  - HERO  ----------------------------------------------------------------------------- */
+.header-hero {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 1rem;
 }
 
-
-hgroup:first-of-type > p:nth-of-type(1) {
-    grid-column: 2;
-    grid-row: 1;
+.header-hero > article {
+    display: flex;
+    gap: 1rem;
 }
 
-hgroup:first-of-type > p:nth-of-type(2) {
-    grid-column: 2/5;
-    grid-row: 2;
+.header-hero > img {
+    justify-self: end;
 }
-
-hgroup:first-of-type > p:nth-of-type(3) {
-    grid-column: 2/5;
-    grid-row: 3;
-}
-
 
 /* --------------------------------------------------------------------    NAVBAR    ----------------------------------------------------------------------------- */
 nav {
@@ -171,43 +163,50 @@ main>.download-app {
     display: none;
 }
 
-main > hgroup > hgroup:first-of-type {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3rem 3rem;
+.main-hero > hgroup:first-of-type {
+    text-align: center;
+    margin-top: 2rem;
 }
 
-hgroup:first-of-type > h1 {
+.main-hero > hgroup:first-of-type > h1 {
     grid-column: 1;
     grid-row: 1;
-    font-weight: 400;
-    font-size:clamp(1rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--third-color);
+    font-size:clamp(1rem, 5vw, 2rem);
     text-align: center;
 }
 
-hgroup > hgroup:first-of-type > input {
-    grid-column: 1;
-    grid-row: 2;
-    border: none;
-    border-radius: 1rem;
-    font-size:clamp(0.5rem, 3vw, 1rem);
-    text-align: center;
-    padding: 1rem;
-    margin-left: 1rem;
-    background-color: var(--back-search);
-    color: rgb(0,0,0, 0.55);
-    width: clamp(18rem, 5vw, 18rem);
+.main-hero > hgroup:first-of-type > input {
+    height: 2.5rem;
+    width: 80%;
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--header-color);
+    background-color: var(--header-color);
 }
+
+.main-hero > hgroup:first-of-type > input:focus {
+    border: 1px solid var(--third-color);
+} 
+
+.main-hero > hgroup:first-of-type > input:focus-visible {
+    border: 1px solid var(--third-color);
+} 
+
+/* -------------------------------------------------------------------------- MAIN HERO - IMG -------------------------------------------------------------------------- */
 
 main > hgroup > hgroup:last-of-type { 
     display: grid;
     grid-template-columns:1fr 1fr;
     grid-template-rows: auto;
-    background-image: url(Img/background-card.svg);
+    background-image: url(./Img/background-card.svg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
     margin: 1rem;
+    text-align: center;
 }
 
 main > hgroup > hgroup:last-of-type > p:nth-of-type(4) {
@@ -356,7 +355,7 @@ main > hgroup > hgroup:last-of-type > img {
     }
 
     main > hgroup > hgroup:first-of-type > input {
-        justify-self: center;
+        /* justify-self: center; */
         margin-top: 1rem;
     }
 
