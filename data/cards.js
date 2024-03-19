@@ -1,6 +1,4 @@
 export const restaurants = [
-
-    // ---------------------  Burgers  ---------------------
     {
         name: "McDonald's",
         type: "Fast-Food",
@@ -81,6 +79,8 @@ export const restaurants = [
     },
 
     // ---------------------  Pizza  ---------------------
+
+    
     // ---------------------  Brunch  ---------------------
     {
         name: "Boulangerie Ange",
