@@ -265,10 +265,6 @@ const idPizza = document.getElementById("Pizza");
 const idBrunch = document.getElementById("Brunch");
 const idBar = document.getElementById("Bar");
 
-idBurger.addEventListener('click', () => {
-    console.log('aozdijazoij');
-})
-
 
 // filtre quand on clique en se basant sur la couleur du filtre
 
