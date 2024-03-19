@@ -36,14 +36,14 @@ teamCard.addEventListener("click", function () {
 
 // Import du tableau "cards"
 import { createCard } from "./functions/createCard.js";
-createCard();
+import { restaurants } from "./data/cards.js";
+createCard(restaurants);
 
 
 // ----------------------------------------- SECTION - FILTER ---------------------------------
 
 // fonction de filtrage générique (la méthode .filter retourne les éléments pour lesquels la callback est vrai)
 
-import { restaurants } from "./data/cards.js";
 
 function filterByType(category) {
     return restaurants.filter(restaurant => restaurant.category === category); // fonction callback anonyme car .filter prend en argument une fonction qui retourne true ou false
