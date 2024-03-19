@@ -20,28 +20,40 @@ body {
 }
 
 /* --------------------------------------------------------------------    HEADER  - HERO  ----------------------------------------------------------------------------- */
+
 header > hgroup:first-of-type {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 3rem repeat(4, 1fr);
+    grid-template-rows: auto;
     margin: 1rem;
 }
 
-/* 
-hgroup:first-of-type > p:nth-of-type(1) {
+hgroup:first-of-type > img:first-of-type {
+    grid-column: 1;
+    grid-row: 1/4;
+    width: clamp(2.5rem, 3vw, 3rem);
+    margin-top: 0.5rem;
+}
+
+hgroup:first-of-type > p {
     grid-column: 2;
-    grid-row: 1;
-}
-
-hgroup:first-of-type > p:nth-of-type(2) {
-    grid-column: 2/5;
     grid-row: 2;
+    padding-left: 0.2rem;
 }
 
-hgroup:first-of-type > p:nth-of-type(3) {
-    grid-column: 2/5;
+hgroup:first-of-type > select {
+    /* grid-column: 2/5; */
     grid-row: 3;
-} */
+    border: none;
+    background-color: var(--primary-color);
+}
 
+hgroup:first-of-type > img:last-of-type {
+    grid-column: 5;
+    grid-row: 1/4;
+    width: clamp(2.5rem, 3vw, 3rem);
+    margin-top: 1rem;
+}
 
 /* --------------------------------------------------------------------    NAVBAR    ----------------------------------------------------------------------------- */
 nav {
@@ -81,7 +93,81 @@ nav>ul>.navMobil-cart {
 .navDesktop {
     display: none;
 }
-/*--------------------------------------------------------------------------NAVBAR - AboutUs section -------------------------------------------------------------------------- */
+
+/*--------------------------------------------------------------------------MAIN HERO -------------------------------------------------------------------------- */
+
+.desktop-hero {
+    display: none;
+}
+
+main > hgroup > hgroup:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2rem 3rem;
+}
+
+hgroup:first-of-type > h1 {
+    grid-column: 1;
+    grid-row: 1;
+    font-weight: 400;
+    font-size:clamp(1rem, 3vw, 2rem);
+    text-align: center;
+}
+
+hgroup > hgroup:first-of-type > input {
+    grid-column: 1;
+    grid-row: 2;
+    border: none;
+    border-radius: 1rem;
+    font-size:clamp(0.5rem, 3vw, 1rem);
+    text-align: center;
+    padding: 1rem;
+    margin-left: 1rem;
+    background-color: var(--secondary-color);
+    color: rgb(0,0,0, 0.55);
+    width: clamp(18rem, 5vw, 18rem);
+}
+
+main > hgroup > hgroup:last-of-type { 
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: auto;
+    background-image: url(Img/background-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+main > hgroup > hgroup:last-of-type > p:nth-of-type(4) {
+    grid-column: 1;
+    grid-row: 2;
+    font-weight: bold;
+    font-size: clamp(2rem, 5vw, 5rem);
+    color: white;
+    padding-left: 1rem;
+}
+
+main > hgroup > hgroup:last-of-type > p:nth-of-type(5) {
+    grid-column: 1;
+    grid-row: 3;
+    font-weight: bold;
+    font-size:clamp(0.8rem, 3vw, 5rem);
+    color: white;
+    padding-left: 1rem;
+}
+
+main > hgroup > hgroup:last-of-type > img {
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: clamp(7.5rem, 45vw, 51rem);
+    max-height: 28rem;
+    min-height: 9rem;
+    grid-column: 2;
+    grid-row: 1/5;
+} 
+
+/*-----------------------------------------------------------------------MAIN NAVBAR - AboutUs section ----------------------------------------------------------------------- */
 main>.aboutUs {
     display: grid;
     grid-template-columns: repeat (4, auto);
@@ -165,80 +251,6 @@ main>.download-app {
     display: none;
 }
 
-/* -------------------------------------------------------------------------- MAIN HERO -------------------------------------------------------------------------- */
-
-.desktop-hero {
-    display: none;
-}
-
-main > hgroup > hgroup:first-of-type {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3rem 3rem;
-}
-
-hgroup:first-of-type > h1 {
-    grid-column: 1;
-    grid-row: 1;
-    font-weight: 400;
-    font-size:clamp(1rem, 3vw, 2rem);
-    text-align: center;
-}
-
-hgroup > hgroup:first-of-type > input {
-    grid-column: 1;
-    grid-row: 2;
-    border: none;
-    border-radius: 1rem;
-    font-size:clamp(0.5rem, 3vw, 1rem);
-    text-align: center;
-    padding: 1rem;
-    margin-left: 1rem;
-    background-color: var(--back-search);
-    color: rgb(0,0,0, 0.55);
-    width: clamp(18rem, 5vw, 18rem);
-}
-
-main > hgroup > hgroup:last-of-type { 
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows: auto;
-    background-image: url(Img/background-card.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 1rem;
-    margin: 1rem;
-}
-
-main > hgroup > hgroup:last-of-type > p:nth-of-type(4) {
-    grid-column: 1;
-    grid-row: 2;
-    font-weight: bold;
-    font-size: clamp(2rem, 5vw, 5rem);
-    color: white;
-    padding-left: 1rem;
-}
-
-main > hgroup > hgroup:last-of-type > p:nth-of-type(5) {
-    grid-column: 1;
-    grid-row: 3;
-    font-weight: bold;
-    font-size:clamp(0.8rem, 3vw, 5rem);
-    color: white;
-    padding-left: 1rem;
-}
-
-main > hgroup > hgroup:last-of-type > img {
-    border-radius: 1rem;
-    padding: 0.5rem;
-    width: clamp(7.5rem, 45vw, 51rem);
-    max-height: 28rem;
-    min-height: 9rem;
-    grid-column: 2;
-    grid-row: 1/5;
-} 
-
-
 /* -------------------------------------------------------------------------- MEDIA QUERY -------------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------------- MEDIA QUERY - NAVBAR -------------------------------------------------------------------------- */
@@ -298,7 +310,9 @@ main > hgroup > hgroup:last-of-type > img {
     nav>ul>li>.fav-cart {
         width: 1rem;
     }
+
 /* -------------------------------------------------------------------------- MEDIA QUERY - NAVBAR - AboutUs section --------------------------------------------------------------------------*/
+
     main>.aboutUs {
         margin: 4rem 2rem;
         justify-content: center;
@@ -333,13 +347,8 @@ main > hgroup > hgroup:last-of-type > img {
     }
 
 /* -------------------------------------------------------------------------- MEDIA QUERY - HERO -------------------------------------------------------------------------- */
-    header {
-        height: 5rem;
-        background-color: var(--header-color);
-        margin-bottom: 1rem;
-    }
 
-    header > hgroup:first-child {
+    header > hgroup:first-of-type {
         display: none;
     }
 
@@ -347,7 +356,7 @@ main > hgroup > hgroup:last-of-type > img {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows:auto;
-        margin: 3rem;
+        margin-top: 4.5rem;
     }
 
     main > hgroup > hgroup:first-of-type {
@@ -410,8 +419,4 @@ main > hgroup > hgroup:last-of-type > img {
         justify-self: center;
         width: clamp(7.5rem, 45vw, 51rem);
     }
-
-
 }
-
-
