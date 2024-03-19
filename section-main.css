@@ -286,6 +286,7 @@ main>section:nth-child(9) {
     .cards .nameFirm {
         color: white;
         text-align: center;
+        transform: translateY(-0.2rem);
     }
 
     .knowMore {
@@ -298,6 +299,7 @@ main>section:nth-child(9) {
         display: block;
         font-size: 0.6rem;
         color: white;
+        transform: translateY(0.3rem);
     }
 
     .cards .avis-note-prix {
@@ -322,6 +324,7 @@ main>section:nth-child(9) {
     .cards-brunch .nameFirm {
         color: white;
         text-align: center;
+        transform: translateY(-0.4rem);
     }
 
     .cards-brunch .avis-note-prix .avis,
@@ -330,6 +333,7 @@ main>section:nth-child(9) {
         display: block;
         font-size: 0.6rem;
         color: white;
+        transform: translateY(0.3rem);
     }
 
     .cards-brunch .avis-note-prix {
@@ -344,6 +348,7 @@ main>section:nth-child(9) {
         display: block;
         font-size: 0.6rem;
         color: white;
+        transform: translateY(0.3rem);
     }
 
     .cards-bar .avis-note-prix {
@@ -368,6 +373,7 @@ main>section:nth-child(9) {
     .cards-bar .nameFirm {
         color: white;
         text-align: center;
+        transform: translateY(-0.4rem);
     }
 
     .allCards,
@@ -396,6 +402,7 @@ main>section:nth-child(9) {
         font-size: 1.5rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
+        color:#F7146B ;
     }
 
     .commandes-populaires {
@@ -433,6 +440,7 @@ main>section:nth-child(9) {
         display: block;
         font-size: 0.6rem;
         color: white;
+        transform: translateY(0.2rem);
     }
 
     .cards-populaires .avis-note-prix {
@@ -448,12 +456,13 @@ main>section:nth-child(9) {
         text-decoration: underline;
         font-weight: 500;
         padding-bottom: 0.5rem;
+        transform: translateY(-0.2rem);
     }
 
     .all-cards-pop {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: rem;
+        gap: 5rem;
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 10rem;
