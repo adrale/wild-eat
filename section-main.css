@@ -380,7 +380,7 @@ main>section:nth-child(9) {
     .allBrunch,
     .allBars {
         grid-template-columns: repeat(4, 1fr);
-        gap: 5rem;
+        gap: 3rem;
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 2rem;
@@ -402,7 +402,7 @@ main>section:nth-child(9) {
         font-size: 1.5rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
-        color:#F7146B ;
+        color: #F7146B;
     }
 
     .commandes-populaires {
@@ -462,7 +462,7 @@ main>section:nth-child(9) {
     .all-cards-pop {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 5rem;
+        gap: 3rem;
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 10rem;
