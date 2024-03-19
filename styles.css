@@ -132,7 +132,7 @@ main>section>article>img {
 main>section>.unhideArticle {
     display: block;
     width: 10rem;
-    height: 17rem;
+    height: 18rem;
     padding-top: 1rem;
     text-align: center;
     z-index:3;
