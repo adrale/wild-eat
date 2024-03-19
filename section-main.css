@@ -1,11 +1,10 @@
 :root {
-    --secondary-color: #EFE0F1;
-    --main-color: #F7146B;
-    --width-card: 16rem;
-    --height-card: 11rem;
-    --padding-left-card-p: 8rem;
-    --image-position: -11rem;
-    --padding-bottom-card: 2rem;
+    --clr-background: #FFF5F5;
+    --clr-main-pink: #F7146B;
+    --clr-second-pink: #EFE0F1;
+    --clr-white: #F1F1F1;
+    --clr-black: #010101;
+    --clr-gray: #8F8F8F;
 }
 
 * {
@@ -15,258 +14,263 @@
     font-family: "Libre Franklin", sans-serif;
 }
 
-
-#first-slide {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 1.5rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+.typeFood {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
 }
 
-h3 {
-    color: var(--main-color);
-
+.typeFood>p {
+    font-size: 1.3rem;
+    color: var(--clr-main-pink);
+    font-weight: 600;
 }
 
-.see-more {
-    color: white;
+.typeFood>a {
+    width: fit-content;
+    align-self: end;
+    justify-self: end;
     font-size: 0.7rem;
-    background-color: var(--main-color);
-    padding-top: 0.25rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    border: solid;
-    border-style: none;
-    border-radius: 1rem;
-}
-
-.cards {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    padding-left: 1rem;
-    padding-bottom: 1.5rem;
-}
-
-.learn-more {
-    font-size: 0.7rem;
-    background-color: var(--main-color);
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    border: solid;
-    border-style: none;
-    border-radius: 1rem;
-    color: white;
-}
-
-.card-img {
-    display: flex;
-    flex-direction: column;
-    width: 16rem;
-    height: 11rem;
-    border: solid;
-    border-style: none;
-    border-radius: 0.8rem;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.181);
-}
-
-.card-title {
-    font-size: 0.9rem;
-    color: var(--main-color);
-    text-decoration: underline;
-}
-
-.range {
-    font-size: 0.5rem;
-    font-weight: normal;
-    opacity: 70%;
-}
-
-.card-desc {
-    font-size: 0.9rem;
-    padding-right: 2.8rem;
-}
-
-.card-avis,
-.card-note,
-.card-prix {
-    display: none;
-}
-
-/*
-
-
-main {
-    display: flex;
-    flex-direction: column;
-    padding-left: 1rem;
-    padding-top: 5rem;
-    background-color: #FFF5F5;
-}
-
-img {
-    width: 13rem;
-}
-
-#range {
-    padding-right: 1rem;
-    font-size: 0.5rem;
-}
-
-.seeMore,
-.learn-more {
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    border: solid;
-    border-style: none;
     border-radius: 2rem;
-    color: white;
-    background-color: var(--main-color);
-    font-size: 0.6rem;
-
+    background-color: var(--clr-main-pink);
+    color: var(--clr-white);
+    text-decoration: none;
 }
 
-.topOfSlideFirst {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 1rem;
-    margin-left: 0.5rem;
+.allCards,
+.allBrunch,
+.allBars {
+    display: grid;
+    margin-top: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    overflow: auto;
+    scrollbar-width: none;
+    gap: 2rem;
     padding-right: 1rem;
-    color: var(--main-color);
 }
 
-.topOfSlide {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 1rem;
-    margin-left: 0.5rem;
-    padding-top: 2rem;
-    padding-right: 1rem;
-    color: var(--main-color);
-}
-
-
-.cards {
-    background-color: #EFE0F1;
-    width: var(--width-card);
-    height: var(--height-card);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
-    padding-right: 1rem;
-    padding-top: 0.8rem;
-    position: relative;
-}
-
-.card-image {
-    width: 5rem;
-    border: solid;
-    border-style: none;
-    border-radius: 0.8rem;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.card-title {
-    padding-bottom: 0.8rem;
-    font-size: 0.8rem;
-    color: var(--main-color);
-    text-decoration: underline;
-}
-
-.card-desc {
-    padding-bottom: 0.8rem;
-    padding-left: var(--padding-left-card-p);
-    font-size: 0.8rem;
-}
-
-.card-article {
+.cards .avis-note-prix .avis,
+.note,
+.prix {
     display: none;
 }
 
-.card-article>p {
-    font-size: 0.2rem;
+.cards {
+    background-image: url(./Group\ 15.png);
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 14rem;
+    height: 12rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
 }
 
-@media screen and (min-width:992px) {
+.cards>p {
+    text-align: end;
+}
+
+.cards .nameFirm {
+    font-size: 0.8rem;
+    text-decoration: underline;
+    font-weight: 500;
+    color: var(--clr-main-pink);
+    padding-bottom: 0.5rem;
+}
+
+.cards .knowMore {
+    width: fit-content;
+    align-self: end;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 2rem;
+    background-color: var(--clr-main-pink);
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+.cards .desc {
+    font-size: 0.9rem;
+    padding-left: 5rem;
+    padding-bottom: 1rem;
+}
+
+.cards .distance {
+    font-size: 0.6rem;
+}
+
+main>section:nth-child(9) {
+    padding-bottom: 20vh;
+}
+
+.cards-brunch {
+    background-image: url(./Group\ 18.jpg);
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 14rem;
+    height: 12rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+
+.cards-brunch>p {
+    text-align: end;
+}
+
+.cards-brunch .nameFirm {
+    font-size: 0.8rem;
+    text-decoration: underline;
+    font-weight: 500;
+    color: var(--clr-main-pink);
+    padding-bottom: 0.5rem;
+}
+
+.cards-brunch .knowMore {
+    width: fit-content;
+    align-self: end;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 2rem;
+    background-color: var(--clr-main-pink);
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+.cards-brunch .desc {
+    font-size: 0.9rem;
+    padding-left: 5rem;
+    padding-bottom: 1rem;
+}
+
+.cards-brunch .distance {
+    font-size: 0.6rem;
+}
+
+.cards-bar {
+    background-image: url(./Group\ 17.jpg);
+    border: solid;
+    border-style: none;
+    border-radius: 1rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 14rem;
+    height: 12rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+
+.cards-bar>p {
+    text-align: end;
+}
+
+.cards-bar .nameFirm {
+    font-size: 0.8rem;
+    text-decoration: underline;
+    font-weight: 500;
+    color: var(--clr-main-pink);
+    padding-bottom: 0.5rem;
+}
+
+.cards-bar .knowMore {
+    width: fit-content;
+    align-self: end;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 2rem;
+    background-color: var(--clr-main-pink);
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+.cards-bar .desc {
+    font-size: 0.9rem;
+    padding-left: 5rem;
+    padding-bottom: 1rem;
+}
+
+.cards-bar .distance {
+    font-size: 0.6rem;
+}
+
+.allBars {
+    padding-bottom: 2rem;
+}
+
+@media screen and (min-width : 992px) {
+
+    .cards .desc {
+        display: none;
+    }
+
+    .cards .distance {
+        display: none;
+    }
 
     .cards {
-        background-position: 0;
-        background-size: 17rem;
-        background-color: var(--secondary-color);
-        border: solid;
-        border-style: none;
-        border-radius: 1rem;
-        color: white;
-        width: var(--width-card);
-        height: var(--height-card);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: right;
-        padding-right: 0;
-        padding-top: 0;
-        position: relative;
-    }
-
-    .favButton {
-        display: none;
-    }
-
-    .cards>h4 {
-        padding-bottom: 0.8rem;
-        font-size: 0.8rem;
-        color: white;
-        background-color: #42424271;
-        width: 100%;
-        text-align: center;
+        background-image: url(./Group\ 16.jpg);
         padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        border: solid;
-        border-style: none;
-        border-radius: 0.9rem 0.9rem 0 0;
-        backdrop-filter: blur(7px);
-        text-decoration: none;
-        font-weight: 400;
-        display: flex;
-        justify-content: center;
-
     }
 
-    .cards>p {
+    .cards .nameFirm {
+        color: white;
+        text-align: center;
+    }
+
+    .knowMore {
         display: none;
     }
 
-    .cards>article {
-        display: flex;
+    .cards .avis-note-prix .avis,
+    .note,
+    .prix {
+        display: block;
         font-size: 0.6rem;
-        flex-direction: row;
-        gap: 2.5rem;
-        padding-left: 0.5rem;
-        padding-bottom: 0.4rem;
-        background-color: #42424271;
-        width: 100%;
-        text-align: center;
-        padding-top: 0.5rem;
-        border: solid;
-        border-style: none;
-        border-radius: 0 0 0.9rem 0.9rem;
-        backdrop-filter: blur(7px);
     }
 
-    .seeMore,
-    .learnMore {
-        display: none;
-    } */
+    .cards .avis-note-prix {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
 
-/* } */
+}
