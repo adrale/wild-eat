@@ -72,9 +72,16 @@ nav>ul>.navMobile-cart {
     margin-top: 0.5rem;
 }
 
-.navDesktop {
+.navDesktop,
+.navDesktop-home,
+.navDesktop-search,
+.navDesktop-cart,
+.navDesktop-aboutUs,
+.navDesktop-view {
     display: none;
 }
+
+
 /*--------------------------------------------------------------------------NAVBAR - AboutUs section -------------------------------------------------------------------------- */
 main>.aboutUs {
     display: grid;

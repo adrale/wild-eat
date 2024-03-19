@@ -1,5 +1,4 @@
 // Import des tableaux
-import { arrayRestaurants } from "./data/arrayRestaurant";
 
 // ----------------------------------------- NAVBAR ---------------------------------
 
@@ -228,6 +227,8 @@ createCardPop();
 // ----------------------------------------- SECTION - FILTER ---------------------------------
 
 // fonction de filtrage générique (la méthode .filter retourne les éléments pour lesquels la callback est vrai)
+
+import { arrayRestaurants } from './data/arrayRestaurant.js';
 
 function filterByType(type) {
     return arrayRestaurants.filter(restaurant => restaurant.type === type); // fonction callback anonyme car .filter prend en argument une fonction qui retourne true ou false
