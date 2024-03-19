@@ -228,10 +228,11 @@ createCardPop();
 
 // fonction de filtrage générique (la méthode .filter retourne les éléments pour lesquels la callback est vrai)
 
-import { arrayRestaurants } from './data/arrayRestaurant.js';
+// import { arrayRestaurants } from './data/arrayRestaurant.js';
+import { restaurants } from "./data/cards.js";
 
-function filterByType(type) {
-    return arrayRestaurants.filter(restaurant => restaurant.type === type); // fonction callback anonyme car .filter prend en argument une fonction qui retourne true ou false
+function filterByType(category) {
+    return restaurants.filter(restaurant => restaurant.category === category); // fonction callback anonyme car .filter prend en argument une fonction qui retourne true ou false
 }
 
 const filteredBurger = filterByType("Burger"); // je viens stocker ces éléments dans de nouveaux tableaux
@@ -272,7 +273,6 @@ function clickFilter(idTypeOfRestaurant, filteredType) {
     idTypeOfRestaurant.addEventListener('click', () => {
         if (idTypeOfRestaurant.classList.contains("color-clicked-filter")) {
             console.log(filteredType);
-            console.log("filtered");
             // return filteredType;
         } else {
             console.log("notFiltered");
@@ -285,7 +285,3 @@ clickFilter(idBurger, filteredBurger);
 clickFilter(idPizza, filteredPizza);
 clickFilter(idBrunch, filteredBrunch);
 clickFilter(idBar, filteredBar);
-
-idBurger.addEventListener('click', () => {
-    console.log('aozijdoaij');
-})

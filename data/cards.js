@@ -1,4 +1,6 @@
 export const restaurants = [
+
+    // ---------------------  Burgers  ---------------------
     {
         name: "McDonald's",
         type: "Fast-Food",
@@ -9,6 +11,7 @@ export const restaurants = [
         avis: "Avis : 504",
         note: "Note : 4,4/5",
         prix: "Prix : 16,90€ ",
+        category: 'Burger',
     },
     {
         name: "Burger King",
@@ -20,6 +23,8 @@ export const restaurants = [
         avis: "Avis : 632",
         note: "Note : 4,9/5",
         prix: "Prix : 14,90€ ",
+        category: 'Burger',
+
     },
     {
         name: "KFC",
@@ -31,6 +36,8 @@ export const restaurants = [
         avis: "Avis : 504",
         note: "Note : 4,2/5",
         prix: "Prix : 12,70€ ",
+        category: 'Burger',
+
 
     },
     {
@@ -43,6 +50,8 @@ export const restaurants = [
         avis: "Avis : 202",
         note: "Note : 4,8/5",
         prix: "Prix : 13,50€ ",
+        category: 'Burger',
+
     },
     {
         name: "Street Burger",
@@ -54,6 +63,8 @@ export const restaurants = [
         avis: "Avis : 415",
         note: "Note : 4,3/5",
         prix: "Prix : 16,70€ ",
+        category: 'Burger',
+
     },
     {
         name: "Smash Burger",
@@ -65,7 +76,12 @@ export const restaurants = [
         avis: "Avis : 301",
         note: "Note : 4,6/5",
         prix: "Prix : 15,90€ ",
+        category: 'Burger',
+
     },
+
+    // ---------------------  Pizza  ---------------------
+    // ---------------------  Brunch  ---------------------
     {
         name: "Boulangerie Ange",
         type: "Boulangerie",
@@ -76,6 +92,8 @@ export const restaurants = [
         avis: "Avis : 105",
         note: "Note : 4,9/5",
         prix: "Prix : 10,90€ ",
+        category: 'Brunch',
+
     },
     {
         name: "Boulangerie Paul",
@@ -87,6 +105,7 @@ export const restaurants = [
         avis: "Avis : 277",
         note: "Note : 4,6/5",
         prix: "Prix : 11,90€ ",
+        category: 'Brunch',
     },
     {
         name: "Boulangerie Belet",
@@ -98,5 +117,8 @@ export const restaurants = [
         avis: "Avis : 256",
         note: "Note : 4,3/5",
         prix: "Prix : 9,90€ ",
+        category: 'Brunch',
     },
+
+    // ---------------------  Bar  ---------------------
 ]

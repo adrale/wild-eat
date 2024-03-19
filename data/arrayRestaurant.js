@@ -55,28 +55,4 @@ export const arrayRestaurants = [
         adresse: "61 Quai Virginie Hériot, 33000 Bordeaux",
         Tel: "05 57 82 70 33",
     },
-    {
-        nom: "Papadum",
-        distance: "260m",
-        type: "Indien",
-        description: "",
-        adresse: "",
-        Tel: "",
-    },
-    {
-        nom: "",
-        distance: "",
-        type: "",
-        description: "",
-        adresse: "",
-        Tel: "",
-    },
-    {
-        nom: "",
-        distance: "",
-        type: "",
-        description: "",
-        adresse: "",
-        Tel: "",
-    }
 ];
