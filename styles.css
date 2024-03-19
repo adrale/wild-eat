@@ -21,34 +21,37 @@ body {
 
 /* --------------------------------------------------------------------    HEADER  - HERO  ----------------------------------------------------------------------------- */
 
-header > hgroup:first-of-type {
+header>hgroup:first-of-type {
     display: grid;
     grid-template-columns: 3rem repeat(4, 1fr);
     grid-template-rows: auto;
     margin: 1rem;
 }
 
-hgroup:first-of-type > img:first-of-type {
+hgroup:first-of-type>img:first-of-type {
     grid-column: 1;
     grid-row: 1/4;
     width: clamp(2.5rem, 3vw, 3rem);
     margin-top: 0.5rem;
 }
 
-hgroup:first-of-type > p {
+hgroup:first-of-type>p {
     grid-column: 2;
     grid-row: 2;
     padding-left: 0.2rem;
+    font-size: 0.8rem;
 }
 
-hgroup:first-of-type > select {
+hgroup:first-of-type>select {
     /* grid-column: 2/5; */
     grid-row: 3;
     border: none;
     background-color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
-hgroup:first-of-type > img:last-of-type {
+hgroup:first-of-type>img:last-of-type {
     grid-column: 5;
     grid-row: 1/4;
     width: clamp(2.5rem, 3vw, 3rem);
@@ -100,37 +103,39 @@ nav>ul>.navMobil-cart {
     display: none;
 }
 
-main > hgroup > hgroup:first-of-type {
+main>hgroup>hgroup:first-of-type {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2rem 3rem;
 }
 
-hgroup:first-of-type > h1 {
+hgroup:first-of-type>h1 {
     grid-column: 1;
     grid-row: 1;
     font-weight: 400;
-    font-size:clamp(1rem, 3vw, 2rem);
+    font-size: clamp(1rem, 3vw, 2rem);
     text-align: center;
+    color: var(--third-color);
 }
 
-hgroup > hgroup:first-of-type > input {
+hgroup>hgroup:first-of-type>input {
     grid-column: 1;
     grid-row: 2;
     border: none;
     border-radius: 1rem;
-    font-size:clamp(0.5rem, 3vw, 1rem);
+    font-size: clamp(0.5rem, 3vw, 1rem);
     text-align: center;
     padding: 1rem;
     margin-left: 1rem;
     background-color: var(--secondary-color);
-    color: rgb(0,0,0, 0.55);
+    color: rgb(0, 0, 0, 0.55);
     width: clamp(18rem, 5vw, 18rem);
+    outline-style: none;
 }
 
-main > hgroup > hgroup:last-of-type { 
+main>hgroup>hgroup:last-of-type {
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     background-image: url(Img/background-card.svg);
     background-repeat: no-repeat;
@@ -139,7 +144,7 @@ main > hgroup > hgroup:last-of-type {
     margin: 1rem;
 }
 
-main > hgroup > hgroup:last-of-type > p:nth-of-type(4) {
+main>hgroup>hgroup:last-of-type>p:nth-of-type(4) {
     grid-column: 1;
     grid-row: 2;
     font-weight: bold;
@@ -148,16 +153,16 @@ main > hgroup > hgroup:last-of-type > p:nth-of-type(4) {
     padding-left: 1rem;
 }
 
-main > hgroup > hgroup:last-of-type > p:nth-of-type(5) {
+main>hgroup>hgroup:last-of-type>p:nth-of-type(5) {
     grid-column: 1;
     grid-row: 3;
     font-weight: bold;
-    font-size:clamp(0.8rem, 3vw, 5rem);
+    font-size: clamp(0.8rem, 3vw, 5rem);
     color: white;
     padding-left: 1rem;
 }
 
-main > hgroup > hgroup:last-of-type > img {
+main>hgroup>hgroup:last-of-type>img {
     border-radius: 1rem;
     padding: 0.5rem;
     width: clamp(7.5rem, 45vw, 51rem);
@@ -165,7 +170,7 @@ main > hgroup > hgroup:last-of-type > img {
     min-height: 9rem;
     grid-column: 2;
     grid-row: 1/5;
-} 
+}
 
 /*-----------------------------------------------------------------------MAIN NAVBAR - AboutUs section ----------------------------------------------------------------------- */
 main>.aboutUs {
@@ -231,7 +236,7 @@ main>section>.unhideArticle {
     height: 18rem;
     padding-top: 1rem;
     text-align: center;
-    z-index:3;
+    z-index: 3;
 }
 
 main>section>article>.unhide {
@@ -311,7 +316,7 @@ main>.download-app {
         width: 1rem;
     }
 
-/* -------------------------------------------------------------------------- MEDIA QUERY - NAVBAR - AboutUs section --------------------------------------------------------------------------*/
+    /* -------------------------------------------------------------------------- MEDIA QUERY - NAVBAR - AboutUs section --------------------------------------------------------------------------*/
 
     main>.aboutUs {
         margin: 4rem 2rem;
@@ -332,62 +337,62 @@ main>.download-app {
         margin: 10rem auto;
         display: flex;
     }
-    
+
     main>.download-app>p {
         font-size: 1.2rem;
         font-weight: 600;
         text-align: center;
         margin: auto;
     }
-    
+
     main>.download-app>img {
         width: 20rem;
         border-radius: 0 1rem 1rem 0;
         background-color: var(--secondary-color);
     }
 
-/* -------------------------------------------------------------------------- MEDIA QUERY - HERO -------------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------------- MEDIA QUERY - HERO -------------------------------------------------------------------------- */
 
-    header > hgroup:first-of-type {
+    header>hgroup:first-of-type {
         display: none;
     }
 
-    main > hgroup:first-of-type {
+    main>hgroup:first-of-type {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows:auto;
+        grid-template-rows: auto;
         margin-top: 4.5rem;
     }
 
-    main > hgroup > hgroup:first-of-type {
+    main>hgroup>hgroup:first-of-type {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
 
-    main > hgroup > hgroup:first-of-type > input {
+    main>hgroup>hgroup:first-of-type>input {
         justify-self: center;
         margin-top: 1rem;
     }
 
-    main > hgroup > hgroup:last-of-type {
-        grid-template-columns: auto  18rem 2rem auto;
+    main>hgroup>hgroup:last-of-type {
+        grid-template-columns: auto 18rem 2rem auto;
         grid-row: auto;
     }
 
-    main > hgroup > hgroup:last-of-type > p:nth-of-type(1){
+    main>hgroup>hgroup:last-of-type>p:nth-of-type(1) {
         grid-column: 2;
         grid-row: 3;
     }
 
-    main > hgroup > hgroup:last-of-type > p:nth-of-type(2){
+    main>hgroup>hgroup:last-of-type>p:nth-of-type(2) {
         grid-column: 2;
         grid-row: 6;
     }
 
-    main > hgroup > hgroup:last-of-type > p:nth-of-type(3){
+    main>hgroup>hgroup:last-of-type>p:nth-of-type(3) {
         grid-column: 2;
         grid-row: 9;
-        font-size:clamp(0.5rem, 3vw, 0.8rem);
+        font-size: clamp(0.5rem, 3vw, 0.8rem);
         border-radius: 1rem;
         background-color: #f7156b;
         color: white;
@@ -396,7 +401,7 @@ main>.download-app {
         padding: 1rem;
     }
 
-    main > hgroup > hgroup:last-of-type > img {
+    main>hgroup>hgroup:last-of-type>img {
         grid-column: 4;
         grid-row: 1/12;
     }
@@ -409,11 +414,11 @@ main>.download-app {
         display: block;
     }
 
-    main > hgroup > hgroup:last-of-type {
+    main>hgroup>hgroup:last-of-type {
         background-image: none;
     }
 
-    hgroup:first-of-type > img:last-of-type {
+    hgroup:first-of-type>img:last-of-type {
         grid-column: 1;
         grid-row: 3;
         justify-self: center;
