@@ -92,7 +92,7 @@ body {
 }
 
 .cards {
-    background-image: url(./Group\ 15.png);
+    background-image: url(./img/Group\ 15.png);
     border: solid;
     border-style: none;
     border-radius: 1rem;
@@ -152,7 +152,7 @@ main>section:nth-child(9) {
 }
 
 .cards-brunch {
-    background-image: url(./Group\ 18.jpg);
+    background-image: url(./img/Group\ 18.jpg);
     border: solid;
     border-style: none;
     border-radius: 1rem;
@@ -208,7 +208,7 @@ main>section:nth-child(9) {
 }
 
 .cards-bar {
-    background-image: url(./Group\ 17.jpg);
+    background-image: url(./img/Group\ 17.jpg);
     border: solid;
     border-style: none;
     border-radius: 1rem;
@@ -278,7 +278,7 @@ main>section:nth-child(9) {
     }
 
     .cards {
-        background-image: url(./Group\ 16.jpg);
+        background-image: url(./img/Group\ 16.jpg);
         padding-top: 0.5rem;
         width: 20rem;
     }
@@ -307,7 +307,7 @@ main>section:nth-child(9) {
     }
 
     .cards-brunch {
-        background-image: url(./Group\ 19.jpg);
+        background-image: url(./img/Group\ 19.jpg);
         width: 20rem;
     }
 
@@ -353,7 +353,7 @@ main>section:nth-child(9) {
     }
 
     .cards-bar {
-        background-image: url(./Group\ 20.jpg);
+        background-image: url(./img/Group\ 20.jpg);
         width: 20rem;
     }
 
@@ -408,7 +408,7 @@ main>section:nth-child(9) {
 
     .cards-populaires {
         display: block;
-        background-image: url(./Group\ 21.jpg);
+        background-image: url(./img/Group\ 21.jpg);
         border: solid;
         border-style: none;
         border-radius: 1rem;
@@ -453,11 +453,12 @@ main>section:nth-child(9) {
     .all-cards-pop {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 5rem;
+        gap: rem;
         padding-left: 2rem;
         padding-right: 2rem;
         padding-bottom: 10rem;
         overflow: auto;
         scrollbar-width: none;
     }
+
 }
