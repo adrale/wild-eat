@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor: #EFE0F1;
+    --secondaryColor: #F7146B;
+}
+
+body {
+    position: relative;
+}
+/* --------------------------------------------------------------------    NAVBAR    ----------------------------------------------------------------------------- */
+nav {
+    height: 4rem;
+    width: 100%;
+    background-color: var(--primaryColor);
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.6rem;
+}
+
+nav>ul>.navMobil-home {
+    background-color: var(--secondaryColor);
+    border-radius: 50%;
+    padding: 0.6rem;
+    margin-left: 2rem;
+}
+
+nav>ul>.navMobil-search {
+    margin-top: 0.5rem;
+}
+
+nav>ul>.navMobil-cart {
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+}
+
+.navDesktop {
+    display: none;
+}
+/*--------------------------------------------------------------------------NAVBAR - AboutUs section -------------------------------------------------------------------------- */
+main>.aboutUs {
+    display: grid;
+    grid-template-columns: repeat (4, auto);
+    grid-template-rows: 4rem 6rem 6rem 6rem;
+    gap: 1rem;
+    margin: 0 2rem;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 2rem;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    margin: auto;
+}
+
+main>section>article {
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem;
+    width: 8rem;
+    height: 12rem;
+    background-color: var(--primaryColor);
+}
+
+main>section>.aboutUs-quality {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    z-index: 1;
+    padding-top: 4rem;
+}
+
+main>section>.aboutUs-availability {
+    grid-column: 1/3;
+    grid-row: 3/5;
+    z-index: 2;
+    padding-top: 5rem;
+}
+
+main>section>.aboutUs-team {
+    grid-column: 3/5;
+    grid-row: 3/5;
+    z-index: 2;
+    padding-top: 5rem;
+}
+
+main>section>article>h3 {
+    text-align: center;
+}
+
+main>section>article>p {
+    display: none;
+}
+
+main>section>article>img {
+    display: none;
+}
+
+main>section>.unhideArticle {
+    display: block;
+    width: 12rem;
+    height: 18rem;
+    padding-top: 1rem;
+    text-align: center;
+    z-index:3;
+}
+
+main>section>article>.unhide {
+    display: block;
+    line-height: 1.5;
+    padding-top: 1rem;
+}
+
+main>section>article>.unhidePicture {
+    display: inline-block;
+    width: 4rem;
+    height: auto;
+    margin-top: 0.4rem;
+}
+
+main>.download-app {
+    display: none;
+}
+
+/* -------------------------------------------------------------------------- MEDIA QUERY -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- MEDIA QUERY - NAVBAR -------------------------------------------------------------------------- */
+
+@media screen and (min-width: 992px) {
+
+    .navMobil {
+        display: none;
+    }
+
+    .navDesktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        top: 0;
+    }
+
+    nav>.navDesktop-logo {
+        width: 4rem;
+        margin-left: 2rem;
+    }
+
+    nav>.navDesktop-picture {
+        width: 4rem;
+        margin-right: 2rem;
+    }
+
+    nav>ul {
+        width: 30rem;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    nav>ul>li {
+        display: flex;
+    }
+
+    nav>ul>li>a {
+        text-decoration: none;
+        margin-left: 0.2rem;
+        color: black;
+    }
+
+    nav>ul>li>.fav-home {
+        background-color: var(--secondaryColor);
+        border-radius: 50%;
+        width: 1rem;
+    }
+
+    nav>ul>li>.fav-search {
+        width: 1rem;
+    }
+
+    nav>ul>li>.fav-cart {
+        width: 1rem;
+    }
+/* -------------------------------------------------------------------------- MEDIA QUERY - NAVBAR - AboutUs section --------------------------------------------------------------------------*/
+    main>.aboutUs {
+        margin: 4rem 2rem;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    main>section>article {
+        width: 12rem;
+        height: 18rem;
+    }
+
+    main>.download-app {
+        background-color: var(--primaryColor);
+        border-radius: 1rem;
+        box-shadow: 0.1rem 0.1rem;
+        width: 50rem;
+        margin: 10rem auto;
+        display: flex;
+    }
+    
+    main>.download-app>p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: center;
+        margin: auto;
+    }
+    
+    main>.download-app>img {
+        width: 20rem;
+        border-radius: 0 1rem 1rem 0;
+        background-color: var(--primaryColor);
+    }
+}
