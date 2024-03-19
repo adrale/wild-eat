@@ -278,7 +278,7 @@ main > hgroup > hgroup:last-of-type > img {
 }
 
 .section-main .color-clicked-filter {
-    color: var(--clr-color);
+    color: var(--clr-white);
     background-color: var(--third-color);
 }
 

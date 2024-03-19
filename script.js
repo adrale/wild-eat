@@ -1,5 +1,5 @@
 // Import des tableaux
-// import { arrayRestaurants } from "./data/arrayRestaurant";
+import { arrayRestaurants } from "./data/arrayRestaurant";
 
 // ----------------------------------------- NAVBAR ---------------------------------
 
