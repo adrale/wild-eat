@@ -1,3 +1,6 @@
+// Import des tableaux
+// import { arrayRestaurants } from "./data/arrayRestaurant";
+
 // ----------------------------------------- NAVBAR ---------------------------------
 
 const qualityCard = document.querySelector (".aboutUs-quality");
@@ -25,6 +28,8 @@ teamCard.addEventListener("click", function () {
         teamHidden[i].classList.toggle ("unhidePicture");
     }  
 })
+
+
 
 // ----------------------------------------- SECTION - MAIN ---------------------------------
 
@@ -218,3 +223,72 @@ function createCardPop() {
 createCardPop();
 createCardPop();
 createCardPop();
+
+
+// ----------------------------------------- SECTION - FILTER ---------------------------------
+
+// fonction de filtrage générique (la méthode .filter retourne les éléments pour lesquels la callback est vrai)
+
+function filterByType(type) {
+    return arrayRestaurants.filter(restaurant => restaurant.type === type); // fonction callback anonyme car .filter prend en argument une fonction qui retourne true ou false
+}
+
+const filteredBurger = filterByType("Burger"); // je viens stocker ces éléments dans de nouveaux tableaux
+const filteredPizza = filterByType("Pizza");
+const filteredBrunch = filterByType("Brunch");
+const filteredBar = filterByType("Bar");
+
+
+// ajoute une couleur au clique
+
+const classRestaurant = document.getElementsByClassName("filter-restaurant");
+
+function toggleColor(restaurant) {
+    if (restaurant.classList.contains("color-clicked-filter")) {
+        // si le bouton est déjà coloré supprime la couleur
+        restaurant.classList.remove("color-clicked-filter");
+    } else {
+        // sinon ajoute la couleur et désactive la couleur pour les autres boutons
+        Array.from(classRestaurant).forEach(restaurant => restaurant.classList.remove("color-clicked-filter"));
+        restaurant.classList.add("color-clicked-filter");
+    };
+};
+
+Array.from(classRestaurant).forEach(restaurant => restaurant.addEventListener('click', () => { toggleColor(restaurant) }));
+
+
+// récupération des id pour écouter les cliques dans le filtre
+
+const idBurger = document.getElementById("Burger");
+const idPizza = document.getElementById("Pizza");
+const idBrunch = document.getElementById("Brunch");
+const idBar = document.getElementById("Bar");
+
+idBurger.addEventListener('click', () => {
+    console.log('aozdijazoij');
+})
+
+
+// filtre quand on clique en se basant sur la couleur du filtre
+
+function clickFilter(idTypeOfRestaurant, filteredType) {
+    idTypeOfRestaurant.addEventListener('click', () => {
+        if (idTypeOfRestaurant.classList.contains("color-clicked-filter")) {
+            console.log(filteredType);
+            console.log("filtered");
+            // return filteredType;
+        } else {
+            console.log("notFiltered");
+            // return arrayRestaurants;
+        };
+    });
+};
+
+clickFilter(idBurger, filteredBurger);
+clickFilter(idPizza, filteredPizza);
+clickFilter(idBrunch, filteredBrunch);
+clickFilter(idBar, filteredBar);
+
+idBurger.addEventListener('click', () => {
+    console.log('aozijdoaij');
+})

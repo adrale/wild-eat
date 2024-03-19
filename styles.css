@@ -251,6 +251,39 @@ main > hgroup > hgroup:last-of-type > img {
     display: none;
 }
 
+/* -------------------------------------------------------------------------- MAIN - FILTER -------------------------------------------------------------------------- */
+.section-main .filter-all {
+    display: flex;
+    overflow: scroll hidden;
+    list-style-type: none;
+}
+
+.section-main .filter-restaurant {
+    font-family: var(--secondary-font);
+    font-size: .8rem;
+    color: var(--black-color);
+    background-color: var(--background-secondary-color);
+    text-decoration: none;
+    margin: .4rem;
+    padding: .5rem;
+    padding-left: .8rem;
+    border-radius: 2rem;
+    box-shadow: 0rem .1rem .4rem #00000034;
+    display: flex;
+    align-items: center;
+}
+
+.section-main .filter-restaurant > img {
+    padding-right: .4rem;
+}
+
+.section-main .color-clicked-filter {
+    color: var(--clr-color);
+    background-color: var(--third-color);
+}
+
+/* -------------------------------------------------------------------------- MAIN - FIN FILTER -------------------------------------------------------------------------- */
+
 .typeFood {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -778,9 +811,6 @@ main>section:nth-child(9) {
     scrollbar-width: none;
 }
 
-.typeFood {
-}
-
 .typeFood > p {
     color: black;
     font-weight: 400;
@@ -793,6 +823,17 @@ main>section:nth-child(9) {
     font-size: 1.5rem;
     padding: 1rem 0;
 }
+/* -------------------------------------------------- MAIN - FILTER -------------------------------------------------- */
+.filter-all {
+    display: flex;
+    scrollbar-width: none;
+}
+
+.filter-restaurant {
+    padding: 0.5rem 1.2rem;
+}
+
+/* -------------------------------------------------- MAIN - FIN FILTER -------------------------------------------------- */
 
 .commandes-populaires {
     display: block;
