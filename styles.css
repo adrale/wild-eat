@@ -56,18 +56,18 @@ nav>ul {
     padding-top: 0.6rem;
 }
 
-nav>ul>.navMobil-home {
+nav>ul>.navMobile-home {
     background-color: var(--third-color);
     border-radius: 50%;
     padding: 0.6rem;
     margin-left: 2rem;
 }
 
-nav>ul>.navMobil-search {
+nav>ul>.navMobile-search {
     margin-top: 0.5rem;
 }
 
-nav>ul>.navMobil-cart {
+nav>ul>.navMobile-cart {
     margin-right: 2rem;
     margin-top: 0.5rem;
 }
@@ -256,7 +256,6 @@ main > hgroup > hgroup:last-of-type > img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 1rem;
-    padding-bottom: 0.5rem;
 }
 
 .typeFood > p {
@@ -314,7 +313,7 @@ main > hgroup > hgroup:last-of-type > img {
 }
 
 .cards {
-    background-image: url(./img/Group\ 15.png);
+    background-image: url(./img/Group-15.png);
     border: solid;
     border-style: none;
     border-radius: 1rem;
@@ -374,7 +373,7 @@ main>section:nth-child(9) {
 }
 
 .cards-brunch {
-    background-image: url(./img/Group\ 18.jpg);
+    background-image: url(./img/Group-18.jpg);
     border: solid;
     border-style: none;
     border-radius: 1rem;
@@ -430,7 +429,7 @@ main>section:nth-child(9) {
 }
 
 .cards-bar {
-    background-image: url(./img/Group\ 17.jpg);
+    background-image: url(./img/Group-17.jpg);
     border: solid;
     border-style: none;
     border-radius: 1rem;
@@ -495,7 +494,7 @@ main>section:nth-child(9) {
 
 @media screen and (min-width: 992px) {
 
-    .navMobil {
+    .navMobile {
         display: none;
     }
 
@@ -642,7 +641,7 @@ main>section:nth-child(9) {
         grid-row: 1/12;
     }
 
-    .mobil-hero {
+    .mobile-hero {
         display: none;
     }
 
@@ -676,7 +675,8 @@ main>section:nth-child(9) {
 .cards {
     background-image: url(./img/Group-16.jpg);
     padding-top: 0.5rem;
-    width: 20rem;
+    width: 15rem;
+    height: 10rem;
 }
 
 .cards .nameFirm {
@@ -704,7 +704,9 @@ main>section:nth-child(9) {
 
 .cards-brunch {
     background-image: url(./img/Group-19.jpg);
-    width: 20rem;
+    padding-top: 0.5rem;
+    width: 15rem;
+    height: 10rem;
 }
 
 .cards-brunch .desc {
@@ -769,11 +771,11 @@ main>section:nth-child(9) {
 .allCards,
 .allBrunch,
 .allBars {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
+    gap: 1rem;
+    overflow: auto;
+    scrollbar-width: none;
 }
 
 .typeFood {
@@ -789,8 +791,7 @@ main>section:nth-child(9) {
     text-align: center;
     font-weight: 500;
     font-size: 1.5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 1rem 0;
 }
 
 .commandes-populaires {
@@ -798,7 +799,7 @@ main>section:nth-child(9) {
     padding-left: 1rem;
     font-weight: 400;
     font-size: 1.1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
 }
 
 .cards-populaires {
