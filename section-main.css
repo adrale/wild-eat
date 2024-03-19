@@ -14,16 +14,34 @@
     font-family: "Libre Franklin", sans-serif;
 }
 
+body {
+    background-color: var(--clr-background);
+}
+
+.cards-populaires {
+    display: none;
+}
+
+.commandes-populaires {
+    display: none;
+}
+
+.restaurants {
+    display: none;
+}
+
 .typeFood {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .typeFood>p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: var(--clr-main-pink);
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 .typeFood>a {
@@ -46,15 +64,28 @@
 .allBars {
     display: grid;
     margin-top: 1rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     overflow: auto;
     scrollbar-width: none;
     gap: 2rem;
     padding-right: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 .cards .avis-note-prix .avis,
+.note,
+.prix {
+    display: none;
+}
+
+.cards-bar .avis-note-prix .avis,
+.note,
+.prix {
+    display: none;
+}
+
+.cards-brunch .avis-note-prix .avis,
 .note,
 .prix {
     display: none;
@@ -249,6 +280,7 @@ main>section:nth-child(9) {
     .cards {
         background-image: url(./Group\ 16.jpg);
         padding-top: 0.5rem;
+        width: 20rem;
     }
 
     .cards .nameFirm {
@@ -265,6 +297,7 @@ main>section:nth-child(9) {
     .prix {
         display: block;
         font-size: 0.6rem;
+        color: white;
     }
 
     .cards .avis-note-prix {
@@ -273,4 +306,158 @@ main>section:nth-child(9) {
         color: white;
     }
 
+    .cards-brunch {
+        background-image: url(./Group\ 19.jpg);
+        width: 20rem;
+    }
+
+    .cards-brunch .desc {
+        display: none;
+    }
+
+    .cards-brunch .distance {
+        display: none;
+    }
+
+    .cards-brunch .nameFirm {
+        color: white;
+        text-align: center;
+    }
+
+    .cards-brunch .avis-note-prix .avis,
+    .note,
+    .prix {
+        display: block;
+        font-size: 0.6rem;
+        color: white;
+    }
+
+    .cards-brunch .avis-note-prix {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+
+    .cards-bar .avis-note-prix .avis,
+    .note,
+    .prix {
+        display: block;
+        font-size: 0.6rem;
+        color: white;
+    }
+
+    .cards-bar .avis-note-prix {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+
+    .cards-bar {
+        background-image: url(./Group\ 20.jpg);
+        width: 20rem;
+    }
+
+    .cards-bar .desc {
+        display: none;
+    }
+
+    .cards-bar .distance {
+        display: none;
+    }
+
+    .cards-bar .nameFirm {
+        color: white;
+        text-align: center;
+    }
+
+    .allCards,
+    .allBrunch,
+    .allBars {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .typeFood {
+        margin-left: 4rem;
+    }
+
+    .typeFood>p {
+        color: black;
+        font-weight: 400;
+    }
+
+    .restaurants {
+        display: block;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .commandes-populaires {
+        display: block;
+        padding-left: 4rem;
+        font-weight: 400;
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
+
+    .cards-populaires {
+        display: block;
+        background-image: url(./Group\ 21.jpg);
+        border: solid;
+        border-style: none;
+        border-radius: 1rem;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 20rem;
+        height: 12rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.7rem;
+        padding-left: 1rem;
+        padding-right: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 1rem;
+    }
+
+    .cards-populaires .avis-note-prix .avis,
+    .note,
+    .prix {
+        display: block;
+        font-size: 0.6rem;
+        color: white;
+    }
+
+    .cards-populaires .avis-note-prix {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+
+    .cards-populaires .nameFirm {
+        color: white;
+        text-align: center;
+        font-size: 0.8rem;
+        text-decoration: underline;
+        font-weight: 500;
+        padding-bottom: 0.5rem;
+    }
+
+    .all-cards-pop {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 10rem;
+        overflow: auto;
+        scrollbar-width: none;
+    }
 }
