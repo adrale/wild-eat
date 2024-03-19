@@ -1,3 +1,5 @@
+// ----------------------------------------- NAVBAR ---------------------------------
+
 const qualityCard = document.querySelector (".aboutUs-quality");
 const qualityHidden = document.querySelector (".qualityHidden");
 
@@ -23,3 +25,4 @@ teamCard.addEventListener("click", function () {
         teamHidden[i].classList.toggle ("unhidePicture");
     }  
 })
+

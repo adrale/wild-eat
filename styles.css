@@ -1,22 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Libre Franklin", sans-serif;
 }
 
 :root {
-    --primaryColor: #EFE0F1;
-    --secondaryColor: #F7146B;
+    --primary-color: #FFF5F5;
+    --secondary-color: #EFE0F1;
+    --third-color: #F7146B;
+    --header-color: #FEE8F0;
 }
 
 body {
     position: relative;
+    background-color: var(--primary-color);
 }
+
+/* --------------------------------------------------------------------    HEADER    ----------------------------------------------------------------------------- */
+header > hgroup:first-of-type {
+    display: grid;
+    grid-template-columns: 3rem repeat(4, 1fr);
+    grid-template-rows: auto;
+    margin: 1rem;
+}
+
+hgroup:first-of-type > img:first-of-type {
+    grid-column: 1;
+    grid-row: 1/4;
+    width: clamp(2.5rem, 3vw, 3rem);
+    margin-top: 0.5rem;
+}
+
+hgroup:first-of-type > p:nth-of-type(1) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+hgroup:first-of-type > p:nth-of-type(2) {
+    grid-column: 2/5;
+    grid-row: 2;
+}
+
+hgroup:first-of-type > p:nth-of-type(3) {
+    grid-column: 2/5;
+    grid-row: 3;
+}
+
+hgroup:first-of-type > img:last-of-type {
+    grid-column: 5;
+    grid-row: 1/4;
+    width: clamp(2.5rem, 3vw, 3rem);
+    margin-top: 1rem;
+}
+
 /* --------------------------------------------------------------------    NAVBAR    ----------------------------------------------------------------------------- */
 nav {
     height: 4rem;
     width: 100%;
-    background-color: var(--primaryColor);
+    background-color: var(--secondary-color);
     position: fixed;
     bottom: 0;
     z-index: 5;
@@ -32,7 +76,7 @@ nav>ul {
 }
 
 nav>ul>.navMobil-home {
-    background-color: var(--secondaryColor);
+    background-color: var(--third-color);
     border-radius: 50%;
     padding: 0.6rem;
     margin-left: 2rem;
@@ -72,7 +116,7 @@ main>section>article {
     box-shadow: 0.1rem 0.1rem;
     width: 8rem;
     height: 12rem;
-    background-color: var(--primaryColor);
+    background-color: var(--secondary-color);
 }
 
 main>section>.aboutUs-quality {
@@ -134,6 +178,80 @@ main>.download-app {
     display: none;
 }
 
+/* -------------------------------------------------------------------------- MAIN HERO -------------------------------------------------------------------------- */
+
+.desktop-hero {
+    display: none;
+}
+
+main > hgroup > hgroup:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3rem 3rem;
+}
+
+hgroup:first-of-type > h1 {
+    grid-column: 1;
+    grid-row: 1;
+    font-weight: 400;
+    font-size:clamp(1rem, 3vw, 2rem);
+    text-align: center;
+}
+
+hgroup > hgroup:first-of-type > input {
+    grid-column: 1;
+    grid-row: 2;
+    border: none;
+    border-radius: 1rem;
+    font-size:clamp(0.5rem, 3vw, 1rem);
+    text-align: center;
+    padding: 1rem;
+    margin-left: 1rem;
+    background-color: var(--back-search);
+    color: rgb(0,0,0, 0.55);
+    width: clamp(18rem, 5vw, 18rem);
+}
+
+main > hgroup > hgroup:last-of-type { 
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: auto;
+    background-image: url(Img/background-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+main > hgroup > hgroup:last-of-type > p:nth-of-type(4) {
+    grid-column: 1;
+    grid-row: 2;
+    font-weight: bold;
+    font-size: clamp(2rem, 5vw, 5rem);
+    color: white;
+    padding-left: 1rem;
+}
+
+main > hgroup > hgroup:last-of-type > p:nth-of-type(5) {
+    grid-column: 1;
+    grid-row: 3;
+    font-weight: bold;
+    font-size:clamp(0.8rem, 3vw, 5rem);
+    color: white;
+    padding-left: 1rem;
+}
+
+main > hgroup > hgroup:last-of-type > img {
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: clamp(7.5rem, 45vw, 51rem);
+    max-height: 28rem;
+    min-height: 9rem;
+    grid-column: 2;
+    grid-row: 1/5;
+} 
+
+
 /* -------------------------------------------------------------------------- MEDIA QUERY -------------------------------------------------------------------------- */
 
 /* -------------------------------------------------------------------------- MEDIA QUERY - NAVBAR -------------------------------------------------------------------------- */
@@ -181,7 +299,7 @@ main>.download-app {
     }
 
     nav>ul>li>.fav-home {
-        background-color: var(--secondaryColor);
+        background-color: var(--third-color);
         border-radius: 50%;
         width: 1rem;
     }
@@ -206,7 +324,7 @@ main>.download-app {
     }
 
     main>.download-app {
-        background-color: var(--primaryColor);
+        background-color: var(--secondary-color);
         border-radius: 1rem;
         box-shadow: 0.1rem 0.1rem;
         width: 50rem;
@@ -224,6 +342,89 @@ main>.download-app {
     main>.download-app>img {
         width: 20rem;
         border-radius: 0 1rem 1rem 0;
-        background-color: var(--primaryColor);
+        background-color: var(--secondary-color);
     }
+
+/* -------------------------------------------------------------------------- MEDIA QUERY - HERO -------------------------------------------------------------------------- */
+    header {
+        height: 5rem;
+        background-color: var(--header-color);
+        margin-bottom: 1rem;
+    }
+
+    header > hgroup:first-child {
+        display: none;
+    }
+
+    main > hgroup:first-of-type {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:auto;
+        margin: 3rem;
+    }
+
+    main > hgroup > hgroup:first-of-type {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    main > hgroup > hgroup:first-of-type > input {
+        justify-self: center;
+        margin-top: 1rem;
+    }
+
+    main > hgroup > hgroup:last-of-type {
+        grid-template-columns: auto  18rem 2rem auto;
+        grid-row: auto;
+    }
+
+    main > hgroup > hgroup:last-of-type > p:nth-of-type(1){
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    main > hgroup > hgroup:last-of-type > p:nth-of-type(2){
+        grid-column: 2;
+        grid-row: 6;
+    }
+
+    main > hgroup > hgroup:last-of-type > p:nth-of-type(3){
+        grid-column: 2;
+        grid-row: 9;
+        font-size:clamp(0.5rem, 3vw, 0.8rem);
+        border-radius: 1rem;
+        background-color: #f7156b;
+        color: white;
+        text-align: center;
+        width: clamp(18rem, 5vw, 18rem);
+        padding: 1rem;
+    }
+
+    main > hgroup > hgroup:last-of-type > img {
+        grid-column: 4;
+        grid-row: 1/12;
+    }
+
+    .mobil-hero {
+        display: none;
+    }
+
+    .desktop-hero {
+        display: block;
+    }
+
+    main > hgroup > hgroup:last-of-type {
+        background-image: none;
+    }
+
+    hgroup:first-of-type > img:last-of-type {
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
+        width: clamp(7.5rem, 45vw, 51rem);
+    }
+
+
 }
+
+
