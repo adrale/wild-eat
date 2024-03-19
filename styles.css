@@ -33,6 +33,10 @@ body {
     gap: 1rem;
 }
 
+.header-hero > article > section > p {
+    padding-left: 0.2rem;
+}
+
 .header-hero > article > section > select {
     border: none;
     background-color: var(--primary-color);
