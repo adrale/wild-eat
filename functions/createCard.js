@@ -55,3 +55,28 @@ export function createCardBrunch(arrayBrunch) {
         cardPrice.innerText = myBrunch.prix;
     };
 };
+
+export let containerBars = document.querySelector('.allBars');
+
+export function createCardBars(arrayBars) {
+    for (let i = 0; i < arrayBars.length; i++) {
+        const myBars = arrayBars[i];
+
+        const card = createAnElement('article', 'cards', containerBars);
+        card.style.backgroundImage = `url('${myBars.img}')`;
+
+        const cardTitle = createAnElement('p', 'nameFirm', card);
+        cardTitle.innerText = myBars.name;
+
+        const cardArticle = createAnElement('article', 'avis-note-prix', card);
+
+        const cardReview = createAnElement('p', 'avis', cardArticle);
+        cardReview.innerText = myBars.avis;
+
+        const cardNote = createAnElement('p', 'note', cardArticle);
+        cardNote.innerText = myBars.note;
+
+        const cardPrice = createAnElement('p', 'prix', cardArticle);
+        cardPrice.innerText = myBars.prix;
+    }
+}

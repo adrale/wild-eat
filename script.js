@@ -45,12 +45,14 @@ searchInput.addEventListener('change', (event) => {
 // ----------------------------------------- SECTION - MAIN ---------------------------------
 
 // Import des différents tableaux & des fonctions
-import { createCardBrunch, createCardBurger } from "./functions/createCard.js";
+import { createCardBars, createCardBrunch, createCardBurger } from "./functions/createCard.js";
 import { restaurants } from "./data/cards.js";
 import { arrayBurger } from "./data/arrayBurger.js";
 import { arrayBrunch } from "./data/arrayBrunch.js";
+import { arrayBars } from "./data/arrayBars.js";
 createCardBurger(arrayBurger);
 createCardBrunch(arrayBrunch);
+createCardBars(arrayBars);
 
 // Constante pour n'afficher que les burgers dans la console
 const onlyBurgers = restaurants.filter((burgers) => burgers.category === 'Burger');
