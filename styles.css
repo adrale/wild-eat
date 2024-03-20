@@ -95,33 +95,33 @@ nav>ul>.navMobile-cart {
 /*--------------------------------------------------------------------------NAVBAR - AboutUs section -------------------------------------------------------------------------- */
 main>.aboutUs {
     display: grid;
+    grid-template-columns: repeat (4, auto);
+    grid-template-rows: 4rem 6rem 6rem 6rem;
+    gap: 1rem;
     margin: 0 2rem;
-    margin-bottom: 20vh;
-    margin-top: 4rem;
+    justify-content: center;
 }
 
-main > .aboutUs > h2 {
+h2 {
     font-size: 2rem;
     grid-column: 2/4;
     grid-row: 1/2;
     margin: auto;
-    padding-bottom: 4rem;
 }
 
-.aboutUs-team,
-.unhideArticle {
+main>section>article {
     border-radius: 1rem;
     box-shadow: 0.1rem 0.1rem;
     width: 8rem;
     height: 12rem;
-    background-color: var(--secondary-color);
+    background-color: var(--primaryColor);
 }
 
 main>section>.aboutUs-quality {
     grid-column: 2/4;
     grid-row: 2/4;
     z-index: 1;
-    padding: 1rem;
+    padding-top: 4rem;
 }
 
 main>section>.aboutUs-availability {
@@ -135,11 +135,15 @@ main>section>.aboutUs-team {
     grid-column: 3/5;
     grid-row: 3/5;
     z-index: 2;
-    padding-top: 3rem;
+    padding-top: 5rem;
 }
 
 main>section>article>h3 {
     text-align: center;
+}
+
+main>section>article>p {
+    display: none;
 }
 
 main>section>article>img {
@@ -148,7 +152,7 @@ main>section>article>img {
 
 main>section>.unhideArticle {
     display: block;
-    width: 10rem;
+    width: 12rem;
     height: 18rem;
     padding-top: 1rem;
     text-align: center;
