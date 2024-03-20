@@ -45,14 +45,23 @@ searchInput.addEventListener('change', (event) => {
 // ----------------------------------------- SECTION - MAIN ---------------------------------
 
 // Import des différents tableaux & des fonctions
-import { createCardBars, createCardBrunch, createCardBurger } from "./functions/createCard.js";
+// import { createCardBars, createCardBrunch, createCardBurger } from "./functions/createCard.js";
 import { restaurants } from "./data/cards.js";
-import { arrayBurger } from "./data/arrayBurger.js";
-import { arrayBrunch } from "./data/arrayBrunch.js";
-import { arrayBars } from "./data/arrayBars.js";
-createCardBurger(arrayBurger);
-createCardBrunch(arrayBrunch);
-createCardBars(arrayBars);
+// import { arrayBurger } from "./data/arrayBurger.js";
+// import { arrayBrunch } from "./data/arrayBrunch.js";
+// import { arrayBars } from "./data/arrayBars.js";
+// createCardBurger(arrayBurger);
+// createCardBrunch(arrayBrunch);
+// createCardBars(arrayBars);
+
+import { createCards } from "./functions/createCard.js";
+createCards('Burger', document.querySelector('.allCards'));
+createCards('Brunch', document.querySelector('.allBrunch'));
+createCards('Bars', document.querySelector('.allBars'));
+
+
+
+
 
 // Constante pour n'afficher que les burgers dans la console
 const onlyBurgers = restaurants.filter((burgers) => burgers.category === 'Burger');

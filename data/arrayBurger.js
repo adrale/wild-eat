@@ -35,7 +35,5 @@ export const arrayBurger = [
         note: "Note : 4,2/5",
         prix: "Prix : 12,70€ ",
         category: 'Burger',
-
-
     },
 ]
