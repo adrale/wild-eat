@@ -95,28 +95,87 @@ const idPizza = document.getElementById("Pizza");
 const idBrunch = document.getElementById("Brunch");
 const idBar = document.getElementById("Bar");
 
-
-//  Récupération des id pour les faire disparaitre si nécessaire
 const defaultContent = document.getElementById('allTheCards').innerHTML;
-const allTheCards = document.getElementById('allTheCards');
 
-function restoreDefaultContent(){
-    document.getElementById('allTheCards').innerHTML = defaultContent;
+// Récupération des id/classes pour les différentes sections en vue de les afficher par la suite 
+const sectionFirst = document.querySelectorAll('.commandes-populaires, .all-cards-pop');
+const sectionSecond = document.querySelectorAll('#typeFastFood, .allCards');
+const sectionThird = document.querySelectorAll('#typeBrunch, .allBrunch');
+const sectionFourth = document.querySelectorAll('#typeBar, .allBars');
+
+// Fonction pour restaurer les sélections par défaut
+function restoreDefaultSelections() {
+    sectionFirst.forEach(section => {
+        section.style.display = "grid";
+
+    });
+    sectionSecond.forEach(section => {
+        section.style.display = "grid";
+
+    });
+    sectionThird.forEach(section => {
+        section.style.display = "grid";
+
+    });
+    sectionFourth.forEach(section => {
+        section.style.display = "grid";
+
+    });
 }
 
-
-// filtre quand on clique en se basant sur la couleur du filtre
-
+// Fonction de filtrage lors du clic
 function clickFilter(idTypeOfRestaurant, filteredType) {
     idTypeOfRestaurant.addEventListener('click', () => {
         if (idTypeOfRestaurant.classList.contains("color-clicked-filter")) {
             console.log(filteredType);
-            allTheCards.innerHTML = '';
+            // Appliquer les filtres
+            if(filteredType === filteredBurger) {
+                sectionFirst.forEach(section => {
+                    section.style.display = "none";
+                });
+                sectionThird.forEach(section => {
+                    section.style.display = "none";
+                });
+                sectionFourth.forEach(section => {
+                    section.style.display = "none";
+                });
+            } else if (filteredType === filteredPizza) {
+                sectionSecond.forEach(section => {
+                    section.style.display = "none";
+                });
+                sectionThird.forEach(section => {
+                    section.style.display = "none";
+                });
+                sectionFourth.forEach(section => {
+                    section.style.display = "none";
+                });
+            } else if (filteredType === filteredBrunch) {
+                sectionFirst.forEach(section => {
+                    section.style.display = "none";
+                });
+                sectionSecond.forEach(section => {
+                    section.style.display = "none";
+                });
+                sectionFourth.forEach(section => {
+                    section.style.display = "none";
+                });
+            } else if (filteredType === filteredBar) {
+                sectionFirst.forEach(section => {
+                    section.style.display = "none";
+                });
+                sectionSecond.forEach(section => {
+                    section.style.display = "none";
+                });
+                sectionThird.forEach(section => {
+                    section.style.display = "none";
+                });
+            }
         } else {
-            restoreDefaultContent();
+            // Réinitialiser les sélections par défaut
+            restoreDefaultSelections();
         }
     });
-};
+}
 
 
 
@@ -127,3 +186,6 @@ clickFilter(idBar, filteredBar);
 
 
 // ---- Mise en place du filtre via les boutons -----
+
+
+

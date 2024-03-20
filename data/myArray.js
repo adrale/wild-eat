@@ -215,6 +215,7 @@ export const allArray = [
                 avis: "Avis : 942",
                 note: "Note : 4,1/5",
                 prix: "Prix : 17,50€",
+                category: 'Pizza',
             },
             
             {
@@ -226,6 +227,7 @@ export const allArray = [
                 avis: "Avis : 194",
                 note: "Note : 4,7/5",
                 prix: "Prix : 12,76€",
+                category: 'Pizza',
             },
 
             {
@@ -237,6 +239,7 @@ export const allArray = [
                 avis: "Avis : 318",
                 note: "Note : 4,1/5",
                 prix: "Prix : 13,14€",
+                category: 'Pizza',
             },
 
             {
@@ -248,6 +251,7 @@ export const allArray = [
                 avis: "Avis : 373",
                 note: "Note : 4,7/5",
                 prix: "Prix : 14,10€",
+                category: 'Pizza',
             },
         ]
     }
