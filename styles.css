@@ -99,22 +99,23 @@ main>.aboutUs {
     grid-template-rows: 4rem 6rem 6rem 6rem;
     gap: 1rem;
     margin: 0 2rem;
+    padding-bottom: 10rem;
     justify-content: center;
 }
 
-h2 {
+main > .aboutUs > h2 {
     font-size: 2rem;
     grid-column: 2/4;
     grid-row: 1/2;
     margin: auto;
 }
 
-main>section>article {
+main>.aboutUs>article {
     border-radius: 1rem;
     box-shadow: 0.1rem 0.1rem;
     width: 8rem;
     height: 12rem;
-    background-color: var(--primaryColor);
+    background-color: var(--secondary-color);
 }
 
 main>section>.aboutUs-quality {
@@ -138,15 +139,16 @@ main>section>.aboutUs-team {
     padding-top: 5rem;
 }
 
-main>section>article>h3 {
+main>.aboutUs>article>h3 {
     text-align: center;
 }
 
-main>section>article>p {
+main>.aboutUs>article>p:first-of-type,
+main>.aboutUs>article>p:last-of-type {
     display: none;
 }
 
-main>section>article>img {
+main>.aboutUs>article>img {
     display: none;
 }
 
@@ -607,7 +609,7 @@ main>section:nth-child(9) {
         gap: 3rem;
     }
 
-    main>section>article {
+    main>.aboutUs>article {
         width: 12rem;
         height: 18rem;
     }
