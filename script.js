@@ -58,6 +58,7 @@ import { createCards } from "./functions/createCard.js";
 createCards('Burger', document.querySelector('.allCards'));
 createCards('Brunch', document.querySelector('.allBrunch'));
 createCards('Bars', document.querySelector('.allBars'));
+createCards('Popular', document.querySelector('.all-cards-pop'));
 
 
 
