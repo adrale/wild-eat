@@ -46,7 +46,7 @@ searchInput.addEventListener('change', (event) => {
 import { allArray } from "./data/testArray.js";
 
 import { createCards } from "./functions/createCard.js";
-createCards('Burger', document.querySelector('.allCards'));
+createCards('Burger', document.querySelector('.allCards')); 
 createCards('Brunch', document.querySelector('.allBrunch'));
 createCards('Bars', document.querySelector('.allBars'));
 createCards('Popular', document.querySelector('.all-cards-pop'));
@@ -117,6 +117,8 @@ function clickFilter(idTypeOfRestaurant, filteredType) {
         }
     });
 };
+
+
 
 clickFilter(idBurger, filteredBurger);
 clickFilter(idPizza, filteredPizza);
