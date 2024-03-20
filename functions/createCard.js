@@ -1,32 +1,55 @@
 
-export let container = document.querySelector('.allCards');
+export let containerBurger = document.querySelector('.allCards');
 
 function createAnElement(tag, classname = null, parent) {
     const element = document.createElement(tag);
     element.classList.add(classname);
     parent.appendChild(element);
     return element;
-}
+};
 
-export function createCard(restaurant){
-    for (let i = 0; i < restaurant.length; i++) {
-        const resto = restaurant[i];
+export function createCardBurger(arrayBurger){
+    for (let i = 0; i < arrayBurger.length; i++) {
+        const myBurger = arrayBurger[i];
 
-        const card = createAnElement('article', 'cards', container);
-        card.style.backgroundImage = `url(${resto.img})`;
+        const card = createAnElement('article', 'cards', containerBurger);
+        card.style.backgroundImage = `url(${myBurger.img})`;
 
         const cardTitle = createAnElement('p', 'nameFirm', card);
-        cardTitle.innerText = resto.name;
+        cardTitle.innerText = myBurger.name;
         
         const cardArticle = createAnElement('article', 'avis-note-prix', card);
 
         const cardReview = createAnElement('p', 'avis', cardArticle);
-        cardReview.innerText = resto.avis;
+        cardReview.innerText = myBurger.avis;
 
         const cardNote = createAnElement('p', 'note', cardArticle);
-        cardNote.innerText = resto.note;
+        cardNote.innerText = myBurger.note;
 
         const cardPrice = createAnElement('p', 'prix', cardArticle);
-        cardPrice.innerText = resto.prix;
-    }
-}
+        cardPrice.innerText = myBurger.prix;
+    };
+};
+
+export let containerBrunch = document.querySelector('.allBrunch');
+
+export function createCardBrunch(arrayBrunch) {
+    for (let i = 0; i < arrayBrunch.length; i++) {
+        const myBrunch = arrayBrunch[i];
+
+        const card = createAnElement('article', 'cards', containerBurger);
+        card.style.backgroundImage = `url(${myBrunch.img})`;
+
+        const cardTitle = createAnElement('p', 'nameFirm', card);
+        cardTitle.innerText = myBrunch.name;
+
+        const cardArticle = createAnElement('article', 'avis-note-prix', card);
+
+        const cardReview = createAnElement('p', 'avis', cardArticle);
+        cardReview.innerText = myBrunch.avis;
+
+        const cardNote = createAnElement('p', 'note', cardArticle);
+        cardNote.innerText = myBrunch.note;
+        cardPrice.innerText = myBrunch.prix
+    };
+};
