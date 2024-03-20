@@ -37,8 +37,8 @@ export function createCardBrunch(arrayBrunch) {
     for (let i = 0; i < arrayBrunch.length; i++) {
         const myBrunch = arrayBrunch[i];
 
-        const card = createAnElement('article', 'cards', containerBurger);
-        card.style.backgroundImage = `url(${myBrunch.img})`;
+        const card = createAnElement('article', 'cards', containerBrunch);
+        card.style.backgroundImage = `url('${myBrunch.img}')`;
 
         const cardTitle = createAnElement('p', 'nameFirm', card);
         cardTitle.innerText = myBrunch.name;
@@ -50,6 +50,8 @@ export function createCardBrunch(arrayBrunch) {
 
         const cardNote = createAnElement('p', 'note', cardArticle);
         cardNote.innerText = myBrunch.note;
-        cardPrice.innerText = myBrunch.prix
+
+        const cardPrice = createAnElement('p', 'prix', cardArticle);
+        cardPrice.innerText = myBrunch.prix;
     };
 };
