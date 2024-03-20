@@ -43,7 +43,7 @@ searchInput.addEventListener('change', (event) => {
 
 // ----------------------------------------- SECTION - MAIN ---------------------------------
 
-import { allArray } from "./data/testArray.js";
+import { allArray } from "./data/myArray.js";
 
 import { createCards } from "./functions/createCard.js";
 createCards('Burger', document.querySelector('.allCards')); 
