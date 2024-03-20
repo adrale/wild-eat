@@ -769,7 +769,7 @@ main>section:nth-child(9) {
 .cards {
     background-image: url(./img/Group\ 16.jpg);
     padding-top: 0.5rem;
-    width: 20rem;
+    width: 16rem;
     transition: all 300ms ease-in-out;
 }
 
@@ -892,10 +892,6 @@ main>section:nth-child(9) {
 .allBrunch,
 .allBars {
     grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
 }
 
 .typeFood {
