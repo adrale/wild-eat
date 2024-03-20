@@ -98,9 +98,12 @@ nav>ul>.navMobile-cart {
 /*--------------------------------------------------------------------------NAVBAR - AboutUs section -------------------------------------------------------------------------- */
 main>.aboutUs {
     display: grid;
+    grid-template-columns: repeat (4, auto);
+    grid-template-rows: 4rem 6rem 6rem 6rem;
+    gap: 1rem;
     margin: 0 2rem;
-    margin-bottom: 20vh;
-    margin-top: 4rem;
+    padding-bottom: 10rem;
+    justify-content: center;
 }
 
 main>.aboutUs>h2 {
@@ -108,11 +111,9 @@ main>.aboutUs>h2 {
     grid-column: 2/4;
     grid-row: 1/2;
     margin: auto;
-    padding-bottom: 4rem;
 }
 
-.aboutUs-team,
-.unhideArticle {
+main>.aboutUs>article {
     border-radius: 1rem;
     box-shadow: 0.1rem 0.1rem;
     width: 8rem;
@@ -124,7 +125,7 @@ main>section>.aboutUs-quality {
     grid-column: 2/4;
     grid-row: 2/4;
     z-index: 1;
-    padding: 1rem;
+    padding-top: 4rem;
 }
 
 main>section>.aboutUs-availability {
@@ -138,20 +139,25 @@ main>section>.aboutUs-team {
     grid-column: 3/5;
     grid-row: 3/5;
     z-index: 2;
-    padding-top: 3rem;
+    padding-top: 5rem;
 }
 
-main>section>article>h3 {
+main>.aboutUs>article>h3 {
     text-align: center;
 }
 
-main>section>article>img {
+main>.aboutUs>article>p:first-of-type,
+main>.aboutUs>article>p:last-of-type {
+    display: none;
+}
+
+main>.aboutUs>article>img {
     display: none;
 }
 
 main>section>.unhideArticle {
     display: block;
-    width: 10rem;
+    width: 12rem;
     height: 18rem;
     padding-top: 1rem;
     text-align: center;
@@ -606,7 +612,7 @@ main>section:nth-child(9) {
         gap: 3rem;
     }
 
-    main>section>article {
+    main>.aboutUs>article {
         width: 12rem;
         height: 18rem;
     }

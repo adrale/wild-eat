@@ -36,10 +36,23 @@ const searchInput = document.querySelector('input')
 searchInput.addEventListener('change', (event) => {
     const searchValue = event.target.value;
     // Vider le container parent a l'aide de .innerHTML = "" || Supprimer les autres card
-    if(restaurants.filter((restaurant) => restaurant.name.toLowerCase().includes(searchValue.toLowerCase()) || restaurant.type.toLowerCase().includes(searchValue.toLowerCase()))) {
+    if(restaurants.filter((restaurant) => restaurant.name.toLowerCase().includes(searchValue.toLowerCase()) || restaurant.category.toLowerCase().includes(searchValue.toLowerCase()))) {
     // Creation des card avec le nom du restaurant || du filtre
     } 
 })
+
+const media992 = window.matchMedia("(max-width: 992px)") 
+
+function viewChange (event){
+    const imgChange = document.getElementById('img-hero-main')
+    if(event.matches) {
+        imgChange.src = './Img/hero-pizza.svg'
+    } else {
+        imgChange.src = './Img/desktop-hero.jpg'
+    }
+}
+media992.addEventListener('change', viewChange)
+viewChange(media992)
 
 
 // ----------------------------------------- SECTION - MAIN ---------------------------------
