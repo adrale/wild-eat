@@ -44,15 +44,8 @@ searchInput.addEventListener('change', (event) => {
 
 // ----------------------------------------- SECTION - MAIN ---------------------------------
 
-// Import des différents tableaux & des fonctions
-// import { createCardBars, createCardBrunch, createCardBurger } from "./functions/createCard.js";
-import { restaurants } from "./data/cards.js";
-// import { arrayBurger } from "./data/arrayBurger.js";
-// import { arrayBrunch } from "./data/arrayBrunch.js";
-// import { arrayBars } from "./data/arrayBars.js";
-// createCardBurger(arrayBurger);
-// createCardBrunch(arrayBrunch);
-// createCardBars(arrayBars);
+// import { restaurants } from "./data/cards.js";
+import { allArray } from "./data/testArray.js";
 
 import { createCards } from "./functions/createCard.js";
 createCards('Burger', document.querySelector('.allCards'));
@@ -61,50 +54,64 @@ createCards('Bars', document.querySelector('.allBars'));
 createCards('Popular', document.querySelector('.all-cards-pop'));
 
 
-
-
-
 // Constante pour n'afficher que les burgers dans la console
-const onlyBurgers = restaurants.filter((burgers) => burgers.category === 'Burger');
-console.log(onlyBurgers);
+// const onlyBurgers = restaurants.filter((burgers) => burgers.category === 'Burger');
+// console.log(onlyBurgers);
 
-const onlyBrunch = restaurants.filter((brunch) => brunch.category === 'Brunch');
-console.log(onlyBrunch);
+// const onlyBrunch = restaurants.filter((brunch) => brunch.category === 'Brunch');
+// console.log(onlyBrunch);
 
-const onlyBars = restaurants.filter((bar) => bar.category === 'Bar');
-console.log(onlyBars);
+// const onlyBars = restaurants.filter((bar) => bar.category === 'Bar');
+// console.log(onlyBars);
 
 // ----------------------------------------- SECTION - FILTER ---------------------------------
 
 // fonction de filtrage générique (la méthode .filter retourne les éléments pour lesquels la callback est vrai)
 
 
+// function filterByType(category) {
+//     return restaurants.filter(restaurant => restaurant.category === category); // fonction callback anonyme car .filter prend en argument une fonction qui retourne true ou false
+// }
+
 function filterByType(category) {
-    return restaurants.filter(restaurant => restaurant.category === category); // fonction callback anonyme car .filter prend en argument une fonction qui retourne true ou false
+    let filteredPlaces = [];
+
+    allArray.forEach(item => {
+        item.places.forEach(place => {
+            if(place.category === category) {
+                filteredPlaces.push(place);
+            }
+        })
+    })
+    return filteredPlaces;
 }
+
+
+
+
 
 const filteredBurger = filterByType("Burger"); // je viens stocker ces éléments dans de nouveaux tableaux
 const filteredPizza = filterByType("Pizza");
 const filteredBrunch = filterByType("Brunch");
-const filteredBar = filterByType("Bar");
+const filteredBar = filterByType("Bars");
 
 
 // ajoute une couleur au clique
 
 const classRestaurant = document.getElementsByClassName("filter-restaurant");
 
-function toggleColor(restaurant) {
-    if (restaurant.classList.contains("color-clicked-filter")) {
+function toggleColor(place) {
+    if (place.classList.contains("color-clicked-filter")) {
         // si le bouton est déjà coloré supprime la couleur
-        restaurant.classList.remove("color-clicked-filter");
+        place.classList.remove("color-clicked-filter");
     } else {
         // sinon ajoute la couleur et désactive la couleur pour les autres boutons
-        Array.from(classRestaurant).forEach(restaurant => restaurant.classList.remove("color-clicked-filter"));
-        restaurant.classList.add("color-clicked-filter");
+        Array.from(classRestaurant).forEach(place => place.classList.remove("color-clicked-filter"));
+        place.classList.add("color-clicked-filter");
     };
 };
 
-Array.from(classRestaurant).forEach(restaurant => restaurant.addEventListener('click', () => { toggleColor(restaurant) }));
+Array.from(classRestaurant).forEach(place => place.addEventListener('click', () => { toggleColor(place) }));
 
 
 // récupération des id pour écouter les cliques dans le filtre
