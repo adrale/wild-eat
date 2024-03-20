@@ -39,6 +39,7 @@ body {
 
 .header-hero > article > section > select {
     border: none;
+    outline: none;
     background-color: var(--primary-color);
 }
 
