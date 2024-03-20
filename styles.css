@@ -632,12 +632,11 @@ main>section:nth-child(9) {
 
 /* -------------------------------------------------------------------------- MEDIA QUERY - HERO -------------------------------------------------------------------------- */
     header {
-        height: 5rem;
         background-color: var(--header-color);
         margin-bottom: 1rem;
     }
 
-    header > hgroup:first-child {
+    .header-hero {
         display: none;
     }
 
@@ -654,7 +653,6 @@ main>section:nth-child(9) {
     }
 
     main > hgroup > hgroup:first-of-type > input {
-        /* justify-self: center; */
         margin-top: 1rem;
     }
 
