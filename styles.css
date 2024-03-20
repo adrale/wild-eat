@@ -749,11 +749,10 @@ main>section:nth-child(9) {
         font-size: 1rem;
         padding-right: 0.7rem;
     }
+    
+    /* -------------------------------------------------- MAIN - FIN FILTER -------------------------------------------------- */
 
-
-}
-
-/* -------------------------------------------------------------------------- MEDIA QUERY - SECTION MAIN -------------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------------- MEDIA QUERY - SECTION MAIN -------------------------------------------------------------------------- */
 .cards .desc {
     display: none;
 }
@@ -927,7 +926,7 @@ main>section:nth-child(9) {
 
 .cards-populaires {
     display: block;
-    background-image: url(./img/Group\ 21.jpg);
+    background-image: url();
     border: solid;
     border-style: none;
     border-radius: 1rem;
@@ -988,98 +987,5 @@ main>section:nth-child(9) {
     transform: scale(1.1);
 }
 
-
-/* -------------------------------------------------- MAIN - FILTER -------------------------------------------------- */
-.filter-all {
-    display: flex;
-    scrollbar-width: none;
 }
 
-.section-main .filter-all {
-    display: flex;
-    overflow: scroll hidden;
-    list-style-type: none;
-}
-
-.section-main .filter-restaurant {
-    font-family: var(--secondary-font);
-    font-size: .8rem;
-    color: var(--black-color);
-    background-color: var(--background-secondary-color);
-    text-decoration: none;
-    margin: .4rem;
-    padding: .5rem;
-    padding-left: .8rem;
-    border-radius: 2rem;
-    box-shadow: 0rem .1rem .4rem #00000034;
-    display: flex;
-    align-items: center;
-}
-
-.section-main .filter-restaurant>img {
-    padding-right: .4rem;
-}
-
-.section-main .color-clicked-filter {
-    color: var(--clr-white);
-    background-color: var(--third-color);
-}
-
-/* -------------------------------------------------- MAIN - FIN FILTER -------------------------------------------------- */
-
-.commandes-populaires {
-    display: block;
-    padding-left: 1rem;
-    font-weight: 400;
-    font-size: 1.1rem;
-    padding: 1rem;
-}
-
-.cards-populaires {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 1rem;
-    background-image: url(./img/Group-21.jpg);
-    border-radius: 1rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 15rem;
-    height: 10rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.7rem;
-    padding-right: 0.8rem;
-}
-
-.cards-populaires .avis-note-prix .avis,
-.note,
-.prix {
-    display: block;
-    font-size: 0.6rem;
-    color: white;
-}
-
-.cards-populaires .avis-note-prix {
-    display: flex;
-    justify-content: space-evenly;
-    color: white;
-}
-
-.cards-populaires .nameFirm {
-    color: white;
-    text-align: center;
-    font-size: 0.8rem;
-    text-decoration: underline;
-    font-weight: 500;
-    padding-bottom: 0.5rem;
-}
-
-.all-cards-pop {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    overflow: auto;
-    scrollbar-width: none;
-}
