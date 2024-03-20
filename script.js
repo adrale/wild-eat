@@ -41,6 +41,19 @@ searchInput.addEventListener('change', (event) => {
     } 
 })
 
+const media992 = window.matchMedia("(max-width: 992px)") 
+
+function viewChange (event){
+    const imgChange = document.getElementById('img-hero-main')
+    if(event.matches) {
+        imgChange.src = './Img/hero-pizza.svg'
+    } else {
+        imgChange.src = './Img/desktop-hero.jpg'
+    }
+}
+media992.addEventListener('change', viewChange)
+viewChange(media992)
+
 
 // ----------------------------------------- SECTION - MAIN ---------------------------------
 
