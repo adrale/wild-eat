@@ -13,7 +13,7 @@ qualityCard.addEventListener ("click", function () {
 })
 
 const availabilityCard = document.querySelector(".aboutUs-availability");
-const availabilityHidden = document.querySelector(".availabilityHidden");
+const availabilityHidden = document.querySelectorAll(".availabilityHidden");
 
 availabilityCard.addEventListener("click", function () {
     availabilityCard.classList.toggle ("unhideArticle");
@@ -21,7 +21,7 @@ availabilityCard.addEventListener("click", function () {
 })
 
 const teamCard = document.querySelector(".aboutUs-team");
-const teamHidden = document.querySelectorAll(".teamHidden");
+const teamHidden = document.querySelector(".teamHidden");
 
 teamCard.addEventListener("click", function () {
     teamCard.classList.toggle ("unhideArticle");
