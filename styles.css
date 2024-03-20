@@ -749,181 +749,184 @@ main>section:nth-child(9) {
         font-size: 1rem;
         padding-right: 0.7rem;
     }
+    
+    /* -------------------------------------------------- MAIN - FIN FILTER -------------------------------------------------- */
 
-
-}
-
-/* -------------------------------------------------------------------------- MEDIA QUERY - SECTION MAIN -------------------------------------------------------------------------- */
+    /* -------------------------------------------------------------------------- MEDIA QUERY - SECTION MAIN -------------------------------------------------------------------------- */
 .cards .desc {
     display: none;
 }
 
-.cards .distance {
-    display: none;
-}
+    .cards .distance {
+        display: none;
+    }
 
-.allCards {
-    padding-top: 2rem;
-}
+    .allCards {
+        padding-top: 2rem;
+    }
 
 .cards {
     background-image: url(./img/Group\ 16.jpg);
     padding-top: 0.5rem;
-    width: 16rem;
-    transition: all 300ms ease-in-out;
-}
-
-.cards:hover {
-    transform: scale(1.1);
-}
-
-.cards .nameFirm {
-    color: white;
-    text-align: center;
-    transform: translateY(-0.2rem);
-}
-
-.knowMore {
-    display: none;
-}
-
-.cards .avis-note-prix .avis,
-.note,
-.prix {
-    display: block;
-    font-size: 0.6rem;
-    color: white;
-    transform: translateY(0.3rem);
-}
-
-.cards .avis-note-prix {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-}
-
-.cards-brunch {
-    background-image: url(./img/Group\ 19.jpg);
     width: 20rem;
     transition: all 300ms ease-in-out;
 }
 
-.cards-brunch:hover {
-    transform: scale(1.1);
-}
+    .cards:hover {
+        transform: scale(1.1);
+    }
 
-.allBrunch {
-    padding-top: 2rem;
-}
+    .cards .nameFirm {
+        color: white;
+        text-align: center;
+        transform: translateY(-0.2rem);
+    }
 
-.cards-brunch .desc {
-    display: none;
-}
+    .knowMore {
+        display: none;
+    }
 
-.cards-brunch .distance {
-    display: none;
-}
+    .cards .avis-note-prix .avis,
+    .note,
+    .prix {
+        display: block;
+        font-size: 0.6rem;
+        color: white;
+        transform: translateY(0.3rem);
+    }
 
-.cards-brunch .nameFirm {
-    color: white;
-    text-align: center;
-    transform: translateY(-0.4rem);
-}
+    .cards .avis-note-prix {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
 
-.cards-brunch .avis-note-prix .avis,
-.note,
-.prix {
-    display: block;
-    font-size: 0.6rem;
-    color: white;
-    transform: translateY(0.3rem);
-}
+    .cards-brunch {
+        background-image: url(./img/Group\ 19.jpg);
+        width: 20rem;
+        transition: all 300ms ease-in-out;
+    }
 
-.cards-brunch .avis-note-prix {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-}
+    .cards-brunch:hover {
+        transform: scale(1.1);
+    }
 
-.cards-bar .avis-note-prix .avis,
-.note,
-.prix {
-    display: block;
-    font-size: 0.6rem;
-    color: white;
-    transform: translateY(0.3rem);
-}
+    .allBrunch {
+        padding-top: 2rem;
+    }
 
-.cards-bar .avis-note-prix {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-}
+    .cards-brunch .desc {
+        display: none;
+    }
 
-.cards-bar {
-    background-image: url(./img/Group\ 20.jpg);
-    width: 20rem;
-    transition: all 300ms ease-in-out;
-}
+    .cards-brunch .distance {
+        display: none;
+    }
 
-.cards-bar:hover {
-    transform: scale(1.1);
-}
+    .cards-brunch .nameFirm {
+        color: white;
+        text-align: center;
+        transform: translateY(-0.4rem);
+    }
 
-.allBars {
-    padding-top: 2rem;
-}
+    .cards-brunch .avis-note-prix .avis,
+    .note,
+    .prix {
+        display: block;
+        font-size: 0.6rem;
+        color: white;
+        transform: translateY(0.3rem);
+    }
 
-.cards-bar .desc {
-    display: none;
-}
+    .cards-brunch .avis-note-prix {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
 
-.cards-bar .distance {
-    display: none;
-}
+    .cards-bar .avis-note-prix .avis,
+    .note,
+    .prix {
+        display: block;
+        font-size: 0.6rem;
+        color: white;
+        transform: translateY(0.3rem);
+    }
 
-.cards-bar .nameFirm {
-    color: white;
-    text-align: center;
-    transform: translateY(-0.4rem);
-}
+    .cards-bar .avis-note-prix {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+
+    .cards-bar {
+        background-image: url(./img/Group\ 20.jpg);
+        width: 20rem;
+        transition: all 300ms ease-in-out;
+    }
+
+    .cards-bar:hover {
+        transform: scale(1.1);
+    }
+
+    .allBars {
+        padding-top: 2rem;
+    }
+
+    .cards-bar .desc {
+        display: none;
+    }
+
+    .cards-bar .distance {
+        display: none;
+    }
+
+    .cards-bar .nameFirm {
+        color: white;
+        text-align: center;
+        transform: translateY(-0.4rem);
+    }
 
 .allCards,
 .allBrunch,
 .allBars {
     grid-template-columns: repeat(4, 1fr);
-}
-
-.typeFood {
-    margin-left: 4rem;
-}
-
-.typeFood>p {
-    color: black;
-    font-weight: 400;
-}
-
-.restaurants {
-    display: block;
-    text-align: center;
-    font-weight: 500;
-    font-size: 1.5rem;
-    padding-top: 2rem;
+    gap: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-bottom: 2rem;
-    color: #F7146B;
 }
 
-.commandes-populaires {
-    display: block;
-    padding-left: 4rem;
-    font-weight: 400;
-    font-size: 1.2rem;
-    padding-bottom: 1rem;
-}
+    .typeFood {
+        margin-left: 4rem;
+    }
+
+    .typeFood>p {
+        color: black;
+        font-weight: 400;
+    }
+
+    .restaurants {
+        display: block;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        color: #F7146B;
+    }
+
+    .commandes-populaires {
+        display: block;
+        padding-left: 4rem;
+        font-weight: 400;
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+    }
 
 .cards-populaires {
     display: block;
-    background-image: url(./img/Group\ 21.jpg);
+    background-image: url();
     border: solid;
     border-style: none;
     border-radius: 1rem;
@@ -943,30 +946,30 @@ main>section:nth-child(9) {
     transition: all 100ms ease-in-out;
 }
 
-.cards-populaires .avis-note-prix .avis,
-.note,
-.prix {
-    display: block;
-    font-size: 0.6rem;
-    color: white;
-    transform: translateY(0.2rem);
-}
+    .cards-populaires .avis-note-prix .avis,
+    .note,
+    .prix {
+        display: block;
+        font-size: 0.6rem;
+        color: white;
+        transform: translateY(0.2rem);
+    }
 
-.cards-populaires .avis-note-prix {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-}
+    .cards-populaires .avis-note-prix {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
 
-.cards-populaires .nameFirm {
-    color: white;
-    text-align: center;
-    font-size: 0.8rem;
-    text-decoration: underline;
-    font-weight: 500;
-    padding-bottom: 0.5rem;
-    transform: translateY(-0.2rem);
-}
+    .cards-populaires .nameFirm {
+        color: white;
+        text-align: center;
+        font-size: 0.8rem;
+        text-decoration: underline;
+        font-weight: 500;
+        padding-bottom: 0.5rem;
+        transform: translateY(-0.2rem);
+    }
 
 .all-cards-pop {
     display: grid;
@@ -974,7 +977,7 @@ main>section:nth-child(9) {
     gap: 3rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 10rem;
     overflow: auto;
     scrollbar-width: none;
     padding-top: 2rem;
@@ -982,4 +985,6 @@ main>section:nth-child(9) {
 
 .cards-populaires:hover {
     transform: scale(1.1);
+}
+
 }
