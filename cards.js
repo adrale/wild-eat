@@ -36,7 +36,7 @@ export const restaurants = [
 
     //fin commandes populaires//
 
-    
+    //Fast-food//
 
     {
         name: "McDonald's",
@@ -74,10 +74,14 @@ export const restaurants = [
         prix: "Prix : 17,90€ ",
     },
 
+    //fin Fast-food//
+
+    //Brunch//
+
     {
         name: "Au Brunch",
         type: "Brunch",
-        desc: "Burgers fait maison, frites...Sur place ou à emporter.",
+        desc: "Brunch décadent, sucré-salé, avec croissants chauds et œufs brouillés.",
         img: "img/card-Boulangerie-Ange.jpg",
         burger: true,
         range: "(3,8km)",
@@ -88,7 +92,7 @@ export const restaurants = [
     {
         name: "Boulangerie Paul",
         type: "Boulangerie",
-        desc: "Burgers fait maison, boisson fraiche...Sur place ou à emporter.",
+        desc: "Brunch gourmet, varié, avec pancakes moelleux et fruits frais.",
         img: "img/card-Boulabgerie-Paul.jpg",
         burger: true,
         range: "(2,2km)",
@@ -99,7 +103,7 @@ export const restaurants = [
     {
         name: "Boulangerie Belet",
         type: "Boulangerie",
-        desc: "Burgers délicieux, frites bio...Sur place ou à emporter.",
+        desc: "Brunch méditerranéen, léger, avec mezze et pain frais.",
         img: "img/card-Boulangerie-Belet.jpg",
         burger: true,
         range: "(1,3km)",
@@ -108,9 +112,13 @@ export const restaurants = [
         prix: "Prix : 9,90€ ",
     },
 
+    //fin Brunch//
+
+    //Bar//
+
     {
-        name: "Boulangerie 3L",
-        type: "Boulangerie",
+        name: "My Beers",
+        type: "Bar",
         desc: "Burgers tendre, frites bio...Sur place ou à emporter.",
         img: "img/card-Boulangerie-3L.jpg",
         burger: true,
@@ -119,4 +127,31 @@ export const restaurants = [
         note: "Note : 4,1/5",
         prix: "Prix : 10,90€ ",
     },
+
+    {
+        name: "Café de la Place",
+        type: "Bar",
+        desc: "Cocktails artisanaux, tapas délicieux...À découvrir absolument.",
+        img: "img/card-le-café-parisien.jpg",
+        burger: false,
+        range: "(2,3km)",
+        avis: "Avis : 142",
+        note: "Note : 4,5/5",
+        prix: "Prix : 8,50€",
+    },
+
+    {
+        name: "La Taverne du Coin",
+        type: "Bar",
+        desc: "Ambiance chaleureuse, bières locales...Un incontournable du quartier.",
+        img: "img/card-la-taverne-du-coin.jpg",
+        burger: false,
+        range: "(800m)",
+        avis: "Avis : 312",
+        note: "Note : 4,3/5",
+        prix: "Prix : 7,90€",
+    },
+
+    //fin bars//
+
 ]
