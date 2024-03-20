@@ -288,7 +288,7 @@ main>section:nth-child(9) {
         transition: all 300ms ease-in-out;
     }
 
-    .cards:hover{
+    .cards:hover {
         transform: scale(1.1);
     }
 
@@ -323,11 +323,11 @@ main>section:nth-child(9) {
         transition: all 300ms ease-in-out;
     }
 
-    .cards-brunch:hover{
+    .cards-brunch:hover {
         transform: scale(1.1);
     }
 
-    .allBrunch{
+    .allBrunch {
         padding-top: 2rem;
     }
 
@@ -381,13 +381,13 @@ main>section:nth-child(9) {
         transition: all 300ms ease-in-out;
     }
 
-.cards-bar:hover{
-    transform: scale(1.1);
-}
+    .cards-bar:hover {
+        transform: scale(1.1);
+    }
 
-.allBars{
-    padding-top: 2rem;
-}
+    .allBars {
+        padding-top: 2rem;
+    }
 
     .cards-bar .desc {
         display: none;
@@ -459,7 +459,7 @@ main>section:nth-child(9) {
         flex-direction: column;
         justify-content: space-between;
         margin-left: 1rem;
-        transition: all 300ms ease-in-out;
+        transition: all 100ms ease-in-out;
     }
 
     .cards-populaires .avis-note-prix .avis,
