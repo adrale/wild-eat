@@ -3,7 +3,7 @@ export const restaurants = [
         name: "McDonald's",
         type: "Fast-Food",
         desc: "img/card-McDonald's.jpg",
-        img: "https://images.unsplash.com/photo-1619881589316-56c7f9e6b587?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWNkb25hbGQnc3xlbnwwfDB8MHx8fDA%3D",
+        img: "img/card-McDonald's.jpg",
         burger: true,
         range: "(190m)",
         avis: "Avis : 504",
