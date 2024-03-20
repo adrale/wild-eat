@@ -29,7 +29,60 @@ teamCard.addEventListener("click", function () {
     }  
 })
 
+// ----------------------------------------- HERO - MAIN ---------------------------------
 
+const searchInput = document.querySelector('input')
+searchInput.addEventListener('change', (event) => {
+
+    // Boucle pour parcourir le tableau restaurant || autre
+    // Surement la boucle est mal placé, mais en dehors d'ici elle bloque le "viewChange"
+
+    for (i = 0; i > restaurants.length; i++) {
+        const establishment = restaurants[i]
+        // createCard(establishment)
+    }
+    const searchValue = event.target.value.toLowerCase();
+    // Vider le container parent || Supprimer les autres card
+    //  <elementparent>.innerHTML = ""
+    let filteredRestaurants = restaurants.filter((restaurant) => 
+    // Peut-être pas le bon paramètre
+        restaurant.name.toLowerCase().includes(searchValue) || 
+        restaurant.category.toLowerCase().includes(searchValue))
+    if(filteredRestaurants) {
+        // Creation des card avec le nom du restaurant || du filtre
+        // createCard(restaurant)
+    }
+})
+
+const selectButton = document.getElementById('campus');
+selectButton.addEventListener("change", () => {
+    const buttonValue = selectButton.value;
+    let filtered = restaurants.filter((restaurant) => 
+    restaurant.value === buttonValue
+    // Décommanter code en dessous
+
+    // if(filtered.length) {
+    //     // Creation des card avec le nom du restaurant || du filtre
+    //     // createCard(restaurant)
+    // } else {
+    //     // Creation des card avec le nom du restaurant || du filtre
+    //     // createCard(filtered)
+    // }
+    )
+});
+
+const media992 = window.matchMedia("(max-width: 992px)") 
+
+function viewChange (event){
+    const imgChange = document.getElementById('img-hero-main')
+    if(event.matches) {
+        imgChange.src = './Img/hero-pizza.svg'
+    } else {
+        imgChange.src = './Img/desktop-hero.jpg'
+    }
+}
+media992.addEventListener('change', viewChange)
+viewChange(media992)
 
 // ----------------------------------------- SECTION - MAIN ---------------------------------
 
