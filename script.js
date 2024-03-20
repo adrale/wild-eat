@@ -28,6 +28,16 @@ teamCard.addEventListener("click", function () {
     }  
 })
 
+// ----------------------------------------- HEOR - MAIN ---------------------------------
+
+const searchInput = document.querySelector('input')
+searchInput.addEventListener('change', (event) => {
+    const searchValue = event.target.value;
+    // Vider le container parent a l'aide de .innerHTML = "" || Supprimer les autres card
+    if(restaurants.filter((restaurant) => restaurant.name.toLowerCase().includes(searchValue.toLowerCase()) || restaurant.type.toLowerCase().includes(searchValue.toLowerCase()))) {
+    // Creation des card avec le nom du restaurant || du filtre
+    } 
+})
 
 
 // ----------------------------------------- SECTION - MAIN ---------------------------------
@@ -229,6 +239,7 @@ createCardPop();
 // fonction de filtrage générique (la méthode .filter retourne les éléments pour lesquels la callback est vrai)
 
 import { arrayRestaurants } from './data/arrayRestaurant.js';
+import { restaurants } from './data/cards.js';
 
 function filterByType(type) {
     return arrayRestaurants.filter(restaurant => restaurant.type === type); // fonction callback anonyme car .filter prend en argument une fonction qui retourne true ou false
