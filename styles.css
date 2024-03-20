@@ -974,7 +974,7 @@ main>section:nth-child(9) {
     gap: 3rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-bottom: 10rem;
+    padding-bottom: 2rem;
     overflow: auto;
     scrollbar-width: none;
     padding-top: 2rem;
@@ -1010,6 +1010,7 @@ main>section:nth-child(9) {
     box-shadow: 0rem .1rem .4rem #00000034;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .section-main .filter-restaurant>img {
