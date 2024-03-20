@@ -13,6 +13,7 @@ export function createCard(restaurant){
         const resto = restaurant[i];
 
         const card = createAnElement('article', 'cards', container);
+        card.style.backgroundImage = `url(${resto.img})`;
 
         const cardTitle = createAnElement('p', 'nameFirm', card);
         cardTitle.innerText = resto.name;
