@@ -49,6 +49,15 @@ import { createCard } from "./functions/createCard.js";
 import { restaurants } from "./data/cards.js";
 createCard(restaurants);
 
+// Constante pour n'afficher que les burgers dans la console
+const onlyBurgers = restaurants.filter((burgers) => burgers.category === 'Burger');
+console.log(onlyBurgers);
+
+const onlyBrunch = restaurants.filter((brunch) => brunch.category === 'Brunch');
+console.log(onlyBrunch);
+
+const onlyBars = restaurants.filter((bar) => bar.category === 'Bar');
+console.log(onlyBars);
 
 // ----------------------------------------- SECTION - FILTER ---------------------------------
 
