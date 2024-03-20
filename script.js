@@ -2,7 +2,6 @@
 
 // ----------------------------------------- NAVBAR ---------------------------------
 
-// import { createCard } from "./functions/createCard";
 
 const qualityCard = document.querySelector (".aboutUs-quality");
 const qualityHidden = document.querySelector (".qualityHidden");
@@ -44,7 +43,6 @@ searchInput.addEventListener('change', (event) => {
 
 // ----------------------------------------- SECTION - MAIN ---------------------------------
 
-// import { restaurants } from "./data/cards.js";
 import { allArray } from "./data/testArray.js";
 
 import { createCards } from "./functions/createCard.js";
@@ -52,26 +50,6 @@ createCards('Burger', document.querySelector('.allCards'));
 createCards('Brunch', document.querySelector('.allBrunch'));
 createCards('Bars', document.querySelector('.allBars'));
 createCards('Popular', document.querySelector('.all-cards-pop'));
-
-
-// Constante pour n'afficher que les burgers dans la console
-// const onlyBurgers = restaurants.filter((burgers) => burgers.category === 'Burger');
-// console.log(onlyBurgers);
-
-// const onlyBrunch = restaurants.filter((brunch) => brunch.category === 'Brunch');
-// console.log(onlyBrunch);
-
-// const onlyBars = restaurants.filter((bar) => bar.category === 'Bar');
-// console.log(onlyBars);
-
-// ----------------------------------------- SECTION - FILTER ---------------------------------
-
-// fonction de filtrage générique (la méthode .filter retourne les éléments pour lesquels la callback est vrai)
-
-
-// function filterByType(category) {
-//     return restaurants.filter(restaurant => restaurant.category === category); // fonction callback anonyme car .filter prend en argument une fonction qui retourne true ou false
-// }
 
 function filterByType(category) {
     let filteredPlaces = [];
@@ -85,10 +63,6 @@ function filterByType(category) {
     })
     return filteredPlaces;
 }
-
-
-
-
 
 const filteredBurger = filterByType("Burger"); // je viens stocker ces éléments dans de nouveaux tableaux
 const filteredPizza = filterByType("Pizza");

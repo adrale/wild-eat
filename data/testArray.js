@@ -73,6 +73,7 @@ export const allArray = [
                 avis: "Avis : 105",
                 note: "Note : 4,9/5",
                 prix: "Prix : 10,90€ ",
+                category: 'Brunch',
             },
             {
                 name: "Boulangerie Paul",
@@ -84,6 +85,7 @@ export const allArray = [
                 avis: "Avis : 277",
                 note: "Note : 4,6/5",
                 prix: "Prix : 11,90€ ",
+                category: 'Brunch',
             },
             {
                 name: "Boulangerie Belet",
@@ -95,6 +97,7 @@ export const allArray = [
                 avis: "Avis : 256",
                 note: "Note : 4,3/5",
                 prix: "Prix : 9,90€ ",
+                category: 'Brunch',
             },
             {
                 name: "Brunch'Dici",
@@ -106,6 +109,7 @@ export const allArray = [
                 avis: "Avis : 79",
                 note: "Note : 2,9/5",
                 prix: 'Prix: 7,90€',
+                category: 'Brunch',
             },
         ],
     },
