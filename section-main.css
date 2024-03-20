@@ -277,10 +277,19 @@ main>section:nth-child(9) {
         display: none;
     }
 
+    .allCards {
+        padding-top: 2rem;
+    }
+
     .cards {
         background-image: url(./img/Group\ 16.jpg);
         padding-top: 0.5rem;
         width: 20rem;
+        transition: all 300ms ease-in-out;
+    }
+
+    .cards:hover{
+        transform: scale(1.1);
     }
 
     .cards .nameFirm {
@@ -311,6 +320,15 @@ main>section:nth-child(9) {
     .cards-brunch {
         background-image: url(./img/Group\ 19.jpg);
         width: 20rem;
+        transition: all 300ms ease-in-out;
+    }
+
+    .cards-brunch:hover{
+        transform: scale(1.1);
+    }
+
+    .allBrunch{
+        padding-top: 2rem;
     }
 
     .cards-brunch .desc {
@@ -360,7 +378,16 @@ main>section:nth-child(9) {
     .cards-bar {
         background-image: url(./img/Group\ 20.jpg);
         width: 20rem;
+        transition: all 300ms ease-in-out;
     }
+
+.cards-bar:hover{
+    transform: scale(1.1);
+}
+
+.allBars{
+    padding-top: 2rem;
+}
 
     .cards-bar .desc {
         display: none;
@@ -432,6 +459,7 @@ main>section:nth-child(9) {
         flex-direction: column;
         justify-content: space-between;
         margin-left: 1rem;
+        transition: all 300ms ease-in-out;
     }
 
     .cards-populaires .avis-note-prix .avis,
@@ -468,6 +496,11 @@ main>section:nth-child(9) {
         padding-bottom: 10rem;
         overflow: auto;
         scrollbar-width: none;
+        padding-top: 2rem;
+    }
+
+    .cards-populaires:hover {
+        transform: scale(1.1);
     }
 
 }
