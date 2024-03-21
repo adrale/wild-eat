@@ -16,14 +16,10 @@
     --clr-white: #F1F1F1;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
 body {
     position: relative;
     background-color: var(--primary-color);
-    scroll-behavior: smooth;
 }
 
 /* --------------------------------------------------------------------    HEADER  - HERO  ----------------------------------------------------------------------------- */
@@ -502,7 +498,6 @@ main>section>.unhideArticle {
 
 .aboutUs .aboutUs-team {
     display: grid;
-    grid-template-columns: repeat(2, auto);
 }
 
 .aboutUs .aboutUs-team>h3 {
@@ -596,15 +591,17 @@ main>.download-app {
         flex-direction: row;
         justify-content: center;
         position: relative;
-        background-color: burlywood;
-        height: 50vh;
     }
 
     main #aboutUs {
-        position: fixed;
+        position: absolute;
         top: 0;
-        left: 0;
-        font-size: 2rem;
+        justify-content: center;
+        font-size: 2.4rem;
+    }
+
+    main .aboutUs > article {
+        margin-top: 8rem;
     }
 
 
@@ -639,7 +636,8 @@ main>.download-app {
 
     main>hgroup>hgroup:last-of-type {
         display: grid;
-        grid-template-columns: auto 18rem 2rem auto auto;
+        grid-template-columns: auto;
+        justify-content: center;
     }
 
     main>hgroup>hgroup:last-of-type>p:nth-of-type(1) {
@@ -650,6 +648,7 @@ main>.download-app {
     main>hgroup>hgroup:last-of-type>p:nth-of-type(2) {
         grid-column: 2;
         grid-row: 6;
+        width: 25rem;
     }
 
     main>hgroup>hgroup:last-of-type>p:nth-of-type(3) {
@@ -772,6 +771,7 @@ main>.download-app {
         padding-right: 0.8rem;
         transition: all 100ms ease-in-out;
         margin-right: 0rem;
+        cursor: pointer;
     }
 
     .cards:hover {
@@ -808,32 +808,37 @@ main>.download-app {
         font-size: 0.9rem;
     }
 
-    #Burger {
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
-        padding-right: 1rem;
-        cursor: pointer;
-    }
-
-    #Pizza {
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
-        padding-right: 1rem;
-        cursor: pointer;
-    }
-
-    #Bar {
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
-        padding-right: 1rem;
-        cursor: pointer;
-    }
-
+    #Burger,
+    #Pizza,
+    #Bar,
     #Brunch {
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
-        padding-right: 1rem;
+        cursor: pointer;
+        padding: 1rem 2rem;
     }
 
+    main > .download-app > img {
+        width: 15rem
+    }
 
+    main > .download-app > p {
+        font-size: 1.1rem;
+    }
+    
+    main > .download-app > p > span {
+        color: var(--third-color);
+        font-weight: 800;
+    }
+
+    main>.download-app {
+        background-color: var(--header-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        margin: 0 20rem;
+        border-radius: 2rem;
+    }
+
+    
 }
