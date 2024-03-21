@@ -88,6 +88,10 @@ nav>ul>.navMobile-cart {
     margin-top: 0.5rem;
 }
 
+nav>ul>.navMobile-cart>a {
+    text-decoration: none;
+}
+
 .navDesktop,
 .navDesktop-home,
 .navDesktop-search,
