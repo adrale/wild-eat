@@ -252,7 +252,6 @@ nav>ul>.navMobile-cart>a {
 }
 
 .typeFood>p {
-    font-size: 1.5rem;
     color: var(--third-color);
     font-weight: 500;
     font-size: 1.2rem;
@@ -526,6 +525,7 @@ main>.download-app {
     display: none;
 }
 
+
 /*-----------------------------------------------------------fin avis-note-prix cards---------------------------*/
 
 @media screen and (min-width: 992px) {
@@ -583,6 +583,7 @@ main>.download-app {
     nav>ul>li>.fav-cart {
         width: 1rem;
     }
+
 
     /* -------------------------------------------------------------------------- MEDIA QUERY - NAVBAR - AboutUs section --------------------------------------------------------------------------*/
     main>.aboutUs {
