@@ -16,9 +16,14 @@
     --clr-white: #F1F1F1;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     position: relative;
     background-color: var(--primary-color);
+    scroll-behavior: smooth;
 }
 
 /* --------------------------------------------------------------------    HEADER  - HERO  ----------------------------------------------------------------------------- */
