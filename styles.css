@@ -592,16 +592,22 @@ main>.download-app {
 
 
     /* -------------------------------------------------------------------------- MEDIA QUERY - NAVBAR - AboutUs section --------------------------------------------------------------------------*/
-    main>.aboutUs {
-        margin: 4rem 2rem;
+    main .aboutUs {
+        flex-direction: row;
         justify-content: center;
-        gap: 3rem;
+        position: relative;
+        background-color: burlywood;
+        height: 50vh;
     }
 
-    main>section>article {
-        width: 12rem;
-        height: 18rem;
+    main #aboutUs {
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-size: 2rem;
     }
+
+
 
     /* -------------------------------------------------------------------------- MEDIA QUERY - HERO -------------------------------------------------------------------------- */
     header {
