@@ -152,9 +152,3 @@ clickFilter(idBurger, filteredBurger);
 clickFilter(idPizza, filteredPizza);
 clickFilter(idBrunch, filteredBrunch);
 clickFilter(idBar, filteredBar);
-
-
-// ---- Mise en place du filtre via les boutons -----
-
-
-
