@@ -438,11 +438,15 @@ main>.aboutUs>h2 {
 }
 
 main>.aboutUs>article {
+    background: rgba(222, 173, 230, 0.15);
+    box-shadow: 0 2px 5px 0 rgba(11, 11, 11, 0.164);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.245) 0px 3px 7px;
-    width: 9rem;
+    width: 10rem;
     height: 14rem;
-    background-color: #e8bdee6b;
     transition: all 200ms ease-in-out;
 }
 
@@ -453,8 +457,8 @@ main>section>.aboutUs-quality,
 }
 
 .aboutUs-team {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-top: 5rem;
 }
 
 
@@ -468,20 +472,43 @@ main>.aboutUs>article>p {
     display: none;
 }
 
-main>.aboutUs>article>.img {
+main>.aboutUs>article>img {
     display: none;
 }
 
 main>section>.unhideArticle {
     display: block;
-    width: 9rem;
-    height: 18rem;
+    width: 13rem;
+    height: 20rem;
     padding-top: 1rem;
     text-align: center;
 }
 
+.aboutUs .aboutUs-team {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.aboutUs .aboutUs-team>h3 {
+    grid-column: 1/3;
+    padding-right: 2rem;
+    color: var(--third-color);
+}
+
+.aboutUs .aboutUs-team>:last-child {
+    transform: translateX(2.6rem);
+}
+
 main>section>article>.unhide {
-    display: none;
+    display: block;
+}
+
+main>section>article>.unhidePicture {
+    display: inline-block;
+    width: 4rem;
+    height: auto;
+    margin-top: 0.4rem;
+    border-radius: 2rem;
 }
 
 main>.download-app {
