@@ -28,23 +28,29 @@ body {
     margin: 1rem;
 }
 
-.header-hero > article {
+.header-hero>article {
     display: flex;
     gap: 1rem;
 }
 
-.header-hero > article > section > p {
+.header-hero>article>section>p {
     padding-left: 0.2rem;
+    font-size: 0.8rem;
+    padding-top: 0.3rem;
 }
 
-.header-hero > article > section > select {
+.header-hero>article>section>select {
     border: none;
     outline: none;
     background-color: var(--primary-color);
 }
 
-.header-hero > img {
+.header-hero>img {
     justify-self: end;
+}
+
+#campus {
+    color: #f7156b;
 }
 
 /* --------------------------------------------------------------------    NAVBAR    ----------------------------------------------------------------------------- */
@@ -93,87 +99,6 @@ nav>ul>.navMobile-cart {
 
 
 /*--------------------------------------------------------------------------NAVBAR - AboutUs section -------------------------------------------------------------------------- */
-main>.aboutUs {
-    display: grid;
-    margin: 0 2rem;
-    margin-bottom: 20vh;
-    margin-top: 4rem;
-}
-
-main > .aboutUs > h2 {
-    font-size: 2rem;
-    grid-column: 2/4;
-    grid-row: 1/2;
-    margin: auto;
-    padding-bottom: 4rem;
-}
-
-.aboutUs-team,
-.unhideArticle {
-    border-radius: 1rem;
-    box-shadow: 0.1rem 0.1rem;
-    width: 8rem;
-    height: 12rem;
-    background-color: var(--secondary-color);
-}
-
-main>section>.aboutUs-quality {
-    grid-column: 2/4;
-    grid-row: 2/4;
-    z-index: 1;
-    padding: 1rem;
-}
-
-main>section>.aboutUs-availability {
-    grid-column: 1/3;
-    grid-row: 3/5;
-    z-index: 2;
-    padding-top: 5rem;
-}
-
-main>section>.aboutUs-team {
-    grid-column: 3/5;
-    grid-row: 3/5;
-    z-index: 2;
-    padding-top: 3rem;
-}
-
-main>section>article>h3 {
-    text-align: center;
-}
-
-main>section>article>img {
-    display: none;
-}
-
-main>section>.unhideArticle {
-    display: block;
-    width: 10rem;
-    height: 18rem;
-    padding-top: 1rem;
-    text-align: center;
-    z-index:3;
-}
-
-main>section>article>.unhide {
-    display: block;
-    line-height: 1.5;
-    padding-top: 1rem;
-}
-
-main>section>article>.unhidePicture {
-    display: inline-block;
-    width: 4rem;
-    height: auto;
-    margin-top: 0.4rem;
-}
-
-main>.download-app {
-    display: none;
-}
-
-/* -------------------------------------------------------------------------- MAIN -------------------------------------------------------------------------- */
-
 
 /* -------------------------------------------------------------------------- MAIN HERO -------------------------------------------------------------------------- */
 
@@ -181,43 +106,45 @@ main>.download-app {
     display: none;
 }
 
-.main-hero > hgroup:first-of-type {
+
+.main-hero>hgroup:first-of-type {
     text-align: center;
     margin-top: 2rem;
+    padding-bottom: 0.5rem;
 }
 
-.main-hero > hgroup:first-of-type > h1 {
+.main-hero>hgroup:first-of-type>h1 {
     grid-column: 1;
     grid-row: 1;
     font-weight: 700;
     color: var(--third-color);
-    font-size:clamp(1rem, 5vw, 2rem);
+    font-size: clamp(1rem, 5vw, 2rem);
     text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-.main-hero > hgroup:first-of-type > input {
+.main-hero>hgroup:first-of-type>input {
     height: 2.5rem;
     width: 80%;
     margin-top: 1.5rem;
     padding-left: 1rem;
-    border-radius: 0.5rem;
-    border: 1px solid var(--header-color);
+    border-radius: 2rem;
+    border: solid;
+    border-style: none;
     background-color: var(--header-color);
+    box-shadow: rgba(0, 0, 0, 0.112) 0px 1px 5px;
 }
 
-.main-hero > hgroup:first-of-type > input:focus {
-    border: 1px solid var(--third-color);
-} 
+.main-hero>hgroup:first-of-type>input:focus {
+    outline: none;
+}
 
-.main-hero > hgroup:first-of-type > input:focus-visible {
-    border: 1px solid var(--third-color);
-} 
+/* -------------------------------- MAIN HERO  -------------------------------------------------------------------------- */
 
-/* -------------------------------------------------------------------------- MAIN HERO - IMG -------------------------------------------------------------------------- */
-
-main > hgroup > hgroup:last-of-type { 
+main>hgroup>hgroup:last-of-type {
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     background-image: url(./Img/background-card.svg);
     background-repeat: no-repeat;
@@ -225,50 +152,40 @@ main > hgroup > hgroup:last-of-type {
     border-radius: 1rem;
     margin: 1rem;
     text-align: center;
+    min-height: 9rem;
+    max-height: 30rem;
+    padding-top: 1rem;
 }
 
-main > hgroup > hgroup:last-of-type > p:nth-of-type(4) {
+main>hgroup>hgroup:last-of-type>p:nth-of-type(4) {
     grid-column: 1;
     grid-row: 2;
     font-weight: bold;
     font-size: clamp(2rem, 5vw, 5rem);
     color: white;
     padding-left: 1rem;
+    padding-top: 1rem;
 }
 
-main > hgroup > hgroup:last-of-type > p:nth-of-type(5) {
+main>hgroup>hgroup:last-of-type>p:nth-of-type(5) {
     grid-column: 1;
     grid-row: 3;
     font-weight: bold;
-    font-size:clamp(0.8rem, 3vw, 5rem);
+    font-size: clamp(0.8rem, 3vw, 5rem);
     color: white;
     padding-left: 1rem;
 }
 
-main > hgroup > hgroup:last-of-type > img {
+main>hgroup>hgroup:last-of-type>img {
     border-radius: 1rem;
     padding: 0.5rem;
     width: clamp(7.5rem, 45vw, 51rem);
     max-height: 28rem;
-    min-height: 9rem;
+    min-height: 6rem;
     grid-column: 2;
-    grid-row: 1/5;
-} 
-
-/* -------------------------------------------------------------------------- MAIN - SECTION MAIN -------------------------------------------------------------------------- */
-.cards-populaires {
-    display: none;
+    grid-row: 2/5;
 }
 
-.commandes-populaires {
-    display: none;
-}
-
-.restaurants {
-    display: none;
-}
-
-/* -------------------------------------------------------------------------- MAIN - FILTER -------------------------------------------------------------------------- */
 .section-main .filter-all {
     display: flex;
     overflow: scroll hidden;
@@ -290,7 +207,7 @@ main > hgroup > hgroup:last-of-type > img {
     align-items: center;
 }
 
-.section-main .filter-restaurant > img {
+.section-main .filter-restaurant>img {
     padding-right: .4rem;
 }
 
@@ -299,7 +216,34 @@ main > hgroup > hgroup:last-of-type > img {
     background-color: var(--third-color);
 }
 
-/* -------------------------------------------------------------------------- MAIN - FIN FILTER -------------------------------------------------------------------------- */
+/*--------------------------------------------------------------------------section main cards---------------------------------------------------------*/
+
+/*-------------------------------------------------------titre restaurants-----------------------------------------------------------------------------*/
+
+.restaurants {
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+/*-----------------------------------------------------fin titre restaurants--------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------Filter---------------------------------------------------------*/
+
+.filter-all {
+    display: flex;
+    scrollbar-width: none;
+}
+
+.filter-restaurant {
+    padding: 0.5rem 1.2rem;
+}
+
+/*--------------------------------------------------------fin filter-----------------------------------------------------------------*/
+
+/*--------------------------------------------------------types de resto + voir plus---------------------------------------------------------------*/
 
 .typeFood {
     display: grid;
@@ -307,14 +251,18 @@ main > hgroup > hgroup:last-of-type > img {
     margin: 1rem;
 }
 
-.typeFood > p {
+.typeFood>p {
     font-size: 1.5rem;
     color: var(--third-color);
     font-weight: 500;
     font-size: 1.2rem;
 }
 
-.typeFood > a {
+.typeFood .fast-food {
+    padding-top: 2.5rem;
+}
+
+.typeFood>a {
     align-self: end;
     justify-self: end;
     font-size: 0.7rem;
@@ -328,6 +276,10 @@ main > hgroup > hgroup:last-of-type > img {
     text-decoration: none;
     color: var(--clr-white);
 }
+
+/*---------------------------------------------------------fin types de nourriture + voir plus----------------------------------------------------*/
+
+/*---------------------------------------------------------ensemble de toutes les cards---------------------------------------------------------*/
 
 .allCards,
 .allBrunch,
@@ -343,203 +295,218 @@ main > hgroup > hgroup:last-of-type > img {
     padding-bottom: 1.5rem;
 }
 
+/*--------------------------------------------------------fin ensemnle de toutes les cards--------------------------------------------------------*/
+
+/*--------------------------------------------------------commandes populaires-----------------------------------------------------------------*/
+
+/*----------------------------------------------------titre commandes populaires------------------------------------------------------------*/
+
+.commandes-populaires {
+    display: block;
+    padding-left: 1rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+/*-----------------------------------------------------fin titre commandes populaires-----------------------------------------------------*/
+
+/*-----------------------------------------------------ensemble des commandes populaires-------------------------------------------------*/
+
+.all-cards-pop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+/*----------------------------------------------------fin ensemble des commandes populaires----------------------------------------------------*/
+
+/*-----------------------------------------------------ensemble des cards populaires-------------------------------------------------*/
+
+.cards-populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+    background-image: url(./img/Group-21.jpg);
+    border-radius: 1rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 10rem;
+    padding-bottom: 0.4rem;
+    padding-right: 0.8rem;
+}
+
+/*---------------------------------------------------fin ensemble des cards des commandes populaires-------------------------------------------------*/
+
+/*----------------------------------------------------avis-note-prix cards populaires--------------------------------------------------*/
+
+.cards-populaires .avis-note-prix .avis,
+.note,
+.prix {
+    display: block;
+    font-size: 0.6rem;
+    color: white;
+}
+
+.cards-populaires .avis-note-prix {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.6rem;
+    color: white;
+}
+
+/*---------------------------------------------------fin avis-note-prix cards populaires--------------------------------------------------*/
+
+/*----------------------------------------------------nom resto cards populaires---------------------------------------------------*/
+
+.cards-populaires .nameFirm {
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    font-weight: 500;
+    padding-top: 0.4rem;
+}
+
+/*-----------------------------------------------------fin nom cards populaires----------------------------------------------------*/
+
+/*--------------------------------------------------------ensemble des cards (fast-food, brunch,...)------------------------------------------------*/
+
+.cards {
+    background-image: url(./img/Group-16.jpg);
+    border-radius: 1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 0.4rem;
+    padding-left: 0.7rem;
+    padding-right: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+    width: 15rem;
+    height: 10rem;
+}
+
+/*-----------------------------------------------------fin ensemble des cards (fast-food, brunch,...)------------------------------------------------*/
+
+/*-----------------------------------------------------nom resto cards----------------------------------------------------*/
+
+.cards .nameFirm {
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    padding-top: 0.4rem;
+    text-decoration: underline;
+}
+
+/*---------------------------------------------------fin nom resto cards----------------------------------------------------*/
+
+/*-------------------------------------------------------avis-note-prix cards----------------------------------------------------*/
+
 .cards .avis-note-prix .avis,
 .note,
 .prix {
+    display: block;
+    font-size: 0.6rem;
+    color: white;
+}
+
+.cards .avis-note-prix {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+main>.aboutUs {
+    display: grid;
+    grid-template-columns: repeat (4, auto);
+    grid-template-rows: 4rem 6rem 6rem 6rem;
+    gap: 1rem;
+    margin-bottom: 10rem;
+    justify-content: center;
+}
+
+main>.aboutUs>h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    margin: auto;
+}
+
+main>.aboutUs>article {
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.245) 0px 3px 7px;
+    width: 8rem;
+    height: 12rem;
+    background-color: var(--secondary-color);
+    transition: all 200ms ease-in-out;
+}
+
+main>section>.aboutUs-quality {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    z-index: 2;
+    padding-top: 4rem;
+}
+
+main>section>.aboutUs-availability {
+    grid-column: 1/3;
+    grid-row: 3/5;
+    z-index: 3;
+    padding-top: 5rem;
+}
+
+main>section>.aboutUs-team {
+    grid-column: 3/5;
+    grid-row: 3/5;
+    z-index: 1;
+    padding-top: 5rem;
+}
+
+main>.aboutUs>article>h3 {
+    text-align: center;
+}
+
+main>.aboutUs>article>p {
     display: none;
 }
 
-.cards-bar .avis-note-prix .avis,
-.note,
-.prix {
+main>.aboutUs>article>img {
     display: none;
 }
 
-.cards-brunch .avis-note-prix .avis,
-.note,
-.prix {
+main>section>.unhideArticle {
+    display: block;
+    width: 12rem;
+    height: 18rem;
+    padding-top: 1rem;
+    text-align: center;
+    z-index: 3;
+}
+
+main>section>article>.unhide {
     display: none;
 }
 
-.cards {
-    background-image: url(./img/Group-15.png);
-    border: solid;
-    border-style: none;
-    border-radius: 1rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 14rem;
-    height: 12rem;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    padding-left: 1rem;
-    padding-right: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 1rem;
+main>section>article>.unhidePicture {
+    display: inline-block;
+    width: 4rem;
+    height: auto;
+    margin-top: 0.4rem;
 }
 
-.cards > p {
-    text-align: end;
+main>.download-app {
+    display: none;
 }
 
-.cards .nameFirm {
-    font-size: 0.8rem;
-    text-decoration: underline;
-    font-weight: 500;
-    color: var(--third-color);
-    padding-bottom: 0.5rem;
-}
-
-.cards .knowMore {
-    width: fit-content;
-    align-self: end;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    font-size: 0.8rem;
-    border-radius: 2rem;
-    background-color: var(--third-color);
-    color: var(--clr-white);
-    text-decoration: none;
-}
-
-.cards .desc {
-    font-size: 0.9rem;
-    padding-left: 5rem;
-    padding-bottom: 1rem;
-}
-
-.cards .distance {
-    font-size: 0.6rem;
-}
-
-main>section:nth-child(9) {
-    padding-bottom: 20vh;
-}
-
-.cards-brunch {
-    background-image: url(./img/Group-18.jpg);
-    border: solid;
-    border-style: none;
-    border-radius: 1rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 14rem;
-    height: 12rem;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    padding-left: 1rem;
-    padding-right: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 1rem;
-}
-
-.cards-brunch > p {
-    text-align: end;
-}
-
-.cards-brunch .nameFirm {
-    font-size: 0.8rem;
-    text-decoration: underline;
-    font-weight: 500;
-    color: var(--third-color);
-    padding-bottom: 0.5rem;
-}
-
-.cards-brunch .knowMore {
-    width: fit-content;
-    align-self: end;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    font-size: 0.8rem;
-    border-radius: 2rem;
-    background-color: var(--third-color);
-    color: var(--clr-white);
-    text-decoration: none;
-}
-
-.cards-brunch .desc {
-    font-size: 0.9rem;
-    padding-left: 5rem;
-    padding-bottom: 1rem;
-}
-
-.cards-brunch .distance {
-    font-size: 0.6rem;
-}
-
-.cards-bar {
-    background-image: url(./img/Group-17.jpg);
-    border: solid;
-    border-style: none;
-    border-radius: 1rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 14rem;
-    height: 12rem;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    padding-left: 1rem;
-    padding-right: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 1rem;
-}
-
-.cards-bar > p {
-    text-align: end;
-}
-
-.cards-bar .nameFirm {
-    font-size: 0.8rem;
-    text-decoration: underline;
-    font-weight: 500;
-    color: var(--third-color);
-    padding-bottom: 0.5rem;
-}
-
-.cards-bar .knowMore {
-    width: fit-content;
-    align-self: end;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    font-size: 0.8rem;
-    border-radius: 2rem;
-    background-color: var(--third-color);
-    color: var(--clr-white);
-    text-decoration: none;
-}
-
-.cards-bar .desc {
-    font-size: 0.9rem;
-    padding-left: 5rem;
-    padding-bottom: 1rem;
-}
-
-.cards-bar .distance {
-    font-size: 0.6rem;
-}
-
-.allBars {
-    padding-bottom: 2rem;
-}
-
-/* -------------------------------------------------------------------------- MEDIA QUERY -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- MEDIA QUERY - NAVBAR -------------------------------------------------------------------------- */
+/*-----------------------------------------------------------fin avis-note-prix cards---------------------------*/
 
 @media screen and (min-width: 992px) {
 
@@ -563,7 +530,7 @@ main>section:nth-child(9) {
     }
 
     nav>.navDesktop-picture {
-        width: 4rem;
+        width: 3rem;
         margin-right: 2rem;
     }
 
@@ -596,7 +563,8 @@ main>section:nth-child(9) {
     nav>ul>li>.fav-cart {
         width: 1rem;
     }
-/* -------------------------------------------------------------------------- MEDIA QUERY - NAVBAR - AboutUs section --------------------------------------------------------------------------*/
+
+    /* -------------------------------------------------------------------------- MEDIA QUERY - NAVBAR - AboutUs section --------------------------------------------------------------------------*/
     main>.aboutUs {
         margin: 4rem 2rem;
         justify-content: center;
@@ -608,29 +576,47 @@ main>section:nth-child(9) {
         height: 18rem;
     }
 
-    main>.download-app {
+    /* main>.download-app {
         background-color: var(--secondary-color);
         border-radius: 1rem;
         box-shadow: 0.1rem 0.1rem;
         width: 50rem;
         margin: 10rem auto;
         display: flex;
+        box-shadow: rgba(0, 0, 0, 0.106) 0px 0px 0px;
     }
-    
+
     main>.download-app>p {
         font-size: 1.2rem;
         font-weight: 600;
         text-align: center;
         margin: auto;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 3rem;
     }
-    
+
     main>.download-app>img {
         width: 20rem;
         border-radius: 0 1rem 1rem 0;
         background-color: var(--secondary-color);
     }
 
-/* -------------------------------------------------------------------------- MEDIA QUERY - HERO -------------------------------------------------------------------------- */
+    main>.download{
+        transform: translateY(-14.5rem);
+        margin-left: 18rem;
+        border-radius: 2rem;
+        padding: 0.5rem;
+        border-style: none;
+        background-color: var(--third-color);
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.257) 1px 1px 10px;
+    } */
+
+
+    /* -------------------------------------------------------------------------- MEDIA QUERY - HERO -------------------------------------------------------------------------- */
     header {
         background-color: var(--header-color);
         margin-bottom: 1rem;
@@ -640,41 +626,43 @@ main>section:nth-child(9) {
         display: none;
     }
 
-    main > hgroup:first-of-type {
+    main>hgroup:first-of-type {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows:auto;
+        grid-template-rows: auto;
         margin: 3rem;
     }
 
-    main > hgroup > hgroup:first-of-type {
+    main>hgroup>hgroup:first-of-type {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
 
-    main > hgroup > hgroup:first-of-type > input {
+    main>hgroup>hgroup:first-of-type>input {
         margin-top: 1rem;
+        padding: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.093) 0px 2px 2 px;
     }
 
-    main > hgroup > hgroup:last-of-type {
-        grid-template-columns: auto  18rem 2rem auto;
+    main>hgroup>hgroup:last-of-type {
+        grid-template-columns: auto 18rem 2rem auto;
         grid-row: auto;
     }
 
-    main > hgroup > hgroup:last-of-type > p:nth-of-type(1){
+    main>hgroup>hgroup:last-of-type>p:nth-of-type(1) {
         grid-column: 2;
         grid-row: 3;
     }
 
-    main > hgroup > hgroup:last-of-type > p:nth-of-type(2){
+    main>hgroup>hgroup:last-of-type>p:nth-of-type(2) {
         grid-column: 2;
         grid-row: 6;
     }
 
-    main > hgroup > hgroup:last-of-type > p:nth-of-type(3){
+    main>hgroup>hgroup:last-of-type>p:nth-of-type(3) {
         grid-column: 2;
         grid-row: 9;
-        font-size:clamp(0.5rem, 3vw, 0.8rem);
+        font-size: clamp(0.5rem, 3vw, 0.8rem);
         border-radius: 1rem;
         background-color: #f7156b;
         color: white;
@@ -683,9 +671,9 @@ main>section:nth-child(9) {
         padding: 1rem;
     }
 
-    main > hgroup > hgroup:last-of-type > img {
+    main>hgroup>hgroup:last-of-type>img {
         grid-column: 4;
-        grid-row: 1/12;
+        grid-row: 1/12
     }
 
     .mobile-hero {
@@ -696,213 +684,152 @@ main>section:nth-child(9) {
         display: block;
     }
 
-    main > hgroup > hgroup:last-of-type {
+    main>hgroup>hgroup:last-of-type {
         background-image: none;
     }
 
-    hgroup:first-of-type > img:last-of-type {
+    hgroup:first-of-type>img:last-of-type {
         grid-column: 1;
         grid-row: 3;
         justify-self: center;
-        width: clamp(7.5rem, 45vw, 51rem);
+        width: clamp(60rem, 60rem, 70rem);
+        padding-right: 3rem;
     }
 
+    /*------------------------------------------------------------------media query cards----------------------------------------------------------------------*/
 
-}
+    .commandes-populaires {
+        font-size: 1.6rem;
+        color: var(--third-color);
+        padding-left: 3rem;
+        padding-top: 3rem;
+    }
 
-/* -------------------------------------------------------------------------- MEDIA QUERY - SECTION MAIN -------------------------------------------------------------------------- */
-.cards .desc {
-    display: none;
-}
+    .typeFood>p {
+        color: var(--third-color);
+        font-weight: 500;
+        padding-left: 3rem;
+        font-size: 1.6rem;
+    }
 
-.cards .distance {
-    display: none;
-}
+    .cards-populaires {
+        border-radius: 1.3rem;
+        width: 20rem;
+        height: 14rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.7rem;
+        padding-right: 0.8rem;
+        transition: all 100ms ease-in-out;
+        margin-right: 1rem;
+    }
 
-.cards {
-    background-image: url(./img/Group-16.jpg);
-    padding-top: 0.5rem;
-    width: 15rem;
-    height: 10rem;
-}
+    .cards-populaires:hover {
+        transform: scale(1.1);
+    }
 
-.cards .nameFirm {
-    color: white;
-    text-align: center;
-}
+    .cards-populaires .avis-note-prix .avis,
+    .note,
+    .prix {
+        display: block;
+        font-size: 0.6rem;
+        color: white;
+    }
 
-.knowMore {
-    display: none;
-}
+    .cards-populaires .avis-note-prix {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
 
-.cards .avis-note-prix .avis,
-.note,
-.prix {
-    display: block;
-    font-size: 0.6rem;
-    color: white;
-}
+    .cards-populaires .nameFirm {
+        color: white;
+        text-align: center;
+        font-size: 0.9rem;
+        text-decoration: underline;
+        font-weight: 500;
+        padding-bottom: 0.5rem;
+    }
 
-.cards .avis-note-prix {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-}
+    .all-cards-pop {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        overflow: auto;
+        scrollbar-width: none;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+    }
 
-.cards-brunch {
-    background-image: url(./img/Group-19.jpg);
-    padding-top: 0.5rem;
-    width: 15rem;
-    height: 10rem;
-}
+    .all-cards-pop .cards {
+        margin-right: 1rem;
+    }
 
-.cards-brunch .desc {
-    display: none;
-}
+    .cards {
+        border-radius: 1.3rem;
+        width: 20rem;
+        height: 14rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.7rem;
+        padding-right: 0.8rem;
+        transition: all 100ms ease-in-out;
+        margin-right: 0rem;
+    }
 
-.cards-brunch .distance {
-    display: none;
-}
+    .cards:hover {
+        transform: scale(1.1);
+    }
 
-.cards-brunch .nameFirm {
-    color: white;
-    text-align: center;
-}
+    .allCards {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+    }
 
-.cards-brunch .avis-note-prix .avis,
-.note,
-.prix {
-    display: block;
-    font-size: 0.6rem;
-    color: white;
-}
+    .allBrunch {
+        padding-left: 2rem;
+    }
 
-.cards-brunch .avis-note-prix {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-}
+    .allBars {
+        padding-left: 2rem;
+    }
 
-.cards-bar .avis-note-prix .avis,
-.note,
-.prix {
-    display: block;
-    font-size: 0.6rem;
-    color: white;
-}
+    /*---------------------------------------------media query filter-----------------------------------------------------------------*/
 
-.cards-bar .avis-note-prix {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-}
+    .filter-all {
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+        scrollbar-width: none;
+        padding-top: 1rem;
+    }
 
-.cards-bar {
-    background-image: url(./img/Group-20.jpg);
-    padding-top: 0.5rem;
-    width: 15rem;
-    height: 10rem;}
+    .filter-restaurant>p {
+        font-size: 0.9rem;
+    }
 
-.cards-bar .desc {
-    display: none;
-}
+    #Burger {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-right: 1rem;
+    }
 
-.cards-bar .distance {
-    display: none;
-}
+    #Pizza {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-right: 1rem;
+    }
 
-.cards-bar .nameFirm {
-    color: white;
-    text-align: center;
-}
+    #Bar {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-right: 1rem;
+    }
 
-.allCards,
-.allBrunch,
-.allBars {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    overflow: auto;
-    scrollbar-width: none;
-}
+    #Brunch {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-right: 1rem;
+    }
 
-.typeFood > p {
-    color: black;
-    font-weight: 400;
-}
-
-.restaurants {
-    display: block;
-    text-align: center;
-    font-weight: 500;
-    font-size: 1.5rem;
-    padding: 1rem 0;
-}
-/* -------------------------------------------------- MAIN - FILTER -------------------------------------------------- */
-.filter-all {
-    display: flex;
-    scrollbar-width: none;
-}
-
-.filter-restaurant {
-    padding: 0.5rem 1.2rem;
-}
-
-/* -------------------------------------------------- MAIN - FIN FILTER -------------------------------------------------- */
-
-.commandes-populaires {
-    display: block;
-    padding-left: 1rem;
-    font-weight: 400;
-    font-size: 1.1rem;
-    padding: 1rem;
-}
-
-.cards-populaires {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 1rem;
-    background-image: url(./img/Group-21.jpg);
-    border-radius: 1rem;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 15rem;
-    height: 10rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.7rem;
-    padding-right: 0.8rem;
-}
-
-.cards-populaires .avis-note-prix .avis,
-.note,
-.prix {
-    display: block;
-    font-size: 0.6rem;
-    color: white;
-}
-
-.cards-populaires .avis-note-prix {
-    display: flex;
-    justify-content: space-evenly;
-    color: white;
-}
-
-.cards-populaires .nameFirm {
-    color: white;
-    text-align: center;
-    font-size: 0.8rem;
-    text-decoration: underline;
-    font-weight: 500;
-    padding-bottom: 0.5rem;
-}
-
-.all-cards-pop {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    overflow: auto;
-    scrollbar-width: none;
 }
