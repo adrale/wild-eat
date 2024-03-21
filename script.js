@@ -3,30 +3,30 @@
 // ----------------------------------------- NAVBAR ---------------------------------
 
 
-const qualityCard = document.querySelector (".aboutUs-quality");
-const qualityHidden = document.querySelector (".qualityHidden");
+const qualityCard = document.querySelector(".aboutUs-quality");
+const qualityHidden = document.querySelector(".qualityHidden");
 
-qualityCard.addEventListener ("click", function () {
-    qualityCard.classList.toggle ("unhideArticle");
-    qualityHidden.classList.toggle ("unhide");   
+qualityCard.addEventListener("click", function () {
+    qualityCard.classList.toggle("unhideArticle");
+    qualityHidden.classList.toggle("unhide");
 })
 
 const availabilityCard = document.querySelector(".aboutUs-availability");
 const availabilityHidden = document.querySelector(".availabilityHidden");
 
 availabilityCard.addEventListener("click", function () {
-    availabilityCard.classList.toggle ("unhideArticle");
-    availabilityHidden.classList.toggle ("unhide");  
+    availabilityCard.classList.toggle("unhideArticle");
+    availabilityHidden.classList.toggle("unhide");
 })
 
 const teamCard = document.querySelector(".aboutUs-team");
 const teamHidden = document.querySelectorAll(".teamHidden");
 
 teamCard.addEventListener("click", function () {
-    teamCard.classList.toggle ("unhideArticle");
-    for(let i=0; i<teamHidden.length; i++) {
-        teamHidden[i].classList.toggle ("unhidePicture");
-    }  
+    teamCard.classList.toggle("unhideArticle");
+    for (let i = 0; i < teamHidden.length; i++) {
+        teamHidden[i].classList.toggle("unhidePicture");
+    }
 })
 
 // ----------------------------------------- HERO - MAIN ---------------------------------
@@ -35,9 +35,9 @@ const searchInput = document.querySelector('input')
 searchInput.addEventListener('change', (event) => {
     const searchValue = event.target.value;
     // Vider le container parent a l'aide de .innerHTML = "" || Supprimer les autres card
-    if(restaurants.filter((restaurant) => restaurant.name.toLowerCase().includes(searchValue.toLowerCase()) || restaurant.type.toLowerCase().includes(searchValue.toLowerCase()))) {
-    // Creation des card avec le nom du restaurant || du filtre
-    } 
+    if (restaurants.filter((restaurant) => restaurant.name.toLowerCase().includes(searchValue.toLowerCase()) || restaurant.type.toLowerCase().includes(searchValue.toLowerCase()))) {
+        // Creation des card avec le nom du restaurant || du filtre
+    }
 })
 
 
@@ -46,7 +46,7 @@ searchInput.addEventListener('change', (event) => {
 import { allArray } from "./data/myArray.js";
 
 import { createCards } from "./functions/createCard.js";
-createCards('Burger', document.querySelector('.allCards')); 
+createCards('Burger', document.querySelector('.allCards'));
 createCards('Brunch', document.querySelector('.allBrunch'));
 createCards('Bars', document.querySelector('.allBars'));
 createCards('Popular', document.querySelector('.all-cards-pop'));
@@ -56,7 +56,7 @@ function filterByType(category) {
 
     allArray.forEach(item => {
         item.places.forEach(place => {
-            if(place.category === category) {
+            if (place.category === category) {
                 filteredPlaces.push(place);
             }
         })

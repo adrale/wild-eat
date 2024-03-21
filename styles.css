@@ -88,6 +88,10 @@ nav>ul>.navMobile-cart {
     margin-top: 0.5rem;
 }
 
+nav>ul>.navMobile-cart>a {
+    text-decoration: none;
+}
+
 .navDesktop,
 .navDesktop-home,
 .navDesktop-search,
@@ -140,9 +144,47 @@ nav>ul>.navMobile-cart {
     outline: none;
 }
 
+/* SLIDER */
+
+.slider-1 {
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    margin: 0 1.2rem;
+}
+
+.slider-1 .slider {
+    display: flex;
+    animation: slider-1 15s infinite ease-in-out;
+}
+
+.slider-1 img {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+@keyframes slider-1 {
+    0%,
+    20% {
+        transform: translateX(0);
+    }
+    25%,
+    45% {
+        transform: translateX(-100%);
+    }
+    50%,
+    70% {
+        transform: translateX(-200%);
+    }
+    75%,
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
 /* -------------------------------- MAIN HERO  -------------------------------------------------------------------------- */
 
-main>hgroup>hgroup:last-of-type {
+/* main>hgroup>hgroup:last-of-type {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -184,7 +226,7 @@ main>hgroup>hgroup:last-of-type>img {
     min-height: 6rem;
     grid-column: 2;
     grid-row: 2/5;
-}
+} */
 
 .section-main .filter-all {
     display: flex;
@@ -424,54 +466,48 @@ main>hgroup>hgroup:last-of-type>img {
 }
 
 main>.aboutUs {
-    display: grid;
-    grid-template-columns: repeat (4, auto);
-    grid-template-rows: 4rem 6rem 6rem 6rem;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
     margin-bottom: 10rem;
-    justify-content: center;
 }
 
 main>.aboutUs>h2 {
     font-size: 1.5rem;
     font-weight: 500;
-    grid-column: 2/4;
-    grid-row: 1/2;
     margin: auto;
 }
 
 main>.aboutUs>article {
+    background: rgba(222, 173, 230, 0.15);
+    box-shadow: 0 2px 5px 0 rgba(11, 11, 11, 0.164);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.245) 0px 3px 7px;
-    width: 8rem;
-    height: 12rem;
-    background-color: var(--secondary-color);
+    width: 10rem;
+    height: 14rem;
     transition: all 200ms ease-in-out;
 }
 
-main>section>.aboutUs-quality {
-    grid-column: 2/4;
-    grid-row: 2/4;
-    z-index: 2;
-    padding-top: 4rem;
+main>section>.aboutUs-quality,
+.aboutUs-team,
+.aboutUs-availability {
+    padding-top: 6rem;
 }
 
-main>section>.aboutUs-availability {
-    grid-column: 1/3;
-    grid-row: 3/5;
-    z-index: 3;
+.aboutUs-team {
+    padding-left: 2rem;
     padding-top: 5rem;
 }
 
-main>section>.aboutUs-team {
-    grid-column: 3/5;
-    grid-row: 3/5;
-    z-index: 1;
-    padding-top: 5rem;
-}
 
 main>.aboutUs>article>h3 {
     text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 main>.aboutUs>article>p {
@@ -484,15 +520,29 @@ main>.aboutUs>article>img {
 
 main>section>.unhideArticle {
     display: block;
-    width: 12rem;
-    height: 18rem;
+    width: 13rem;
+    height: 20rem;
     padding-top: 1rem;
     text-align: center;
-    z-index: 3;
+}
+
+.aboutUs .aboutUs-team {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.aboutUs .aboutUs-team>h3 {
+    grid-column: 1/3;
+    padding-right: 2rem;
+    color: var(--third-color);
+}
+
+.aboutUs .aboutUs-team>:last-child {
+    transform: translateX(2.6rem);
 }
 
 main>section>article>.unhide {
-    display: none;
+    display: block;
 }
 
 main>section>article>.unhidePicture {
@@ -500,6 +550,7 @@ main>section>article>.unhidePicture {
     width: 4rem;
     height: auto;
     margin-top: 0.4rem;
+    border-radius: 2rem;
 }
 
 main>.download-app {
@@ -576,46 +627,6 @@ main>.download-app {
         height: 18rem;
     }
 
-    /* main>.download-app {
-        background-color: var(--secondary-color);
-        border-radius: 1rem;
-        box-shadow: 0.1rem 0.1rem;
-        width: 50rem;
-        margin: 10rem auto;
-        display: flex;
-        box-shadow: rgba(0, 0, 0, 0.106) 0px 0px 0px;
-    }
-
-    main>.download-app>p {
-        font-size: 1.2rem;
-        font-weight: 600;
-        text-align: center;
-        margin: auto;
-        padding-left: 3rem;
-        padding-right: 3rem;
-        padding-bottom: 3rem;
-    }
-
-    main>.download-app>img {
-        width: 20rem;
-        border-radius: 0 1rem 1rem 0;
-        background-color: var(--secondary-color);
-    }
-
-    main>.download{
-        transform: translateY(-14.5rem);
-        margin-left: 18rem;
-        border-radius: 2rem;
-        padding: 0.5rem;
-        border-style: none;
-        background-color: var(--third-color);
-        font-size: 0.8rem;
-        font-weight: 500;
-        color: white;
-        box-shadow: rgba(0, 0, 0, 0.257) 1px 1px 10px;
-    } */
-
-
     /* -------------------------------------------------------------------------- MEDIA QUERY - HERO -------------------------------------------------------------------------- */
     header {
         background-color: var(--header-color);
@@ -645,6 +656,7 @@ main>.download-app {
     }
 
     main>hgroup>hgroup:last-of-type {
+        display: grid;
         grid-template-columns: auto 18rem 2rem auto;
         grid-row: auto;
     }
@@ -673,7 +685,12 @@ main>.download-app {
 
     main>hgroup>hgroup:last-of-type>img {
         grid-column: 4;
-        grid-row: 1/12
+        grid-row: 1/12;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        width: clamp(7.5rem, 45vw, 51rem);
+        max-height: 28rem;
+        min-height: 9rem;
     }
 
     .mobile-hero {
@@ -788,10 +805,12 @@ main>.download-app {
 
     .allBrunch {
         padding-left: 2rem;
+        padding-top: 2rem;
     }
 
     .allBars {
         padding-left: 2rem;
+        padding-top: 2rem;
     }
 
     /*---------------------------------------------media query filter-----------------------------------------------------------------*/
@@ -812,18 +831,21 @@ main>.download-app {
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         padding-right: 1rem;
+        cursor: pointer;
     }
 
     #Pizza {
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         padding-right: 1rem;
+        cursor: pointer;
     }
 
     #Bar {
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         padding-right: 1rem;
+        cursor: pointer;
     }
 
     #Brunch {
@@ -831,5 +853,6 @@ main>.download-app {
         padding-bottom: 0.8rem;
         padding-right: 1rem;
     }
+
 
 }
