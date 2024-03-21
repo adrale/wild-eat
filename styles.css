@@ -437,6 +437,8 @@ main>.aboutUs>h2 {
     font-size: 1.5rem;
     font-weight: 500;
     margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 main>.aboutUs>article {
@@ -468,10 +470,17 @@ main>.aboutUs>article>h3 {
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
+    color: var(--third-color);
 }
 
 main>.aboutUs>article>p {
     display: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.4rem;
 }
 
 main>.aboutUs>article>img {
