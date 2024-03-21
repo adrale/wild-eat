@@ -95,31 +95,21 @@ const idPizza = document.getElementById("Pizza");
 const idBrunch = document.getElementById("Brunch");
 const idBar = document.getElementById("Bar");
 
-const defaultContent = document.getElementById('allTheCards').innerHTML;
-
 // Récupération des id/classes pour les différentes sections en vue de les afficher par la suite 
-const sectionFirst = document.querySelectorAll('.commandes-populaires, .all-cards-pop');
-const sectionSecond = document.querySelectorAll('#typeFastFood, .allCards');
-const sectionThird = document.querySelectorAll('#typeBrunch, .allBrunch');
-const sectionFourth = document.querySelectorAll('#typeBar, .allBars');
+// Définir les sélections dans un tableau
+const sections = [
+    document.querySelectorAll('.commandes-populaires, .all-cards-pop'),
+    document.querySelectorAll('#typeFastFood, .allCards'),
+    document.querySelectorAll('#typeBrunch, .allBrunch'),
+    document.querySelectorAll('#typeBar, .allBars')
+];
 
 // Fonction pour restaurer les sélections par défaut
 function restoreDefaultSelections() {
-    sectionFirst.forEach(section => {
-        section.style.display = "grid";
-
-    });
-    sectionSecond.forEach(section => {
-        section.style.display = "grid";
-
-    });
-    sectionThird.forEach(section => {
-        section.style.display = "grid";
-
-    });
-    sectionFourth.forEach(section => {
-        section.style.display = "grid";
-
+    sections.forEach(sectionArray => {
+        sectionArray.forEach(section => {
+            section.style.display = "grid";
+        });
     });
 }
 
@@ -129,53 +119,32 @@ function clickFilter(idTypeOfRestaurant, filteredType) {
         if (idTypeOfRestaurant.classList.contains("color-clicked-filter")) {
             console.log(filteredType);
             // Appliquer les filtres
-            if(filteredType === filteredBurger) {
-                sectionFirst.forEach(section => {
-                    section.style.display = "none";
-                });
-                sectionThird.forEach(section => {
-                    section.style.display = "none";
-                });
-                sectionFourth.forEach(section => {
-                    section.style.display = "none";
-                });
-            } else if (filteredType === filteredPizza) {
-                sectionSecond.forEach(section => {
-                    section.style.display = "none";
-                });
-                sectionThird.forEach(section => {
-                    section.style.display = "none";
-                });
-                sectionFourth.forEach(section => {
-                    section.style.display = "none";
-                });
-            } else if (filteredType === filteredBrunch) {
-                sectionFirst.forEach(section => {
-                    section.style.display = "none";
-                });
-                sectionSecond.forEach(section => {
-                    section.style.display = "none";
-                });
-                sectionFourth.forEach(section => {
-                    section.style.display = "none";
-                });
-            } else if (filteredType === filteredBar) {
-                sectionFirst.forEach(section => {
-                    section.style.display = "none";
-                });
-                sectionSecond.forEach(section => {
-                    section.style.display = "none";
-                });
-                sectionThird.forEach(section => {
-                    section.style.display = "none";
-                });
-            }
+            sections.forEach((sectionArray, index) => {
+                if (filteredType === filteredBurger && index !== 1) {
+                    sectionArray.forEach(section => {
+                        section.style.display = "none";
+                    });
+                } else if (filteredType === filteredPizza && index !== 0) {
+                    sectionArray.forEach(section => {
+                        section.style.display = "none";
+                    });
+                } else if (filteredType === filteredBrunch && index !== 2) {
+                    sectionArray.forEach(section => {
+                        section.style.display = "none";
+                    });
+                } else if (filteredType === filteredBar && index !== 3) {
+                    sectionArray.forEach(section => {
+                        section.style.display = "none";
+                    });
+                }
+            });
         } else {
             // Réinitialiser les sélections par défaut
             restoreDefaultSelections();
         }
     });
 }
+
 
 
 

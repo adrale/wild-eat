@@ -1,5 +1,5 @@
 
-import { allArray } from "../data/testArray.js";
+import { allArray } from "../data/myArray.js";
 export let containerBurger = document.querySelector('.allCards');
 
 function createAnElement(tag, classname = null, parent) {
