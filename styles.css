@@ -252,7 +252,6 @@ main>hgroup>hgroup:last-of-type>img {
 }
 
 .typeFood>p {
-    font-size: 1.5rem;
     color: var(--third-color);
     font-weight: 500;
     font-size: 1.2rem;
@@ -302,11 +301,10 @@ main>hgroup>hgroup:last-of-type>img {
 /*----------------------------------------------------titre commandes populaires------------------------------------------------------------*/
 
 .commandes-populaires {
-    display: block;
-    padding-left: 1rem;
-    font-weight: 400;
-    font-size: 1.1rem;
     padding: 1rem;
+    color: var(--third-color);
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 /*-----------------------------------------------------fin titre commandes populaires-----------------------------------------------------*/
