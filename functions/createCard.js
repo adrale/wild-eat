@@ -31,4 +31,6 @@ export function createCards(type, container) {
         const cardPrice = createAnElement('p', 'prix', cardArticle);
         cardPrice.innerText = place.prix;
     };
+
+    
 };

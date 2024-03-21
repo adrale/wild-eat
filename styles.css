@@ -188,6 +188,8 @@ nav>ul>.navMobile-cart>a {
     }
 }
 
+
+
 /* -------------------------------- MAIN HERO  -------------------------------------------------------------------------- */
 /*--------------------------------------------------------------------------section main cards---------------------------------------------------------*/
 
@@ -433,7 +435,7 @@ main>.aboutUs {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 main>.aboutUs>h2 {
@@ -526,6 +528,68 @@ main>section>article>.unhidePicture {
 
 main>.download-app {
     display: none;
+}
+
+.section-avis {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 10rem;
+    padding-top: 2rem;
+    margin-left: 2rem;
+    overflow: scroll hidden;
+}
+
+.section-avis .card-avis {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+padding-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    align-items: center;
+    background-color: #FEE8F0;
+    border-radius: 1rem;
+    width: 40rem;
+    height: 25rem;
+}
+
+.section-avis .card-avis>img {
+    width: 4rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.218) 0px 0px 7px;
+}
+
+#text-avis{
+font-style: italic;
+font-size: 0.7rem;
+padding-left: 2rem;
+padding-right: 2rem;
+}
+
+#username{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color:#f7156cb0;
+}
+
+#note-avis{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.avis-star{
+    display: flex;
+    gap: 0.3rem;
+}
+.avis-star>img{
+width: 0.9rem;
+padding-bottom: 0.6rem;
+}
+
+.titre-avis{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 
@@ -861,5 +925,62 @@ main>.download-app {
         border-radius: 2rem;
     }
 
+    .section-avis {
+        display: flex;
+        gap: 3rem;
+        padding-bottom: 10rem;
+        padding-top: 5rem;
+        margin-left: 7rem;
+        overflow: scroll hidden;
+    }
+
+    .titre-avis{
+        padding-top: 5rem;
+    }
+
+    .section-avis .card-avis {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 2rem;
+        align-items: center;
+        background-color: #FEE8F0;
+        border-radius: 1rem;
+        width: 40rem;
+        height: 25rem;
+    }
+
+    .section-avis .card-avis>img {
+        width: 4rem;
+        border-radius: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.218) 0px 0px 7px;
+    }
+
+#text-avis{
+padding-left: 2rem;
+padding-right: 2rem;
+font-style: italic;
+font-size: 1rem;
+    }
+
+    #username{
+        font-size: 1.1rem;
+        font-weight: 600;
+        color:#f7156cb0;
+    }
+
+    #note-avis{
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .avis-star{
+        display: flex;
+        gap: 0.3rem;
+    }
+.avis-star>img{
+    width: 0.9rem;
+    padding-bottom: 0.6rem;
+}
 
 }
