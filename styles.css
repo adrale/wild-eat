@@ -610,11 +610,13 @@ main>.download-app {
         font-size: 2.4rem;
     }
 
-    main .aboutUs > article {
+    main .aboutUs>article {
         margin-top: 8rem;
     }
 
-
+    main .aboutUs>article:hover {
+        transform: scale(1.1);
+    }
 
     /* -------------------------------------------------------------------------- MEDIA QUERY - HERO -------------------------------------------------------------------------- */
     header {
@@ -819,7 +821,12 @@ main>.download-app {
     }
 
     .filter-restaurant>p {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
+    }
+
+    .filter-all>article:hover {
+        transform: scale(1.05);
+        transition: all 100ms ease-in-out;
     }
 
     #Burger,
@@ -830,15 +837,15 @@ main>.download-app {
         padding: 1rem 2rem;
     }
 
-    main > .download-app > img {
+    main>.download-app>img {
         width: 15rem
     }
 
-    main > .download-app > p {
+    main>.download-app>p {
         font-size: 1.1rem;
     }
-    
-    main > .download-app > p > span {
+
+    main>.download-app>p>span {
         color: var(--third-color);
         font-weight: 800;
     }
@@ -854,5 +861,5 @@ main>.download-app {
         border-radius: 2rem;
     }
 
-    
+
 }
