@@ -536,11 +536,20 @@ main>.download-app {
 
 @media screen and (min-width: 992px) {
 
+    .navDesktop,
+    .navDesktop-home,
+    .navDesktop-search,
+    .navDesktop-cart,
+    .navDesktop-aboutUs,
+    .navDesktop-view {
+        display: inline-block;
+    }
+
     .navMobile {
         display: none;
     }
 
-    .navDesktop {
+    header>.navDesktop {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -577,8 +586,7 @@ main>.download-app {
     }
 
     nav>ul>li>.fav-home {
-        background-color: var(--third-color);
-        border-radius: 50%;
+
         width: 1rem;
     }
 
@@ -696,6 +704,11 @@ main>.download-app {
 
     /*------------------------------------------------------------------media query cards----------------------------------------------------------------------*/
 
+    .restaurants {
+        padding-top: 3rem;
+        font-size: 2rem;
+    }
+
     .commandes-populaires {
         font-size: 1.6rem;
         color: var(--third-color);
@@ -798,20 +811,25 @@ main>.download-app {
 
     .filter-all {
         display: flex;
-        justify-content: center;
-        gap: 2.5rem;
+        gap: 0;
         scrollbar-width: none;
-        padding-top: 1rem;
+        padding-top: 3rem;
     }
 
     .filter-restaurant>p {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
+        padding-right: 1.1rem;
+    }
+
+    .filter-restaurant>img {
+        width: 2.1rem;
     }
 
     #Burger {
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         padding-right: 1rem;
+        padding-left: 2rem;
         cursor: pointer;
     }
 
@@ -819,6 +837,7 @@ main>.download-app {
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         padding-right: 1rem;
+        padding-left: 2rem;
         cursor: pointer;
     }
 
@@ -826,6 +845,7 @@ main>.download-app {
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         padding-right: 1rem;
+        padding-left: 2rem;
         cursor: pointer;
     }
 
@@ -833,6 +853,8 @@ main>.download-app {
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         padding-right: 1rem;
+        padding-left: 2rem;
+        cursor: pointer;
     }
 
 
