@@ -470,6 +470,8 @@ main>section>.aboutUs-team {
 
 main>.aboutUs>article>h3 {
     text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 main>.aboutUs>article>p {
@@ -595,46 +597,6 @@ main>.download-app {
         width: 12rem;
         height: 18rem;
     }
-
-    /* main>.download-app {
-        background-color: var(--secondary-color);
-        border-radius: 1rem;
-        box-shadow: 0.1rem 0.1rem;
-        width: 50rem;
-        margin: 10rem auto;
-        display: flex;
-        box-shadow: rgba(0, 0, 0, 0.106) 0px 0px 0px;
-    }
-
-    main>.download-app>p {
-        font-size: 1.2rem;
-        font-weight: 600;
-        text-align: center;
-        margin: auto;
-        padding-left: 3rem;
-        padding-right: 3rem;
-        padding-bottom: 3rem;
-    }
-
-    main>.download-app>img {
-        width: 20rem;
-        border-radius: 0 1rem 1rem 0;
-        background-color: var(--secondary-color);
-    }
-
-    main>.download{
-        transform: translateY(-14.5rem);
-        margin-left: 18rem;
-        border-radius: 2rem;
-        padding: 0.5rem;
-        border-style: none;
-        background-color: var(--third-color);
-        font-size: 0.8rem;
-        font-weight: 500;
-        color: white;
-        box-shadow: rgba(0, 0, 0, 0.257) 1px 1px 10px;
-    } */
-
 
     /* -------------------------------------------------------------------------- MEDIA QUERY - HERO -------------------------------------------------------------------------- */
     header {
@@ -832,18 +794,21 @@ main>.download-app {
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         padding-right: 1rem;
+        cursor: pointer;
     }
 
     #Pizza {
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         padding-right: 1rem;
+        cursor: pointer;
     }
 
     #Bar {
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
         padding-right: 1rem;
+        cursor: pointer;
     }
 
     #Brunch {
@@ -851,5 +816,6 @@ main>.download-app {
         padding-bottom: 0.8rem;
         padding-right: 1rem;
     }
+
 
 }
