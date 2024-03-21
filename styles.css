@@ -208,6 +208,7 @@ nav>ul>.navMobile-cart>a {
 
 .section-main .filter-all {
     display: flex;
+    justify-content: space-evenly;
     overflow: scroll hidden;
     scrollbar-width: none;
     list-style-type: none;
