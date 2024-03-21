@@ -108,13 +108,14 @@ nav>ul>.navMobile-cart>a {
 
 .desktop-hero {
     display: none;
+    padding-top: 1rem;
 }
 
 
 .main-hero>hgroup:first-of-type {
     text-align: center;
-    margin-top: 2rem;
-    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 .main-hero>hgroup:first-of-type>h1 {
@@ -125,7 +126,7 @@ nav>ul>.navMobile-cart>a {
     font-size: clamp(1rem, 5vw, 2rem);
     text-align: center;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.2rem;
 }
 
 .main-hero>hgroup:first-of-type>input {
@@ -164,74 +165,54 @@ nav>ul>.navMobile-cart>a {
 }
 
 @keyframes slider-1 {
+
     0%,
-    20% {
+    22.5% {
         transform: translateX(0);
     }
-    25%,
-    45% {
+
+    27.5%,
+    53% {
         transform: translateX(-100%);
     }
-    50%,
-    70% {
+
+    58.5%,
+    84% {
         transform: translateX(-200%);
     }
-    75%,
+
+    88.5%,
     100% {
         transform: translateX(-300%);
     }
 }
 
 /* -------------------------------- MAIN HERO  -------------------------------------------------------------------------- */
+/*--------------------------------------------------------------------------section main cards---------------------------------------------------------*/
 
-/* main>hgroup>hgroup:last-of-type {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    background-image: url(./Img/background-card.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 1rem;
-    margin: 1rem;
+/*-------------------------------------------------------titre restaurants-----------------------------------------------------------------------------*/
+
+.restaurants {
+    display: block;
     text-align: center;
-    min-height: 9rem;
-    max-height: 30rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    padding-bottom: 1rem;
     padding-top: 1rem;
 }
 
-main>hgroup>hgroup:last-of-type>p:nth-of-type(4) {
-    grid-column: 1;
-    grid-row: 2;
-    font-weight: bold;
-    font-size: clamp(2rem, 5vw, 5rem);
-    color: white;
-    padding-left: 1rem;
-    padding-top: 1rem;
-}
+/*-----------------------------------------------------fin titre restaurants--------------------------------------------------------------------------*/
 
-main>hgroup>hgroup:last-of-type>p:nth-of-type(5) {
-    grid-column: 1;
-    grid-row: 3;
-    font-weight: bold;
-    font-size: clamp(0.8rem, 3vw, 5rem);
-    color: white;
-    padding-left: 1rem;
-}
-
-main>hgroup>hgroup:last-of-type>img {
-    border-radius: 1rem;
-    padding: 0.5rem;
-    width: clamp(7.5rem, 45vw, 51rem);
-    max-height: 28rem;
-    min-height: 6rem;
-    grid-column: 2;
-    grid-row: 2/5;
-} */
+/*-------------------------------------------------------------Filter---------------------------------------------------------*/
 
 .section-main .filter-all {
     display: flex;
     overflow: scroll hidden;
+    scrollbar-width: none;
     list-style-type: none;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
 }
 
 .section-main .filter-restaurant {
@@ -244,7 +225,7 @@ main>hgroup>hgroup:last-of-type>img {
     padding: .5rem;
     padding-left: .8rem;
     border-radius: 2rem;
-    box-shadow: 0rem .1rem .4rem #00000034;
+    box-shadow: 0rem .1rem .4rem #0000001c;
     display: flex;
     align-items: center;
 }
@@ -258,30 +239,7 @@ main>hgroup>hgroup:last-of-type>img {
     background-color: var(--third-color);
 }
 
-/*--------------------------------------------------------------------------section main cards---------------------------------------------------------*/
 
-/*-------------------------------------------------------titre restaurants-----------------------------------------------------------------------------*/
-
-.restaurants {
-    display: block;
-    text-align: center;
-    font-weight: 500;
-    font-size: 1.5rem;
-    padding: 1rem 0;
-}
-
-/*-----------------------------------------------------fin titre restaurants--------------------------------------------------------------------------*/
-
-/*-------------------------------------------------------------Filter---------------------------------------------------------*/
-
-.filter-all {
-    display: flex;
-    scrollbar-width: none;
-}
-
-.filter-restaurant {
-    padding: 0.5rem 1.2rem;
-}
 
 /*--------------------------------------------------------fin filter-----------------------------------------------------------------*/
 
@@ -346,9 +304,10 @@ main>hgroup>hgroup:last-of-type>img {
 .commandes-populaires {
     display: block;
     padding-left: 1rem;
-    font-weight: 400;
-    font-size: 1.1rem;
+    font-weight: 500;
+    font-size: 1.2rem;
     padding: 1rem;
+    color: var(--third-color);
 }
 
 /*-----------------------------------------------------fin titre commandes populaires-----------------------------------------------------*/
@@ -380,7 +339,7 @@ main>hgroup>hgroup:last-of-type>img {
     width: 15rem;
     height: 10rem;
     padding-bottom: 0.4rem;
-    padding-right: 0.8rem;
+    margin-right: 1rem;
 }
 
 /*---------------------------------------------------fin ensemble des cards des commandes populaires-------------------------------------------------*/
@@ -399,6 +358,7 @@ main>hgroup>hgroup:last-of-type>img {
     display: flex;
     justify-content: space-between;
     padding-left: 0.6rem;
+    padding-right: 0.6rem;
     color: white;
 }
 
@@ -658,7 +618,7 @@ main>.download-app {
     main>hgroup>hgroup:last-of-type {
         display: grid;
         grid-template-columns: auto 18rem 2rem auto;
-        grid-row: auto;
+        `auto;
     }
 
     main>hgroup>hgroup:last-of-type>p:nth-of-type(1) {
