@@ -218,7 +218,8 @@ nav>ul>.navMobile-cart>a {
     scrollbar-width: none;
     list-style-type: none;
     padding-bottom: 1rem;
-    padding-left: 0.5rem;
+    padding-left: 5rem;
+    gap: 1rem;
 }
 
 .section-main .filter-restaurant {
@@ -227,13 +228,14 @@ nav>ul>.navMobile-cart>a {
     color: var(--black-color);
     background-color: var(--background-secondary-color);
     text-decoration: none;
-    margin: .4rem;
-    padding: .5rem;
-    padding-left: .8rem;
     border-radius: 2rem;
     box-shadow: 0rem .1rem .4rem #0000001c;
     display: flex;
     align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .section-main .filter-restaurant>img {
