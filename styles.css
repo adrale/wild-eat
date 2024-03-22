@@ -940,7 +940,7 @@ main>.download-app {
         padding-bottom: 2rem;
         margin-left: 2rem;
         margin-right: 2rem;
-        overflow: scroll hidden;
+        scrollbar-width: none;
     }
 
     .titre-avis {
