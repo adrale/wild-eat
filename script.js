@@ -152,3 +152,88 @@ clickFilter(idBurger, filteredBurger);
 clickFilter(idPizza, filteredPizza);
 clickFilter(idBrunch, filteredBrunch);
 clickFilter(idBar, filteredBar);
+
+
+
+// ----------------------------------------- Barre de recherche ---------------------------------
+
+
+// fonction pour associer un nom de restaurant au type de restaurant pour ensuite appeler createCards(type, container)
+// car createCards prend en 1er paramètre le type du restaurant et non le nom du restaurant
+// mais du coup ça va recréer toutes les cartes pour un type de restaurant
+// donc c'est mort à moins de trouver un expert en JS
+
+function findRestaurantType(restaurantName) {
+    for (const category of allArray) {
+        for (const place of category.places) {
+            if (place.name === restaurantName) {
+                return category.type;
+            }
+        }
+    }
+    return null; // retourne null si aucun restaurant avec le nom donné n'est trouvé
+}
+
+console.log(findRestaurantType("My Beers")); // RENVOIE BIEN LE TYPE DU RESTO MY BEERS !
+
+
+// tableau vide pour stocker les noms des restaurants
+const restaurantNames = [];
+
+// push les noms de resto dans le tableau vide
+allArray.forEach(category => {
+    category.places.forEach(place => {
+        restaurantNames.push(place.name);
+    });
+});
+
+console.log(restaurantNames); // on obtient bien un tableau avec les noms des restos
+
+const inputName = document.getElementById('search'); // DOM input barre de recherche
+const container = document.getElementById("allTheCards"); // DOM container cards
+
+inputName.addEventListener("input", (event) => {
+    const searchValue = event.target.value.toLowerCase();
+    console.log(searchValue);
+
+    container.innerHTML = ""; // efface le contenu du conteneur avant d'afficher les résultats filtrés
+
+    // filtre les noms de restaurants en fonction de l'input
+    // const filteredRestaurantsNames = restaurantNames.filter((restaurantName) => {
+    //     return restaurantName.toLowerCase().includes(searchValue);
+    // });
+
+    // console.log(filteredRestaurantsNames);
+
+    restaurantNames.filter((restaurantName) => {
+        if (restaurantName.toLowerCase().includes(searchValue)) {
+            createCards(findRestaurantType(restaurantName), container);
+        } else {
+        };
+    });
+});
+
+// idée : ajout méthode .trim()
+
+
+
+
+// tentative n°1 dans createCards pour passer du nom du resto au type de resto (méthode restaurantNames) ?
+
+// allArray.forEach(category => {
+//     category.places.forEach(place => {(place.name);
+//     });
+// })
+
+
+
+// tentative n°2 dans createCards pour passer du nom du resto au type de resto (méthode Adrien filtre bouton) ?
+
+// function displayCardByRestaurantName (filteredRestaurantsNames) {
+//     for (let i = 0; i < filteredRestaurantsNames; i++) {
+//         if (filteredRestaurantsNames === searchValue) {
+//             sectionArray.forEach(section => {
+//                 section.style.display = ............;
+//             })} else {.........
+//     }};
+// };
