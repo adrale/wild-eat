@@ -539,6 +539,8 @@ main>.download-app {
     gap: 2rem;
     padding: 5rem 0;
     margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
     overflow: scroll hidden;
 }
 
@@ -563,34 +565,35 @@ main>.download-app {
     top: -2rem;
 }
 
-#text-avis{
-font-style: italic;
-font-size: 0.7rem;
-padding: 0 2rem;
-width: 10rem;
+#text-avis {
+    font-style: italic;
+    font-size: 0.7rem;
+    padding: 0 2rem;
+    width: 10rem;
 }
 
-#username{
+#username {
     font-size: 1.1rem;
     font-weight: 600;
-    color:#f7156cb0;
+    color: #f7156cb0;
 }
 
-#note-avis{
+#note-avis {
     font-size: 0.8rem;
     font-weight: 500;
 }
 
-.avis-star{
+.avis-star {
     display: flex;
     gap: 0.3rem;
 }
-.avis-star>img{
-width: 0.9rem;
-padding-bottom: 0.6rem;
+
+.avis-star>img {
+    width: 0.9rem;
+    padding-bottom: 0.6rem;
 }
 
-.titre-avis{
+.titre-avis {
     text-align: center;
     font-size: 2rem;
     font-weight: 400;
@@ -934,24 +937,27 @@ padding-bottom: 0.6rem;
         gap: 3rem;
         padding-bottom: 10rem;
         padding-top: 5rem;
-        margin-left: 7rem;
+        padding-bottom: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
         overflow: scroll hidden;
     }
 
-    .titre-avis{
+    .titre-avis {
         padding-top: 5rem;
     }
 
     .section-avis .card-avis {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         gap: 3rem;
-        padding: 2rem;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
         align-items: center;
         background-color: #FEE8F0;
         border-radius: 1rem;
-        width: 40rem;
-        height: 25rem;
+        width: 30rem;
     }
 
     .section-avis .card-avis>img {
@@ -960,31 +966,35 @@ padding-bottom: 0.6rem;
         box-shadow: rgba(0, 0, 0, 0.218) 0px 0px 7px;
     }
 
-#text-avis{
-padding-left: 2rem;
-padding-right: 2rem;
-font-style: italic;
-font-size: 1rem;
+    #text-avis {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-style: italic;
+        font-size: 1rem;
+        width: 20rem;
     }
 
-    #username{
+    #username {
         font-size: 1.1rem;
         font-weight: 600;
-        color:#f7156cb0;
+        color: #f7156cb0;
+        /* padding-top: 1rem; */
+
     }
 
-    #note-avis{
+    #note-avis {
         font-size: 0.8rem;
         font-weight: 500;
     }
 
-    .avis-star{
+    .avis-star {
         display: flex;
         gap: 0.3rem;
     }
-.avis-star>img{
-    width: 0.9rem;
-    padding-bottom: 0.6rem;
-}
+
+    .avis-star>img {
+        width: 0.9rem;
+        padding-bottom: 0.6rem;
+    }
 
 }
