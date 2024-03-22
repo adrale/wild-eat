@@ -467,6 +467,7 @@ main>section>.aboutUs-quality,
 .aboutUs-team,
 .aboutUs-availability {
     padding-top: 6rem;
+    cursor: pointer;
 }
 
 .aboutUs-team {
