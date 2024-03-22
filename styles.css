@@ -537,8 +537,7 @@ main>.download-app {
 .section-avis {
     display: flex;
     gap: 2rem;
-    padding-bottom: 10rem;
-    padding-top: 2rem;
+    padding: 5rem 0;
     margin-left: 2rem;
     overflow: scroll hidden;
 }
@@ -546,28 +545,29 @@ main>.download-app {
 .section-avis .card-avis {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-padding-top: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    justify-content: center;
     align-items: center;
+    gap: 1rem;
+    padding: 0 3rem;
     background-color: #FEE8F0;
     border-radius: 1rem;
-    width: 40rem;
-    height: 25rem;
+    height: 21rem;
+    position: relative;
 }
 
 .section-avis .card-avis>img {
     width: 4rem;
     border-radius: 2rem;
     box-shadow: rgba(0, 0, 0, 0.218) 0px 0px 7px;
+    position: absolute;
+    top: -2rem;
 }
 
 #text-avis{
 font-style: italic;
 font-size: 0.7rem;
-padding-left: 2rem;
-padding-right: 2rem;
+padding: 0 2rem;
+width: 10rem;
 }
 
 #username{
